@@ -57,3 +57,13 @@ All communication between Loan Market and the lodgement target systems MUST inco
 The backchannel allows a call-back endpoint for the lender to update a deal after being lodged. 
 
 ![image](https://user-images.githubusercontent.com/60586239/108803611-d9af3c00-75e6-11eb-9b49-df5fd111493e.png)
+
+#Samples
+
+All samples included within this repository are using .NET Core 3.1. The sample provides a very basic application which provides an example OpenAPI schema.
+
+Required Software installations:
+* [.NET Core 3.1](https://dotnet.microsoft.com/download/dotnet/3.1)
+
+## Running the sample
+Open a console within ./samples/MyCRM.Lodgement.Sample and execute "dotnet run"
