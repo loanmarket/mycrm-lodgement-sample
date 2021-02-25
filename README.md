@@ -58,7 +58,7 @@ The backchannel allows a call-back endpoint for the lender to update a deal afte
 
 ![image](https://user-images.githubusercontent.com/60586239/108803611-d9af3c00-75e6-11eb-9b49-df5fd111493e.png)
 
-#Samples
+# Samples
 
 All samples included within this repository are using .NET Core 3.1. The sample provides a very basic application which provides an example OpenAPI schema.
 
