@@ -1,27 +1,35 @@
-# My CRM Lodgement
+# My CRM Residential Application Lodgement
 
-MyCRM aims to integrate with a wide range of lodgement targets including direct to lender and 3rd party gateways. At the point of lodgement, based on configuration and predefined rules, the user is presented a selection of available lodgement targets for their loan application. Once a target is selected a lodgement package is created containing all available loan application information. This lodgement package is then sent to the selected lodgement target for validation, if the validation is successful, the package can then be lodged.  The intention of this readme is to assist potential lodgement targets in completing this integration with MyCRM.
+MyCRM aims to integrate with a wide range of lodgement targets either by communicating directly to a lender or via 3rd party gateways. At the point of lodgement, based on configuration and predefined rules, the user is presented a selection of available lodgement targets for their loan application. Once a target is selected a lodgement package is created within MyCRM containing all available loan application information. This lodgement package is then sent to the selected lodgement target for validation, if the validation is successful, the package can then be lodged.  After initial lodgement, MyCRM will listen for any updates regarding the staus of the application so these statuses can be visible within MyCRM. The intention of this readme is to assist potential lodgement targets in completing this integration with MyCRM.
 
 # How to integrate with MyCRM as a lodgement target
 
 ## Make contact with mycrm to set up configuration     
-    - discuss any commercial agreements (if applicable)
-    - which lenders and markets should be supported    
+    - discuss any commercial agreements
+    - which lenders and markets should be supported
     - Work through configuration of security
     - How can MyCRM test this integration, sandbox configuration? Prod configuration?
+    - How can the lodgement target test this integration?
 
 ## Expose an api
     General api info
         - security
-        - retry strategy
-    - Valdiation endpoint
-    - Submission endpoint
-    - Communicating back to mycrm
+        - Retry strategy 
+            Calling into a target endpoint a retry policy will be utilised. The implementation of the retry strategy is on specific status codes retry up to 3 attempts with a exponential back off of 2 seconds to the power of the retry attempt.
+            Conditions:
+            * Status Code 420 - Enhance your calm;
+            * Timeout exception;
+                - Valdiation endpoint
+                - Submission endpoint
+                - Communicating status updates back to mycrm
 
 # Additional information
     - Security
     - Testing harness and getting started scenarios
     - Information on Lixi
+        - Lodgement uses Lixi packages for both Australia and New Zealand.
+            * CAL - 2.6.34
+            * CNZ - 2.1.7
     
 # Testing harness
 
@@ -35,50 +43,6 @@ Open a console within ./samples/MyCRM.Lodgement.Sample and execute "dotnet run"
 
 
 
-
-
-
-
-The **Lodgement API** is a single entry point which is utilised by MyCRM to lodge and validate a an existing deal. Lodgement has been built to allow MyCRM to lodge with multiple third party API's. 
-
-Lodgement uses Lixi packages for both Australia and New Zealand.
-* CAL - 2.6.34
-* CNZ - 2.1.7
-
-# Lodge
-
-POST Application/{applicationId}/Lodgement/Residential
-
-Lodge a residential deal.
-
-![image](https://user-images.githubusercontent.com/60586239/108928136-6ca2b180-768d-11eb-93f6-09841289fe6f.png)
-
-# Validate
-
-POST Application/{applicationId}/Lodgement/Residential/Validate
-
-Validate a residential deal.
-
-![image](https://user-images.githubusercontent.com/60586239/108928187-847a3580-768d-11eb-8aba-148960866170.png)
-
-# Lodgement Target
-
-A lodgement target is implemented per lender, the target can lodge and validate a lixi package.
-Each target is independent and can have different security requirements, but all endpoints will require at minimum authorization. 
-
-## Required Endpoints 
-* Lodge
-* Validate
-
-![image](https://user-images.githubusercontent.com/60586239/108803573-bc7a6d80-75e6-11eb-89d9-876fdedf7e83.png)
-
-## Retry Strategy
-
-Calling into a target endpoint a retry policy will be utilised. The implementation of the retry strategy is on specific status codes retry up to 3 attempts with a exponential back off of 2 seconds to the power of the retry attempt.
-
-Conditions:
-* Status Code 420 - Enhance your calm;
-* Timeout exception;
 
 ## Client Authentication
 
