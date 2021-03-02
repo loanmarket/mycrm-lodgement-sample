@@ -1,10 +1,13 @@
 using System.Collections.Generic;
+using Hellang.Middleware.ProblemDetails;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using MyCRM.Lodgement.Sample.Services.Client;
 
 namespace MyCRM.Lodgement.Sample
 {
@@ -21,6 +24,15 @@ namespace MyCRM.Lodgement.Sample
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            services.AddClient(Configuration);
+
+            services.AddProblemDetails(options =>
+            {
+                options.IncludeExceptionDetails = (context, ex) => false;
+            });
+
+            services.AddHealthChecks().AddCheck("default", _ => HealthCheckResult.Healthy("The API is responding"));
 
             services.AddSwaggerGen(c =>
             {
