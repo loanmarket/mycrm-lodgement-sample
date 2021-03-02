@@ -1,11 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System;
+﻿using System;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
-using MyCRM.Lodgement.Server.Models;
+using Microsoft.AspNetCore.Mvc;
+using MyCRM.Lodgement.Sample.Models;
 using MyCRMAPI.Lodgement.Models;
 
-namespace MyCRM.Lodgement.Server.Controllers
+namespace MyCRM.Lodgement.Sample.Controllers
 {
     [ApiController]
     [Route("Lodgement")]
