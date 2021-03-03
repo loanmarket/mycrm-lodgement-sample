@@ -11,27 +11,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-dotnet@v1
-
-    - name: Install Octopus CLI
-      run: |
-        OCTO_VERSION=7.4.2
-        mkdir -p "$GITHUB_WORKSPACE/bin" && cd "$GITHUB_WORKSPACE/bin"
-        wget https://download.octopusdeploy.com/octopus-tools/$OCTO_VERSION/OctopusTools.$OCTO_VERSION.portable.tar.gz
-        tar xvzf OctopusTools.$OCTO_VERSION.portable.tar.gz
-        echo "$GITHUB_WORKSPACE/bin" >> $GITHUB_PATH
- 
-    - name: Build and test
-      run: |
-        set -euo pipefail
-        echo "${{ secrets.LOAN_MARKET_TOKEN_READ_WRITE }}" | docker login -u ${{ github.actor }} --password-stdin ghcr.io
-        npm config set //npm.pkg.github.com/:_authToken ${{ secrets.LOAN_MARKET_TOKEN }}
-        version=$([ "$GITHUB_EVENT_NAME" == "pull_request" ] && echo "0.0.0-pr${{ github.event.number }}-$GITHUB_RUN_NUMBER" || echo "0.0.$GITHUB_RUN_NUMBER")
-        ./build.sh \
-          --app-version=${version} \
-          --remote-docker-registry="ghcr.io/loanmarket/mycrm-product" \
-          --publish-to-octopus \
-          --publish-nugets-to-github \
-          --publish-nugets-to-github-username="loanmarket" \
-          --publish-nugets-to-github-token="${{ secrets.GITHUB_TOKEN }}" \
-          --octo-server="${{ secrets.OCTOPUS_SERVER }}" \
-          --octo-api-key="${{ secrets.OCTOPUS_APIKEY }}"
+    - name: Install dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --configuration Release --no-restore
+    - name: Test
+      run: dotnet test --no-restore --verbosity normal
