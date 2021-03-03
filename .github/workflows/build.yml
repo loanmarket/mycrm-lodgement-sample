@@ -11,9 +11,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-dotnet@v1
-    - name: Install dependencies
-      run: dotnet restore
-    - name: Build
-      run: dotnet build --configuration Release --no-restore
-    - name: Test
-      run: dotnet test --no-restore --verbosity normal
+    - name: Restore Samples
+      run: dotnet restore ./samples/MyCRM.Lodgement.Sample.sln
+    - name: Build Samples
+      run: dotnet build --configuration Release --no-restore ./samples/MyCRM.Lodgement.Sample.sln
+    - name: Test Samples
+      run: dotnet test --no-restore --verbosity normal ./samples/MyCRM.Lodgement.Sample.sln
