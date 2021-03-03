@@ -26,7 +26,6 @@ namespace MyCRM.Lodgement.Sample.Services.Client
                 httpClient.BaseAddress = new Uri(settings.Url);
             });
             services.AddTransient<ILodgementClient, LodgementClient>();
-            services.AddTransient<IPackageSerializer, PackageSerializer>();
             return services;
         }
     }
