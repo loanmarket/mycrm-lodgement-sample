@@ -1,4 +1,6 @@
-﻿using System.Threading.Tasks;
+﻿using System.IO;
+using System.Threading.Tasks;
+using FluentAssertions;
 using Xunit;
 
 namespace MyCRM.Lodgement.Automation.Services.Tests
@@ -7,15 +9,13 @@ namespace MyCRM.Lodgement.Automation.Services.Tests
     {
         [Theory]
         [InlineData("./App_Data/Validate_Test1.xml")]
-        [InlineData("./App_Data/Validate_Test2.xml")]
-        [InlineData("./App_Data/Validate_Test3.xml")]
-        [InlineData("./App_Data/Validate_Test4.xml")]
         public async Task ValidateFailure(string fileName)
         {
-            var settings = Configuration.AutomationSettings;
-
+            var package = await File.ReadAllTextAsync(fileName);
             var client = new LodgementClient();
-            var result = await client.Validate("");
+            var result = await client.Validate(package);
+            result.ReferenceId.Should().NotBeNullOrWhiteSpace("A reference is should be returned on both success and failure.");
+            result.ValidationErrors.Should().NotBeNullOrEmpty("No validation errors were returned.");
         }
     }
 }

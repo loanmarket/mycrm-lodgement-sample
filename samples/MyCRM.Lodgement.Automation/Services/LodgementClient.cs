@@ -49,12 +49,8 @@ namespace MyCRM.Lodgement.Automation.Services
             if (payload == null) throw new ArgumentNullException(nameof(payload));
             if (route == null) throw new ArgumentNullException(nameof(route));
 
-            var message = new HttpRequestMessage(HttpMethod.Post, route)
-            {
-                Content = new StringContent(payload, Encoding.UTF8, "application/json")
-            };
-
-            return _client.SendAsync(message);
+            var content = new StringContent(payload, Encoding.UTF8, "application/json");
+            return _client.PostAsync($"Lodgement/{route}", content);
         }
 
         public void Dispose()

@@ -22,15 +22,17 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\MyCRM.Lodgement.Core\MyCRM.Lodgement.Common.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="App_Data\Validate_Test1.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="App_Data\Validate_Test1.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

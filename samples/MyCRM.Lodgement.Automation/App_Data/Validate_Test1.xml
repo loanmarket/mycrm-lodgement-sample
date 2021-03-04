@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Content>
+    <Application UniqueID="x1878031">
+      <ContributionFunds Amount="65000" Type="Genuine Savings" UniqueID="x4864758" />
+      <ContributionFunds Amount="60000" Type="Gift" UniqueID="x4864765" />
+      <ContributionFunds Amount="0" Description="Equity in another property own name(s) - Equity from the propert @ 90D Atkinson Rd, Titirangi" Type="Other" UniqueID="x4887713" />
+      <DetailedComment ContextDescription="Customer has been provided a copy of the brokers Personal Disclosure Statement and signed the declaration form">
+        <Comment>No</Comment>
+      </DetailedComment>
+      <DetailedComment ContextDescription="Primary Purpose" />
+      <DetailedComment ContextDescription="Preferred Lenders" />
+      <DetailedComment ContextDescription="Loan Features" />
+      <DetailedComment ContextDescription="Specific Goals/Objectives" />
+      <DetailedComment ContextDescription="Any previous impairements/bankruptcy?">
+        <Comment>No</Comment>
+      </DetailedComment>
+      <DetailedComment ContextDescription="Any current debts in arrears?">
+        <Comment>No</Comment>
+      </DetailedComment>
+      <DetailedComment ContextDescription="Any Risk Insurance?">
+        <Comment>No</Comment>
+      </DetailedComment>
+      <DetailedComment ContextDescription="Any Home/Contents Insurance?">
+        <Comment>No</Comment>
+      </DetailedComment>
+      <DetailedComment ContextDescription="Any important timeframes / dates">
+        <Comment>No</Comment>
+      </DetailedComment>
+      <DetailedComment ContextDescription="Who are you currently banking with?" />
+      <DetailedComment ContextDescription="Are you happy with your current bank?">
+        <Comment>No</Comment>
+      </DetailedComment>
+      <DetailedComment ContextDescription="Total Funding Required">
+        <Comment>2598281</Comment>
+      </DetailedComment>
+      <Overview ApplicationType="Loan" />
+      <Summary>
+        <LoanToValuationRatio ApplicationLVR="0" />
+        <ServiceabilityResults>
+          <TotalGrossIncome Amount="0" Frequency="Monthly" />
+          <TotalUserStatedLivingExpenses Amount="0" Frequency="Monthly" />
+        </ServiceabilityResults>
+      </Summary>
+    </Application>
+  </Content>
+  <Instructions>
+    <ApplicationInstructions>
+      <Submit />
+    </ApplicationInstructions>
+  </Instructions>
+  <Publisher LIXICode="LMKLO1" />
+  <Recipient LIXICode="BSEMOO" />
+  <SchemaVersion LIXITransactionType="CNZ" LIXIVersion="2.1.7" />
+</Package>

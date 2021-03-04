@@ -26,14 +26,8 @@ namespace MyCRM.Lodgement.Sample.Controllers
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(ValidationResult))]
         public async Task<IActionResult> Post(Package package, CancellationToken token)
         {
-            var resultOrError = await _lodgementClient.Submit(package, token);
-
-            if (resultOrError.IsError)
-            {
-                return BadRequest(resultOrError.Error);
-            }
-
-            return Ok(resultOrError.Result);
+            var validationResult = await _lodgementClient.Validate(package, token);
+            return Ok(validationResult);
         }
     }
 }
