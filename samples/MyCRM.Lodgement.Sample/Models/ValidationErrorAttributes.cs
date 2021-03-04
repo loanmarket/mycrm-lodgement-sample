@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace MyCRM.Lodgement.Server.Models
+namespace MyCRM.Lodgement.Sample.Models
 {
     public class ValidationErrorAttributes 
     {

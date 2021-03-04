@@ -1,10 +1,18 @@
-The **Lodgement API** is a single entry point which is utilised by MyCRM to lodge and validate a an existing deal. Lodgement has been built to allow MyCRM to lodge with multiple third party API's. 
+# My CRM Residential Application Lodgement
+
+MyCRM aims to integrate with a wide range of lodgement targets either by communicating directly to a lender or via 3rd party gateways. At the point of lodgement, based on configuration and predefined rules, the user is presented a selection of available lodgement targets for their loan application. Once a target is selected a lodgement package is created within MyCRM containing all available loan application information. This lodgement package is then sent to the selected lodgement target for validation, if the validation is successful, the package can then be lodged.  After initial lodgement, MyCRM will listen for any updates regarding the staus of the application so these statuses can be visible within MyCRM. The intention of this readme is to assist potential lodgement targets in completing this integration with MyCRM.
+
+# Lixi Version
 
 Lodgement uses Lixi packages for both Australia and New Zealand.
 * CAL - 2.6.34
 * CNZ - 2.1.7
 
-# Lodge
+# MyCRM Lodgement Overview
+
+The following diagrams demonstrates a highlevel overview of MyCRM and integration into the Target API.
+
+## Lodge
 
 POST Application/{applicationId}/Lodgement/Residential
 
@@ -12,7 +20,7 @@ Lodge a residential deal.
 
 ![image](https://user-images.githubusercontent.com/60586239/108928136-6ca2b180-768d-11eb-93f6-09841289fe6f.png)
 
-# Validate
+## Validate
 
 POST Application/{applicationId}/Lodgement/Residential/Validate
 
@@ -58,12 +66,23 @@ The backchannel allows a call-back endpoint for the lender to update a deal afte
 
 ![image](https://user-images.githubusercontent.com/60586239/108803611-d9af3c00-75e6-11eb-9b49-df5fd111493e.png)
 
+# OpenAPI
+
+The Open API definitions versions are backed up to OpenApi Definitions.
+
 # Samples
 
 All samples included within this repository are using .NET Core 3.1. The sample provides a very basic application which provides an example OpenAPI schema.
 
 Required Software installations:
 * [.NET Core 3.1](https://dotnet.microsoft.com/download/dotnet/3.1)
+
+## Application
+
+![image](https://user-images.githubusercontent.com/60586239/109752327-f45b6380-7c2b-11eb-825f-e52005d3cfc6.png)
+
+* Test Harness - Console application which will run a series of tests against the sample.
+* Open API Spec - An API which provide a swagger specification and also acts as a proxy calling into the Target API.
 
 ## Running the sample
 Open a console within ./samples/MyCRM.Lodgement.Sample and execute "dotnet run"

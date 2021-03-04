@@ -1,23 +1,39 @@
 ﻿using System;
+using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using MyCRM.Lodgement.Server.Models;
+using MyCRM.Lodgement.Sample.Models;
+using MyCRM.Lodgement.Sample.Services.Client;
 using MyCRMAPI.Lodgement.Models;
 
-namespace MyCRM.Lodgement.Server.Controllers
+namespace MyCRM.Lodgement.Sample.Controllers
 {
     [ApiController]
     [Route("Lodgement")]
     public class LodgementSubmissionController : ControllerBase
     {
-        [HttpPost("Submit")]
-        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(ValidationResult))]
+        private readonly ILodgementClient _lodgementClient;
+
+        public LodgementSubmissionController(ILodgementClient lodgementClient)
+        {
+            _lodgementClient = lodgementClient ?? throw new ArgumentNullException(nameof(lodgementClient));
+        }
+
+        [HttpPost(Routes.Submit)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(ValidationError))]
         [ProducesResponseType(StatusCodes.Status500InternalServerError, Type = typeof(ProblemDetails))]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(SubmissionResult))]
-        public Task<IActionResult> Post(Package package)
+        public async Task<IActionResult> Post(Package package, CancellationToken token)
         {
-            throw new NotImplementedException();
+            var resultOrError = await _lodgementClient.Submit(package, token);
+
+            if (resultOrError.IsError)
+            {
+                return BadRequest(resultOrError.Error);
+            }
+
+            return Ok(resultOrError.Result);
         }
     }
 }

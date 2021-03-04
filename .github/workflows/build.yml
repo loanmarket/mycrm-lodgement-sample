@@ -1,0 +1,19 @@
+name: Build
+
+on:
+  push: { branches: [ master ] }
+  pull_request: { branches: [ master ] }
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-dotnet@v1
+    - name: Restore Samples
+      run: dotnet restore ./samples/MyCRM.Lodgement.Sample.sln
+    - name: Build Samples
+      run: dotnet build --configuration Release --no-restore ./samples/MyCRM.Lodgement.Sample.sln
+    - name: Test Samples
+      run: dotnet test --no-restore --verbosity normal ./samples/MyCRM.Lodgement.Sample.sln
