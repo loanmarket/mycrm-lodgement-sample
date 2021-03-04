@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace MyCRM.Lodgement.Sample.Models
+namespace MyCRM.Lodgement.Common.Models
 {
     public class ValidationResult
     {

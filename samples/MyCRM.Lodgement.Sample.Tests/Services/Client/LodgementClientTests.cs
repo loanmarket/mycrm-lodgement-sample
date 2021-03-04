@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
 using System.Text;
@@ -9,7 +8,7 @@ using AutoFixture;
 using FluentAssertions;
 using Microsoft.Extensions.Options;
 using Moq;
-using MyCRM.Lodgement.Sample.Models;
+using MyCRM.Lodgement.Common.Models;
 using MyCRM.Lodgement.Sample.Services.Client;
 using MyCRM.Lodgement.Sample.Services.Settings;
 using MyCRMAPI.Lodgement.Models;

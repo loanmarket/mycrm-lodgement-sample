@@ -7,7 +7,8 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 using Microsoft.Extensions.Options;
-using MyCRM.Lodgement.Sample.Models;
+using MyCRM.Lodgement.Common;
+using MyCRM.Lodgement.Common.Models;
 using MyCRM.Lodgement.Sample.Services.Settings;
 using MyCRMAPI.Lodgement.Models;
 using Newtonsoft.Json;
@@ -43,7 +44,7 @@ namespace MyCRM.Lodgement.Sample.Services.Client
         {
             if (package == null) throw new ArgumentNullException(nameof(package));
 
-            using var response = await Send(package, Routes.Validate, token);
+            using var response = await Send(package, Routes.Submit, token);
             return response.StatusCode switch
             {
                 HttpStatusCode.OK => await ReadResponse<SubmissionResult>(response.Content),
