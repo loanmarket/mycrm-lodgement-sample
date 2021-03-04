@@ -60,7 +60,7 @@ namespace MyCRM.Lodgement.Sample.Services.Client
 
             var payload = Serialize(package);
 
-            var message = new HttpRequestMessage(HttpMethod.Post, route)
+            var message = new HttpRequestMessage(HttpMethod.Post, $"Lodgement/{route}")
             {
                 Content = new StringContent(payload, Encoding.UTF8, _settings.MediaType)
             };
