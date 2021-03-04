@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MyCRM.Lodgement.Sample.Models
+namespace MyCRM.Lodgement.Common.Models
 {
     public sealed class ResultOrError<TResult, TError>
     {

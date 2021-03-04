@@ -1,6 +1,6 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
-using MyCRM.Lodgement.Sample.Models;
+using MyCRM.Lodgement.Common.Models;
 using MyCRMAPI.Lodgement.Models;
 
 namespace MyCRM.Lodgement.Sample.Services.Client

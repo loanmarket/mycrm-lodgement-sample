@@ -1,4 +1,4 @@
-﻿namespace MyCRM.Lodgement.Sample
+﻿namespace MyCRM.Lodgement.Common
 {
     public static class Routes
     {

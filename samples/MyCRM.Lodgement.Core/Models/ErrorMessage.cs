@@ -1,4 +1,4 @@
-﻿namespace MyCRM.Lodgement.Sample.Models
+﻿namespace MyCRM.Lodgement.Common.Models
 {
     public class ErrorMessage
     {
