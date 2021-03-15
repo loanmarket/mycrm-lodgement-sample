@@ -7,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using MyCRM.Lodgement.Sample.Services;
 using MyCRM.Lodgement.Sample.Services.Client;
 
 namespace MyCRM.Lodgement.Sample
@@ -23,7 +24,10 @@ namespace MyCRM.Lodgement.Sample
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers()
+            services.AddControllers(options =>
+                {
+                    options.Conventions.Add(new ApiExplorerConvention());
+                })
                 .AddXmlSerializerFormatters();
 
             services.AddClient(Configuration);
@@ -41,7 +45,8 @@ namespace MyCRM.Lodgement.Sample
                     e.ActionDescriptor.AttributeRouteInfo?.Name
                     ?? $"{e.ActionDescriptor.RouteValues["controller"]}_{e.ActionDescriptor.RouteValues["action"]}");
 
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "MyCRM Lodgement API (v1)", Version = "v1" });
+                c.SwaggerDoc(ApiExplorerConvention.LodgementApi, new OpenApiInfo { Title = "MyCRM Lodgement API (v1)", Version = "v1" });
+                c.SwaggerDoc(ApiExplorerConvention.BackchannelApi, new OpenApiInfo { Title = "MyCRM Lodgement Backchannel API (v1)", Version = "v1" });
 
                 c.CustomSchemaIds(x => x.FullName);
 
@@ -81,7 +86,11 @@ namespace MyCRM.Lodgement.Sample
             app.UseRouting();
 
             app.UseSwagger();
-            app.UseSwaggerUI(c => c.SwaggerEndpoint("v1/swagger.json", "MyCRM Lodgement API (v1)"));
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint($"{ApiExplorerConvention.LodgementApi}/swagger.json", "MyCRM Lodgement API (v1)");
+                c.SwaggerEndpoint($"{ApiExplorerConvention.BackchannelApi}/swagger.json", "MyCRM LodgementApi Backchannel API (v1)");
+            });
 
             app.UseAuthorization();
 
