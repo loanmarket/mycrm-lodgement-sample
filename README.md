@@ -62,7 +62,7 @@ All communication between Loan Market and the lodgement target systems MUST inco
 
 ## Backchannel
 
-The backchannel allows a call-back endpoint for the lender to update a deal after being lodged. 
+The backchannel allows a call-back endpoint for the lender to update a deal after being lodged. The backchannel endpoint will be developed and managed by Loan Market.
 
 ![image](https://user-images.githubusercontent.com/60586239/108803611-d9af3c00-75e6-11eb-9b49-df5fd111493e.png)
 

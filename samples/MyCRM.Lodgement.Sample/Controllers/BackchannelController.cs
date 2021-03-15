@@ -6,6 +6,9 @@ using MyCRM.Lodgement.Common.Models;
 
 namespace MyCRM.Lodgement.Sample.Controllers
 {
+    /// <summary>
+    /// The backchannel will be developed within the loan market application. 
+    /// </summary>
     [ApiController]
     [Route("Lodgement/Backchannel")]
     public class BackchannelController
