@@ -2,7 +2,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using MyCRMAPI.Lodgement.Models;
+using MyCRM.Lodgement.Common.Models;
 
 namespace MyCRM.Lodgement.Sample.Controllers
 {
@@ -11,7 +11,7 @@ namespace MyCRM.Lodgement.Sample.Controllers
     public class BackchannelController
     {
         [HttpPost]
-        public Task<IActionResult> Post(Package package, CancellationToken token)
+        public Task<IActionResult> Post(Backchannel model, CancellationToken token)
         {
             throw new NotImplementedException();
         }
