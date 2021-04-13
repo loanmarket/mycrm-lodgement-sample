@@ -32,6 +32,21 @@
               "schema": {
                 "$ref": "#/components/schemas/MyCRMAPI.Lodgement.Models.Package"
               }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/MyCRMAPI.Lodgement.Models.Package"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/MyCRMAPI.Lodgement.Models.Package"
+              }
+            },
+            "application/*+xml": {
+              "schema": {
+                "$ref": "#/components/schemas/MyCRMAPI.Lodgement.Models.Package"
+              }
             }
           }
         },
@@ -41,17 +56,27 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/MyCRM.Lodgement.Sample.Models.ValidationError"
+                  "$ref": "#/components/schemas/MyCRM.Lodgement.Common.Models.ValidationError"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/MyCRM.Lodgement.Sample.Models.ValidationError"
+                  "$ref": "#/components/schemas/MyCRM.Lodgement.Common.Models.ValidationError"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/MyCRM.Lodgement.Sample.Models.ValidationError"
+                  "$ref": "#/components/schemas/MyCRM.Lodgement.Common.Models.ValidationError"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/MyCRM.Lodgement.Common.Models.ValidationError"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/MyCRM.Lodgement.Common.Models.ValidationError"
                 }
               }
             }
@@ -73,6 +98,16 @@
                 "schema": {
                   "$ref": "#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails"
                 }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails"
+                }
               }
             }
           },
@@ -81,17 +116,27 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/MyCRM.Lodgement.Sample.Models.SubmissionResult"
+                  "$ref": "#/components/schemas/MyCRM.Lodgement.Common.Models.SubmissionResult"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/MyCRM.Lodgement.Sample.Models.SubmissionResult"
+                  "$ref": "#/components/schemas/MyCRM.Lodgement.Common.Models.SubmissionResult"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/MyCRM.Lodgement.Sample.Models.SubmissionResult"
+                  "$ref": "#/components/schemas/MyCRM.Lodgement.Common.Models.SubmissionResult"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/MyCRM.Lodgement.Common.Models.SubmissionResult"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/MyCRM.Lodgement.Common.Models.SubmissionResult"
                 }
               }
             }
@@ -121,6 +166,21 @@
               "schema": {
                 "$ref": "#/components/schemas/MyCRMAPI.Lodgement.Models.Package"
               }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/MyCRMAPI.Lodgement.Models.Package"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/MyCRMAPI.Lodgement.Models.Package"
+              }
+            },
+            "application/*+xml": {
+              "schema": {
+                "$ref": "#/components/schemas/MyCRMAPI.Lodgement.Models.Package"
+              }
             }
           }
         },
@@ -142,6 +202,16 @@
                 "schema": {
                   "$ref": "#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails"
                 }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/Microsoft.AspNetCore.Mvc.ProblemDetails"
+                }
               }
             }
           },
@@ -150,17 +220,27 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/MyCRM.Lodgement.Sample.Models.ValidationResult"
+                  "$ref": "#/components/schemas/MyCRM.Lodgement.Common.Models.ValidationResult"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/MyCRM.Lodgement.Sample.Models.ValidationResult"
+                  "$ref": "#/components/schemas/MyCRM.Lodgement.Common.Models.ValidationResult"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/MyCRM.Lodgement.Sample.Models.ValidationResult"
+                  "$ref": "#/components/schemas/MyCRM.Lodgement.Common.Models.ValidationResult"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/MyCRM.Lodgement.Common.Models.ValidationResult"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/MyCRM.Lodgement.Common.Models.ValidationResult"
                 }
               }
             }
@@ -198,7 +278,7 @@
         },
         "additionalProperties": { }
       },
-      "MyCRM.Lodgement.Sample.Models.ErrorMessage": {
+      "MyCRM.Lodgement.Common.Models.ErrorMessage": {
         "type": "object",
         "properties": {
           "title": {
@@ -212,7 +292,7 @@
         },
         "additionalProperties": false
       },
-      "MyCRM.Lodgement.Sample.Models.SubmissionResult": {
+      "MyCRM.Lodgement.Common.Models.SubmissionResult": {
         "type": "object",
         "properties": {
           "referenceId": {
@@ -222,7 +302,7 @@
         },
         "additionalProperties": false
       },
-      "MyCRM.Lodgement.Sample.Models.ValidationError": {
+      "MyCRM.Lodgement.Common.Models.ValidationError": {
         "type": "object",
         "properties": {
           "name": {
@@ -233,20 +313,17 @@
             "type": "string",
             "nullable": true
           },
-          "isValid": {
-            "type": "boolean"
-          },
           "errorType": {
             "type": "string",
             "nullable": true
           },
           "attributes": {
-            "$ref": "#/components/schemas/MyCRM.Lodgement.Sample.Models.ValidationErrorAttributes"
+            "$ref": "#/components/schemas/MyCRM.Lodgement.Common.Models.ValidationErrorAttributes"
           }
         },
         "additionalProperties": false
       },
-      "MyCRM.Lodgement.Sample.Models.ValidationErrorAttributes": {
+      "MyCRM.Lodgement.Common.Models.ValidationErrorAttributes": {
         "type": "object",
         "properties": {
           "ids": {
@@ -255,12 +332,12 @@
             "nullable": true
           },
           "errorMessage": {
-            "$ref": "#/components/schemas/MyCRM.Lodgement.Sample.Models.ErrorMessage"
+            "$ref": "#/components/schemas/MyCRM.Lodgement.Common.Models.ErrorMessage"
           }
         },
         "additionalProperties": false
       },
-      "MyCRM.Lodgement.Sample.Models.ValidationResult": {
+      "MyCRM.Lodgement.Common.Models.ValidationResult": {
         "type": "object",
         "properties": {
           "referenceId": {
@@ -270,7 +347,7 @@
           "validationErrors": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/MyCRM.Lodgement.Sample.Models.ValidationError"
+              "$ref": "#/components/schemas/MyCRM.Lodgement.Common.Models.ValidationError"
             },
             "nullable": true
           }

@@ -16,4 +16,4 @@ jobs:
     - name: Build Samples
       run: dotnet build --configuration Release --no-restore ./samples/MyCRM.Lodgement.Sample.sln
     - name: Test Samples
-      run: dotnet test --no-restore --verbosity normal ./samples/MyCRM.Lodgement.Sample.sln
+      run: dotnet test --no-restore --verbosity normal ./samples/MyCRM.Lodgement.Sample.Tests/MyCRM.Lodgement.Sample.Tests.csproj

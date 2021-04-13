@@ -62,9 +62,22 @@ All communication between Loan Market and the lodgement target systems MUST inco
 
 ## Backchannel
 
-The backchannel allows a call-back endpoint for the lender to update a deal after being lodged. 
+The backchannel allows a call-back endpoint for the lender to update a deal after being lodged. The backchannel endpoint will be developed and managed by Loan Market.
 
 ![image](https://user-images.githubusercontent.com/60586239/108803611-d9af3c00-75e6-11eb-9b49-df5fd111493e.png)
+
+### Authorization
+The backchannel will require a signed JWT using the client credentials flow.
+The client credentials and issuer code will be provided to a target via loan market. 
+
+Claims:
+* iss - REQUIRED. Issuer. This MUST contain the well known issuer code provided by loan market.
+* sub - REQUIRED. Subject. This MUST contain the static Loan Market Lodgement id of ‘mycrm-lodgement’.
+* jti - REQUIRED. JWT ID. A unique identifier for the token, which can be used to prevent reuse of the token. These tokens MUST only be used once.
+* exp - REQUIRED. Expiration time on or after which the ID Token MUST NOT be accepted for processing.
+
+### Type Definitions
+A separate Open API definition has been specified for the back channel.  
 
 # OpenAPI
 
@@ -86,3 +99,44 @@ Required Software installations:
 
 ## Running the sample
 Open a console within ./samples/MyCRM.Lodgement.Sample and execute "dotnet run"
+
+
+# Schemas
+
+---
+
+## Generating Classes
+
+There are many tools to generate classes from an Open API Definition file. 
+* [AutoRest](https://github.com/Azure/autorest) - Supports the majority of languages and has documentation.
+
+
+## ValidationResult
+
+| Name              | Type               | Required  | Description |
+| ------------------|--------------------| ----------| ------------|
+| ReferenceId       | string             | optional  | The reference id used for logging and debugging purposes |
+| ValidationErrors  | [ValidationError]  | mandatory | The list of validation errors. |
+
+## ValidationError
+
+| Name              | Type                          | Required  | Description |
+| ------------------|-------------------------------| ----------| ------------|
+| Name              | string                        | optional  | Obsolete, supporting previous existing implementations.. |
+| Code              | string                        | mandatory | A unique error code. |
+| ErrorType         | string                        | optional  | Obsolete, supporting previous existing implementations. |
+| Attributes        | [ValidationErrorAttributes]   | optional  | Obsolete, supporting previous existing implementations. |
+
+## ValidationErrorAttributes
+
+| Name              | Type                          | Required  | Description |
+| ------------------|-------------------------------| ----------| ------------|
+| Ids               | string                        | optional  | Obsolete, supporting previous existing implementations. |
+| ErrorMessage      | [ErrorMessage]                | optional  | Obsolete, supporting previous existing implementations..  |
+
+## ErrorMessage
+
+| Name              | Type                          | Required  | Description |
+| ------------------|-------------------------------| ----------| ------------|
+| Title             | string                        | mandatory | Obsolete, supporting previous existing implementations.. |
+| Detail            | string                        | optional  | Obsolete, supporting previous existing implementations..  |
