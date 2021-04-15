@@ -62,9 +62,79 @@ All communication between Loan Market and the lodgement target systems MUST inco
 
 ## Backchannel
 
+POST Lodgement/{LixiStandard}/Backchannel
+The Lixi Standard could be CNZ or CAL. 
+
 The backchannel allows a call-back endpoint for the lender to update a deal after being lodged. The backchannel endpoint will be developed and managed by Loan Market.
+The LIXI package for CAL and CNZ already has the required fields.
+The Lodgement Target should send these updates using the Lixi Standard. 
 
 ![image](https://user-images.githubusercontent.com/60586239/108803611-d9af3c00-75e6-11eb-9b49-df5fd111493e.png)
+
+### Samples
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <Content>
+        <Application>
+            <Overview BrokerApplicationReferenceNumber="APP-123" LenderApplicationReferenceNumber="PP-005045"/>
+        </Application>
+    </Content>
+    <Instructions>
+        <ApplicationInstructions>
+            <Update>
+                <Event DateTime="2021-04-14T11:35:37" Name="Solicitor Instructed"/>
+            </Update>
+        </ApplicationInstructions>
+    </Instructions>
+    <Publisher LIXICode="LIXICode"/>
+    <Recipient Description="Simpology Pty Ltd" LIXICode="SPLMO1"/>
+    <SchemaVersion LIXITransactionType="CAL" LIXIVersion="2.6.24"/>
+</Package>
+```
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <Content>
+        <Application>
+            <Overview BrokerApplicationReferenceNumber="APP-124" LenderApplicationReferenceNumber="PP-004573"/>
+        </Application>
+    </Content>
+    <Instructions>
+        <ApplicationInstructions>
+            <Update>
+                <Event DateTime="2021-04-14T10:20:11" Name="Loan Documents Certified for Settlement"/>
+            </Update>
+        </ApplicationInstructions>
+    </Instructions>
+    <Publisher LIXICode="LIXICode"/>
+    <Recipient Description="Simpology Pty Ltd" LIXICode="SPLMO1"/>
+    <SchemaVersion LIXITransactionType="CAL" LIXIVersion="2.6.24"/>
+</Package> 
+```
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <Content>
+        <Application>
+            <Overview BrokerApplicationReferenceNumber="APP-125" LenderApplicationReferenceNumber="PP-004573"/>
+        </Application>
+    </Content>
+    <Instructions>
+        <ApplicationInstructions>
+            <Update>
+                <Status DateTime="2021-04-14T10:15:15" Name="Indicatively Approved"/>
+            </Update>
+        </ApplicationInstructions>
+    </Instructions>
+    <Publisher LIXICode="LIXICode"/>
+    <Recipient Description="Simpology Pty Ltd" LIXICode="SPLMO1"/>
+    <SchemaVersion LIXITransactionType="CAL" LIXIVersion="2.6.24"/>
+</Package>
+```
 
 ### Authorization
 The backchannel will require a signed JWT using the client credentials flow.

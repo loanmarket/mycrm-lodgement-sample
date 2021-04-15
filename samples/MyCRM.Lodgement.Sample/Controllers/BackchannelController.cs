@@ -2,7 +2,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using MyCRM.Lodgement.Common.Models;
+using MyCRMAPI.Lodgement.Models;
 
 namespace MyCRM.Lodgement.Sample.Controllers
 {
@@ -10,11 +10,11 @@ namespace MyCRM.Lodgement.Sample.Controllers
     /// The backchannel will be developed within the loan market application. 
     /// </summary>
     [ApiController]
-    [Route("Lodgement/Backchannel")]
+    [Route("Lodgement/{LixiCode}/Backchannel")]
     public class BackchannelController
     {
         [HttpPost]
-        public Task<IActionResult> Post(Backchannel model, CancellationToken token)
+        public Task<IActionResult> Post([FromRoute] string lixiCode, [FromBody] Package model, CancellationToken token)
         {
             throw new NotImplementedException();
         }
