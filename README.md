@@ -137,14 +137,13 @@ The Lodgement Target should send these updates using the Lixi Standard.
 ```
 
 ### Authorization
-The backchannel will require a signed JWT using the client credentials flow.
-The client credentials and issuer code will be provided to a target via loan market. 
+The back channel uses [Okta](https://developer.okta.com/docs/guides/implement-client-creds/use-flow/) to Authenticate using client credentials.
 
-Claims:
-* iss - REQUIRED. Issuer. This MUST contain the well known issuer code provided by loan market.
-* sub - REQUIRED. Subject. This MUST contain the static Loan Market Lodgement id of ‘mycrm-lodgement’.
-* jti - REQUIRED. JWT ID. A unique identifier for the token, which can be used to prevent reuse of the token. These tokens MUST only be used once.
-* exp - REQUIRED. Expiration time on or after which the ID Token MUST NOT be accepted for processing.
+Loan Market will supply the following details which are all required to authenticate:
+* **Okta Domain** - the okta domain is different per environment;
+* **Client Id**;
+* **Client Secret**;
+* **Scope** - Lodgement;
 
 ### Type Definitions
 A separate Open API definition has been specified for the back channel.  
