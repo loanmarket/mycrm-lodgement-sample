@@ -73,67 +73,80 @@ The Lodgement Target should send these updates using the Lixi Standard.
 
 ### Samples
 
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<Package>
-    <Content>
-        <Application>
-            <Overview BrokerApplicationReferenceNumber="APP-123" LenderApplicationReferenceNumber="PP-005045"/>
-        </Application>
-    </Content>
-    <Instructions>
-        <ApplicationInstructions>
-            <Update>
-                <Event DateTime="2021-04-14T11:35:37" Name="Solicitor Instructed"/>
-            </Update>
-        </ApplicationInstructions>
-    </Instructions>
-    <Publisher LIXICode="LIXICode"/>
-    <Recipient Description="Simpology Pty Ltd" LIXICode="SPLMO1"/>
-    <SchemaVersion LIXITransactionType="CAL" LIXIVersion="2.6.24"/>
-</Package>
+```json
+{
+  "Content":{
+    "Application":{
+      "Overview":{
+        "BrokerApplicationReferenceNumber":"699111",
+        "LenderApplicationReferenceNumber":"PP-005045"
+      }
+    }
+  },
+  "Instructions":{
+    "ApplicationInstructions":{
+      "Update":{
+        "Event":[
+          {
+            "DateTime":"2021-04-14T11:35:37",
+            "Name":"Settlement_Completed"
+          }
+        ]
+      }
+    }
+  },
+  "Publisher":{
+    "LIXICode":"LIXICode"
+  },
+  "Recipient":[
+    {
+      "Description":"Lodgement Target",
+      "LIXICode":"SPLMO1"
+    }
+  ],
+  "SchemaVersion":{
+    "LIXITransactionType":"CNZ",
+    "LIXIVersion":"2.1.7"
+  }
+}
 ```
 
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<Package>
-    <Content>
-        <Application>
-            <Overview BrokerApplicationReferenceNumber="APP-124" LenderApplicationReferenceNumber="PP-004573"/>
-        </Application>
-    </Content>
-    <Instructions>
-        <ApplicationInstructions>
-            <Update>
-                <Event DateTime="2021-04-14T10:20:11" Name="Loan Documents Certified for Settlement"/>
-            </Update>
-        </ApplicationInstructions>
-    </Instructions>
-    <Publisher LIXICode="LIXICode"/>
-    <Recipient Description="Simpology Pty Ltd" LIXICode="SPLMO1"/>
-    <SchemaVersion LIXITransactionType="CAL" LIXIVersion="2.6.24"/>
-</Package> 
-```
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<Package>
-    <Content>
-        <Application>
-            <Overview BrokerApplicationReferenceNumber="APP-125" LenderApplicationReferenceNumber="PP-004573"/>
-        </Application>
-    </Content>
-    <Instructions>
-        <ApplicationInstructions>
-            <Update>
-                <Status DateTime="2021-04-14T10:15:15" Name="Indicatively Approved"/>
-            </Update>
-        </ApplicationInstructions>
-    </Instructions>
-    <Publisher LIXICode="LIXICode"/>
-    <Recipient Description="Simpology Pty Ltd" LIXICode="SPLMO1"/>
-    <SchemaVersion LIXITransactionType="CAL" LIXIVersion="2.6.24"/>
-</Package>
+```json
+{
+  "Content":{
+    "Application":{
+      "Overview":{
+        "BrokerApplicationReferenceNumber":"699111",
+        "LenderApplicationReferenceNumber":"PP-004573"
+      }
+    }
+  },
+  "Instructions":{
+    "ApplicationInstructions":{
+      "Update":{
+        "Event":[
+          {
+            "DateTime":"2021-04-14T10:20:11",
+            "Name":"Application_Received"
+          }
+        ]
+      }
+    }
+  },
+  "Publisher":{
+    "LIXICode":"LIXICode"
+  },
+  "Recipient":[
+    {
+      "Description":"Lodgement Target",
+      "LIXICode":"LIXICode"
+    }
+  ],
+  "SchemaVersion":{
+    "LIXITransactionType":"CNZ",
+    "LIXIVersion":"2.1.7"
+  }
+}
 ```
 
 ### Authorization
@@ -143,7 +156,8 @@ Loan Market will supply the following details which are all required to authenti
 * **Okta Domain** - the okta domain is different per environment;
 * **Client Id**;
 * **Client Secret**;
-* **Scope** - Lodgement;
+* **Scope** - integration.lodgement;
+
 
 ### Type Definitions
 A separate Open API definition has been specified for the back channel.  
