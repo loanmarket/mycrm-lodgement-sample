@@ -73,80 +73,25 @@ The Lodgement Target should send these updates using the Lixi Standard.
 
 ### Samples
 
-```json
-{
-  "Content":{
-    "Application":{
-      "Overview":{
-        "BrokerApplicationReferenceNumber":"699111",
-        "LenderApplicationReferenceNumber":"PP-005045"
-      }
-    }
-  },
-  "Instructions":{
-    "ApplicationInstructions":{
-      "Update":{
-        "Event":[
-          {
-            "DateTime":"2021-04-14T11:35:37",
-            "Name":"Settlement_Completed"
-          }
-        ]
-      }
-    }
-  },
-  "Publisher":{
-    "LIXICode":"LIXICode"
-  },
-  "Recipient":[
-    {
-      "Description":"Lodgement Target",
-      "LIXICode":"SPLMO1"
-    }
-  ],
-  "SchemaVersion":{
-    "LIXITransactionType":"CNZ",
-    "LIXIVersion":"2.1.7"
-  }
-}
-```
-
-```json
-{
-  "Content":{
-    "Application":{
-      "Overview":{
-        "BrokerApplicationReferenceNumber":"699111",
-        "LenderApplicationReferenceNumber":"PP-004573"
-      }
-    }
-  },
-  "Instructions":{
-    "ApplicationInstructions":{
-      "Update":{
-        "Event":[
-          {
-            "DateTime":"2021-04-14T10:20:11",
-            "Name":"Application_Received"
-          }
-        ]
-      }
-    }
-  },
-  "Publisher":{
-    "LIXICode":"LIXICode"
-  },
-  "Recipient":[
-    {
-      "Description":"Lodgement Target",
-      "LIXICode":"LIXICode"
-    }
-  ],
-  "SchemaVersion":{
-    "LIXITransactionType":"CNZ",
-    "LIXIVersion":"2.1.7"
-  }
-}
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <Content>
+        <Application>
+            <Overview BrokerApplicationReferenceNumber="APP-123" LenderApplicationReferenceNumber="PP-005045"/>
+        </Application>
+    </Content>
+    <Instructions>
+        <ApplicationInstructions>
+            <Update>
+                <Event DateTime="2021-04-14T11:35:37" Name="Solicitor Instructed"/>
+            </Update>
+        </ApplicationInstructions>
+    </Instructions>
+    <Publisher LIXICode="LIXICode"/>
+    <Recipient Description="Simpology Pty Ltd" LIXICode="SPLMO1"/>
+    <SchemaVersion LIXITransactionType="CNZ" LIXIVersion="2.1.7"/>
+</Package>
 ```
 
 ### Authorization
