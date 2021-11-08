@@ -5,8 +5,8 @@ MyCRM aims to integrate with a wide range of lodgement targets either by communi
 # Lixi Version
 
 Lodgement uses Lixi packages for both Australia and New Zealand.
-* CAL - 2.6.34
-* CNZ - 2.1.7
+* CAL - 2.6.35
+* CNZ - 2.1.8
 
 # MyCRM Lodgement Overview
 
@@ -90,7 +90,7 @@ The Lodgement Target should send these updates using the Lixi Standard.
     </Instructions>
     <Publisher LIXICode="LIXICode"/>
     <Recipient Description="Simpology Pty Ltd" LIXICode="SPLMO1"/>
-    <SchemaVersion LIXITransactionType="CNZ" LIXIVersion="2.1.7"/>
+    <SchemaVersion LIXITransactionType="CNZ" LIXIVersion="2.1.8"/>
 </Package>
 ```
 
