@@ -57,9 +57,6 @@ Lodgement Targets should support the authentication of the Lodgement API using a
 ### Use of TLS
 All HTTP calls MUST be made using HTTPS incorporating TLS >= 1.2.
 
-### Use of MTLS
-All communication between Loan Market and the lodgement target systems MUST incorporate MTLS as part of the TLS handshake.
-
 ## Backchannel
 
 POST Lodgement/{LixiStandard}/Backchannel
