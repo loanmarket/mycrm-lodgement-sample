@@ -200,3 +200,4 @@ There are many tools to generate classes from an Open API Definition file.
 
 ```
 
+<img width="581" alt="Validation Pop-up" src="https://user-images.githubusercontent.com/3873306/156328480-17881211-55e6-4036-b6cc-de95da608f8c.png">
