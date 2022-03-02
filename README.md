@@ -59,7 +59,7 @@ All HTTP calls MUST be made using HTTPS incorporating TLS >= 1.2.
 
 ## Backchannel
 
-POST Lodgement/{LixiStandard}/Backchannel
+POST Lodgement/Residential/Backchannel
 The Lixi Standard could be CNZ or CAL. 
 
 The backchannel allows a call-back endpoint for the lender to update a deal after being lodged. The backchannel endpoint will be developed and managed by Loan Market.
@@ -75,19 +75,19 @@ The Lodgement Target should send these updates using the Lixi Standard.
 <Package>
     <Content>
         <Application>
-            <Overview BrokerApplicationReferenceNumber="APP-123" LenderApplicationReferenceNumber="PP-005045"/>
+            <Overview BrokerApplicationReferenceNumber="LoanScenario-1558767-ZYCANU1" LenderApplicationReferenceNumber="BNZ-005045"/>
         </Application>
     </Content>
     <Instructions>
         <ApplicationInstructions>
             <Update>
-                <Event DateTime="2021-04-14T11:35:37" Name="Solicitor Instructed"/>
+                <Event DateTime="2021-04-24T01:01:24" Name="Application Received" Details="Thanks for submitting this application. We've started working on it and will get back to you soon."/>
             </Update>
         </ApplicationInstructions>
     </Instructions>
     <Publisher LIXICode="LIXICode"/>
     <Recipient Description="Simpology Pty Ltd" LIXICode="SPLMO1"/>
-    <SchemaVersion LIXITransactionType="CNZ" LIXIVersion="2.1.8"/>
+    <SchemaVersion LIXITransactionType="CAL" LIXIVersion="2.6.35"/>
 </Package>
 ```
 
@@ -110,10 +110,10 @@ The Open API definitions versions are backed up to OpenApi Definitions.
 
 # Samples
 
-All samples included within this repository are using .NET Core 3.1. The sample provides a very basic application which provides an example OpenAPI schema.
+All samples included within this repository are using .NET Core 6 The sample provides a very basic application which provides an example OpenAPI schema.
 
 Required Software installations:
-* [.NET Core 3.1](https://dotnet.microsoft.com/download/dotnet/3.1)
+* [.NET Core 6](https://dotnet.microsoft.com/download/dotnet)
 
 ## Application
 

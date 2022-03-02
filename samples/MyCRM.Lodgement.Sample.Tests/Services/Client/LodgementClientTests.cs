@@ -67,7 +67,7 @@ namespace MyCRM.Lodgement.Sample.Tests.Services.Client
                 _optionsMock.Object);
 
             var result = await target.Validate(package, CancellationToken.None);
-            result.ReferenceId.Should().Be(validationResult.ReferenceId);
+            result.ExternalReferenceId.Should().Be(validationResult.ExternalReferenceId);
         }
 
         [Fact]
@@ -101,7 +101,7 @@ namespace MyCRM.Lodgement.Sample.Tests.Services.Client
                 _optionsMock.Object);
 
             var result = await target.Validate(package, CancellationToken.None);
-            result.ReferenceId.Should().Be(submissionResult.ReferenceId);
+            result.ExternalReferenceId.Should().Be(submissionResult.ReferenceId);
         }
     }
 }

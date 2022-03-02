@@ -14,7 +14,7 @@ namespace MyCRM.Lodgement.Automation.Services.Tests
             var package = await File.ReadAllTextAsync(fileName);
             var client = new LodgementClient();
             var result = await client.Validate(package);
-            result.ReferenceId.Should().NotBeNullOrWhiteSpace("A reference is should be returned on both success and failure.");
+            result.ExternalReferenceId.Should().NotBeNullOrWhiteSpace("A reference is should be returned on both success and failure.");
             result.ValidationErrors.Should().NotBeNullOrEmpty("No validation errors were returned.");
         }
     }
