@@ -140,28 +140,29 @@ There are many tools to generate classes from an Open API Definition file.
 
 | Name              | Type               | Required  | Description |
 | ------------------|--------------------| ----------| ------------|
-| ReferenceId       | string             | optional  | The reference id used for logging and debugging purposes |
+| ReferenceId       | string             | optional  | Obsolete, supporting previous existing implementations. |
 | ValidationErrors  | [ValidationError]  | mandatory | The list of validation errors. |
 
 ## ValidationError
 
-| Name              | Type                          | Required  | Description |
-| ------------------|-------------------------------| ----------| ------------|
-| Name              | string                        | optional  | Obsolete, supporting previous existing implementations.. |
-| Code              | string                        | mandatory | A unique error code. |
-| ErrorType         | string                        | optional  | Obsolete, supporting previous existing implementations. |
-| Attributes        | [ValidationErrorAttributes]   | optional  | Obsolete, supporting previous existing implementations. |
+| Name              | Type                        | Required  | Description                                                   |
+| ------------------|-----------------------------| ----------|---------------------------------------------------------------|
+| Name              | string                      | optional  | Obsolete, supporting previous existing implementations..      |
+| Code              | string                      | mandatory | Const 401.                                                    |
+| IsValid           | bool                        | mandatory | Const false.                                                  |
+| ErrorType         | string                      | optional  | Obsolete, supporting previous existing implementations.       |
+| Attributes        | [ValidationErrorAttributes] | optional  | Contains the Error message that will be shown on MyCRM pop-up |
 
 ## ValidationErrorAttributes
 
 | Name              | Type                          | Required  | Description |
 | ------------------|-------------------------------| ----------| ------------|
 | Ids               | string                        | optional  | Obsolete, supporting previous existing implementations. |
-| ErrorMessage      | [ErrorMessage]                | optional  | Obsolete, supporting previous existing implementations..  |
+| ErrorMessage      | [ErrorMessage]                | optional  |  |
 
 ## ErrorMessage
 
 | Name              | Type                          | Required  | Description |
 | ------------------|-------------------------------| ----------| ------------|
-| Title             | string                        | mandatory | Obsolete, supporting previous existing implementations.. |
-| Detail            | string                        | optional  | Obsolete, supporting previous existing implementations..  |
+| Title             | string                        | mandatory |  |
+| Detail            | string                        | optional  |Obsolete, supporting previous existing implementations.   |

@@ -1,4 +1,6 @@
-﻿namespace MyCRM.Lodgement.Common.Models
+﻿using System;
+
+namespace MyCRM.Lodgement.Common.Models
 {
     public class ValidationError
     {
