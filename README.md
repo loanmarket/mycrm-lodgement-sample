@@ -191,6 +191,16 @@ There are many tools to generate classes from an Open API Definition file.
             <Attributes>
                 <Ids />
                 <ErrorMessage>
+                    <Title>Proof of Identity wasn't supplied</Title>
+                </ErrorMessage>
+            </Attributes>
+        </ValidationError>
+        <ValidationError>
+            <Code>401</Code>
+            <IsValid>false</IsValid>
+            <Attributes>
+                <Ids />
+                <ErrorMessage>
                     <Title>Employment history must have minimum of 3 years</Title>
                 </ErrorMessage>
             </Attributes>
