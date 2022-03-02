@@ -166,3 +166,37 @@ There are many tools to generate classes from an Open API Definition file.
 | ------------------|-------------------------------| ----------| ------------|
 | Title             | string                        | mandatory |  |
 | Detail            | string                        | optional  |Obsolete, supporting previous existing implementations.   |
+
+
+### Samples
+
+```xml
+<?xml version="1.0" encoding="utf-16"?>
+<ValidationResult xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <ValidationErrors>
+        <ValidationError>
+            <Code>401</Code>
+            <IsValid>false</IsValid>
+            <Attributes>
+                <Ids />
+                <ErrorMessage>
+                    <Title>Proof of income wasn't supplied </Title>
+                </ErrorMessage>
+            </Attributes>
+        </ValidationError>
+        <ValidationError>
+            <Code>401</Code>
+            <IsValid>false</IsValid>
+            <Attributes>
+                <Ids />
+                <ErrorMessage>
+                    <Title>Employment history must have minimum of 3 years</Title>
+                </ErrorMessage>
+            </Attributes>
+        </ValidationError>
+    </ValidationErrors>
+</ValidationResult>
+
+```
+
