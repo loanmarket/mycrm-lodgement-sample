@@ -214,13 +214,14 @@ There are many tools to generate classes from an Open API Definition file.
 
 # Download Lixi package
 * Use the Swagger api url https://api.integration.mycrm.finance/swagger/index.html
-Make sure the Lodgement Api is selected as shown below, 
-The /Lodgement/Residential/Admin/Package endpoint is used to generate the package, it also allows to select the format Json or XML
+* Lodgement Api definition should be selected as shown below.
+* /Lodgement/Residential/Admin/Package endpoint is used to generate the package, it also allows to select the format Json or XML
 
 ![ScreeShot 2022-10-11 at 15 46 42@2x](https://user-images.githubusercontent.com/3873306/200980851-1311d380-fa2f-45a6-9786-d8b87940fbac.png)
 
 * Log in to MyCrm using the credetial provided.
-once you logged in to MyCRM filter the network by getuser in order to get the Bearer token so that you can copy it into the Swagger Authorize (exclude the “Bearer” prefix)
+* Once you logged in to MyCRM using the browser developer tools (F12) filter the network calls and search for the getuser calls.
+* Get the Bearer token and copy it into the Swagger Authorize (exclude the “Bearer” prefix)
 
 
 ![ScreeShot 2022-10-11 at 15 49 40@2x](https://user-images.githubusercontent.com/3873306/200981097-09c38ac4-bd4d-4725-9523-0f5709b3e453.png)
@@ -228,6 +229,8 @@ once you logged in to MyCRM filter the network by getuser in order to get the Be
 * Open an application you've created.
 from the application link copy the opportunityId in this example 114390700 and palace in the swagger and generate the package in the format you need.
 https://integration.mycrm.finance/app/opportunity/fact-find?opportunityId=114390700&loanId=12345&sourceFamilyId=4403391&isContactOpener=1
+
+
 
 
 
