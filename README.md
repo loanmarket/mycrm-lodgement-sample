@@ -213,6 +213,10 @@ There are many tools to generate classes from an Open API Definition file.
 <img width="581" alt="Validation Pop-up" src="https://user-images.githubusercontent.com/3873306/156328480-17881211-55e6-4036-b6cc-de95da608f8c.png">
 
 # Download Lixi package
+
+We are using the Swagger api tools in order to generate the package, here are some instructions about how to get the Authentication Bearer code and the endpoint that generates the Lixi package.
+
+
 * Use the Swagger api url https://api.integration.mycrm.finance/swagger/index.html
 * Lodgement Api definition should be selected as shown below.
 * /Lodgement/Residential/Admin/Package endpoint is used to generate the package, it also allows to select the format Json or XML
