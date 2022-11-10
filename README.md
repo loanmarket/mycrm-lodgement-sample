@@ -234,6 +234,9 @@ We are using the Swagger api tools in order to generate the package, here are so
 from the application link copy the opportunityId in this example 114390700 and palace in the swagger and generate the package in the format you need.
 https://integration.mycrm.finance/app/opportunity/fact-find?opportunityId=114390700&loanId=12345&sourceFamilyId=4403391&isContactOpener=1
 
+Final step click the excute and get the package
+
+![ScreeShot 2022-11-10 at 12 18 39@2x](https://user-images.githubusercontent.com/3873306/200984351-18e67f3f-7e9c-4147-a3c7-1bd3a96e1a86.png)
 
 
 
