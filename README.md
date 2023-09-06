@@ -70,6 +70,8 @@ The Lodgement Target should send these updates using the Lixi Standard.
 
 ### Samples
 
+An example response for a received application 
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <Package>
@@ -82,6 +84,50 @@ The Lodgement Target should send these updates using the Lixi Standard.
         <ApplicationInstructions>
             <Update>
                 <Event DateTime="2021-04-24T01:01:24" Name="Application Received" Details="Thanks for submitting this application. We've started working on it and will get back to you soon."/>
+            </Update>
+        </ApplicationInstructions>
+    </Instructions>
+    <Publisher LIXICode="LIXICode"/>
+    <Recipient Description="Simpology Pty Ltd" LIXICode="SPLMO1"/>
+    <SchemaVersion LIXITransactionType="CAL" LIXIVersion="2.6.35"/>
+</Package>
+```
+
+Example of a declined application
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <Content>
+        <Application>
+            <Overview BrokerApplicationReferenceNumber="LoanScenario-1558767-ZYCANU1" LenderApplicationReferenceNumber="BNZ-005045"/>
+        </Application>
+    </Content>
+    <Instructions>
+        <ApplicationInstructions>
+            <Update>
+                <Event DateTime="2021-04-24T01:01:24" Name="Declined" Details="The application has been declined"/>
+            </Update>
+        </ApplicationInstructions>
+    </Instructions>
+    <Publisher LIXICode="LIXICode"/>
+    <Recipient Description="Simpology Pty Ltd" LIXICode="SPLMO1"/>
+    <SchemaVersion LIXITransactionType="CAL" LIXIVersion="2.6.35"/>
+</Package>
+```
+
+Example of a declined application
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <Content>
+        <Application>
+            <Overview BrokerApplicationReferenceNumber="LoanScenario-1558767-ZYCANU1" LenderApplicationReferenceNumber="BNZ-005045"/>
+        </Application>
+    </Content>
+    <Instructions>
+        <ApplicationInstructions>
+            <Update>
+                <Event DateTime="2021-04-24T01:01:24" Name="Cancelled" Details="The loan application has been cancelled"/>
             </Update>
         </ApplicationInstructions>
     </Instructions>
