@@ -1,10 +1,4 @@
-﻿using System;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Options;
-using MyCRM.Lodgement.Sample.Services.Settings;
-
-namespace MyCRM.Lodgement.Sample.Services.Client
+﻿namespace MyCRM.Lodgement.Sample.Services.Client
 {
     public static class ServiceCollectionExtensions
     {
@@ -26,6 +20,17 @@ namespace MyCRM.Lodgement.Sample.Services.Client
                 httpClient.BaseAddress = new Uri(settings.Url);
             });
             services.AddTransient<ILodgementClient, LodgementClient>();
+            return services;
+        }
+
+        public static IServiceCollection AddServicesSample(this IServiceCollection services, IConfiguration configuration)
+        {
+            if (services == null) throw new ArgumentNullException(nameof(services));
+            if (configuration == null) throw new ArgumentNullException(nameof(configuration));
+            
+            services.AddScoped<ILixiPackageService, LixiPackageService>();
+            services.AddClient(configuration);
+            
             return services;
         }
     }

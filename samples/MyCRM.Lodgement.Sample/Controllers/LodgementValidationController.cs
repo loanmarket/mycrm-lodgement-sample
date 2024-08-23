@@ -1,12 +1,4 @@
-﻿using System;
-using System.Threading;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using MyCRM.Lodgement.Common;
-using MyCRM.Lodgement.Common.Models;
-using MyCRM.Lodgement.Sample.Services.Client;
-using MyCRMAPI.Lodgement.Models;
+﻿using MyCRMAPI.Lodgement.Models;
 
 namespace MyCRM.Lodgement.Sample.Controllers
 {

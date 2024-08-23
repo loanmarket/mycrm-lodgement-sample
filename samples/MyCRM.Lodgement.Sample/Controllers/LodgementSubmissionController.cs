@@ -1,11 +1,4 @@
-﻿using System;
-using System.Threading;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using MyCRM.Lodgement.Common;
-using MyCRM.Lodgement.Common.Models;
-using MyCRM.Lodgement.Sample.Services.Client;
+﻿using MyCRM.Lodgement.Sample.Mapping;
 using MyCRMAPI.Lodgement.Models;
 
 namespace MyCRM.Lodgement.Sample.Controllers
@@ -34,6 +27,29 @@ namespace MyCRM.Lodgement.Sample.Controllers
                 return BadRequest(resultOrError.Error);
             }
 
+            return Ok(resultOrError.Result);
+        }
+        
+        
+        [HttpPost(Routes.SumbitTestPackage)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(ValidationError))]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError, Type = typeof(ProblemDetails))]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(SubmissionResult))]
+        public async Task<IActionResult> PostTestPackage(PostTestPackageRequest request, CancellationToken token)
+        {
+            var model = request.MapToLodgementInformation();
+            if (model is null)
+            {
+                return BadRequest();
+            }
+            
+            var resultOrError = await _lodgementClient.SubmitSampleLixiPackage(model, token);
+        
+            if (resultOrError.IsError)
+            {
+                return BadRequest(resultOrError.Error);
+            }
+        
             return Ok(resultOrError.Result);
         }
     }

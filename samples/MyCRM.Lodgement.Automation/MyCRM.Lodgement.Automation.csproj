@@ -4,7 +4,7 @@
     <OutputType>Exe</OutputType>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
 
