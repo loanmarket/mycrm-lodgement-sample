@@ -252,9 +252,9 @@
           "OtherIdentifier": "C9RZZZ",
           "UniqueID": "Lender_5054",
           "Contact": {
-            "WebAddress": "https://www.ubank.com.au/",
+            "WebAddress": "https://www.Lender.com.au/",
             "OfficePhone": {
-              "Number": "02 9058 7402"
+              "Number": "02 9999 9999"
             }
           }
         },
@@ -971,14 +971,14 @@
               "PreferredContact": "Mobile",
               "EmailAddress": [
                 {
-                  "Email": "jeremy.kho+1111@loanmarketgroup.com",
+                  "Email": "testEmail@testcompany.com",
                   "EmailType": "Home"
                 }
               ],
               "Mobile": {
                 "AustralianDialingCode": "04",
                 "CountryCode": "61",
-                "Number": "0409503715"
+                "Number": "0499999999"
               },
               "PostSettlementAddress": {
                 "HousingStatus": "Own Home",
@@ -1102,7 +1102,7 @@
               "Mobile": {
                 "AustralianDialingCode": "04",
                 "CountryCode": "61",
-                "Number": "0402510192"
+                "Number": "0488888888"
               },
               "PostSettlementAddress": {
                 "HousingStatus": "Own Home",
@@ -1492,7 +1492,7 @@
             "Contact": {
               "x_Address": "Address_3510876",
               "OfficePhone": {
-                "Number": "61404040404"
+                "Number": "61477777777"
               }
             }
           },
@@ -1520,7 +1520,7 @@
                 "x_ContactPerson": "EmployerContact_5283440"
               },
               "OfficePhone": {
-                "Number": "61400101010"
+                "Number": "61400000000"
               }
             }
           }
@@ -1561,7 +1561,7 @@
             "LicenceType": "ACL",
             "UniqueID": "Aggregator_2",
             "Contact": {
-              "Email": "customerservice@loanmarket.com.au",
+              "Email": "testcustomerservice@testCompany.com.au",
               "x_Address": "Address_807535",
               "OfficePhone": {
                 "Number": "1800 763 486 (free call)"
@@ -1570,22 +1570,22 @@
           },
           "Company": {
             "ABN": "12345678910",
-            "CompanyName": "LoanMarket BDE Test",
+            "CompanyName": "Test Company",
             "LicenceNumber": "517192"
           },
           "LoanWriter": {
             "FirstName": "Jeremy",
-            "Surname": "Adviser Kho",
+            "Surname": "Adviser",
             "UniqueID": "Family_6430652",
             "Contact": {
-              "Email": "jeremy.kho@loanmarket.com.au",
+              "Email": "testAdviser@testCompany.com.au",
               "x_Address": "Address_3416383",
               "Fax": {},
               "Mobile": {
-                "Number": "0402510192"
+                "Number": "0400000000"
               },
               "OfficePhone": {
-                "Number": "0212344567"
+                "Number": "0222222222"
               }
             }
           }
