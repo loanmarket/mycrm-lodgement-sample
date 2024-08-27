@@ -1,0 +1,20 @@
+// Global using directives
+global using System;
+global using System.Collections.Generic;
+global using System.IO;
+global using System.Threading;
+global using System.Threading.Tasks;
+global using Microsoft.AspNetCore.Http;
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.Extensions.Configuration;
+global using Microsoft.Extensions.DependencyInjection;
+global using Microsoft.Extensions.Options;
+global using Microsoft.OpenApi.Models;
+global using MyCRM.Lodgement.Common;
+global using MyCRM.Lodgement.Common.Models;
+global using MyCRM.Lodgement.Sample.Models;
+global using MyCRM.Lodgement.Sample.Services;
+global using MyCRM.Lodgement.Sample.Services.Client;
+global using MyCRM.Lodgement.Sample.Services.LixiPackage;
+global using MyCRM.Lodgement.Sample.Services.Settings;
+global using Newtonsoft.Json;

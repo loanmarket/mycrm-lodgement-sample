@@ -1,0 +1,1730 @@
+{
+    "ProductionData": false,
+    "Content": {
+      "Application": {
+        "UniqueID": "LoanScenario-5542468-ZVVVNU1",
+        "Address": [
+          {
+            "AustralianPostCode": "2640",
+            "AustralianState": "NSW",
+            "City": "Albury",
+            "Country": "AU",
+            "Latitude": -36.0741418,
+            "Longitude": 146.9101373,
+            "Suburb": "Albury",
+            "Type": "Standard",
+            "UniqueID": "Address_11696101",
+            "Standard": {
+              "StreetName": "Thurgoona",
+              "StreetNumber": "616",
+              "StreetType": "Street"
+            }
+          },
+          {
+            "AustralianPostCode": "6059",
+            "AustralianState": "WA",
+            "City": "Dianella",
+            "Country": "AU",
+            "Latitude": -31.8891855,
+            "Longitude": 115.8697586,
+            "Suburb": "Dianella",
+            "Type": "Standard",
+            "UniqueID": "Address_11829994",
+            "Standard": {
+              "StreetName": "Booker",
+              "StreetNumber": "75",
+              "StreetType": "Street"
+            }
+          },
+          {
+            "AustralianPostCode": "3978",
+            "AustralianState": "VIC",
+            "City": "clyde north",
+            "Country": "AU",
+            "Suburb": "clyde north",
+            "Type": "Standard",
+            "UniqueID": "Address_13531793",
+            "Standard": {
+              "StreetName": "harrys",
+              "StreetNumber": "12",
+              "StreetType": "Avenue"
+            }
+          },
+          {
+            "AustralianPostCode": "4113",
+            "AustralianState": "QLD",
+            "City": "Runcorn",
+            "Country": "AU",
+            "Latitude": -27.587909,
+            "Longitude": 153.076485,
+            "Suburb": "Runcorn",
+            "Type": "Standard",
+            "UniqueID": "Address_13627215",
+            "Standard": {
+              "StreetName": "Diamond",
+              "StreetNumber": "8",
+              "StreetType": "Place",
+              "Unit": "unit 60"
+            }
+          },
+          {
+            "AustralianPostCode": "4113",
+            "AustralianState": "QLD",
+            "City": "Runcorn",
+            "Country": "AU",
+            "Latitude": -27.587909,
+            "Longitude": 153.076485,
+            "Suburb": "Runcorn",
+            "Type": "Standard",
+            "UniqueID": "Address_13627292",
+            "Standard": {
+              "StreetName": "Diamond",
+              "StreetNumber": "8",
+              "StreetType": "Place",
+              "Unit": "unit 50"
+            }
+          },
+          {
+            "AustralianPostCode": "4113",
+            "AustralianState": "QLD",
+            "City": "Runcorn",
+            "Country": "AU",
+            "Latitude": -27.5888638,
+            "Longitude": 153.0762382,
+            "Suburb": "Runcorn",
+            "Type": "Standard",
+            "UniqueID": "Address_13627438",
+            "Standard": {
+              "StreetName": "Diamond",
+              "StreetNumber": "20",
+              "StreetType": "Place"
+            }
+          },
+          {
+            "AustralianPostCode": "4113",
+            "AustralianState": "QLD",
+            "City": "Runcorn",
+            "Country": "AU",
+            "Latitude": -27.5892457,
+            "Longitude": 153.0769254,
+            "Suburb": "Runcorn",
+            "Type": "Standard",
+            "UniqueID": "Address_13627498",
+            "Standard": {
+              "StreetName": "Diamond",
+              "StreetNumber": "45",
+              "StreetType": "Place"
+            }
+          },
+          {
+            "AustralianPostCode": "3029",
+            "AustralianState": "VIC",
+            "City": "Tarneit",
+            "Country": "AU",
+            "Suburb": "Tarneit",
+            "Type": "Standard",
+            "UniqueID": "Address_11168887",
+            "Standard": {
+              "StreetName": "Lamington",
+              "StreetNumber": "18",
+              "StreetType": "Drive"
+            }
+          },
+          {
+            "AustralianPostCode": "3124",
+            "AustralianState": "VIC",
+            "City": "Camberwell",
+            "Country": "AU",
+            "Latitude": -37.8281618,
+            "Longitude": 145.0587268,
+            "Suburb": "Camberwell",
+            "Type": "Standard",
+            "UniqueID": "Address_3510876",
+            "Standard": {
+              "StreetNumber": "19"
+            }
+          },
+          {
+            "AustralianPostCode": "2000",
+            "AustralianState": "NSW",
+            "City": "",
+            "Country": "AU",
+            "Latitude": -33.8688197,
+            "Longitude": 151.2092955,
+            "Suburb": "",
+            "UniqueID": "Address_3386157"
+          },
+          {
+            "AustralianPostCode": "4213",
+            "AustralianState": "QLD",
+            "City": "Mudgeeraba",
+            "Country": "AU",
+            "Latitude": -28.1040346,
+            "Longitude": 153.3530469,
+            "Suburb": "Mudgeeraba",
+            "Type": "Standard",
+            "UniqueID": "Address_8247579",
+            "Standard": {
+              "StreetName": "Strawberry",
+              "StreetNumber": "20-22",
+              "StreetType": "Road"
+            }
+          },
+          {
+            "AustralianPostCode": "4000",
+            "AustralianState": "QLD",
+            "City": "Brisbane City",
+            "Country": "AU",
+            "Suburb": "Brisbane City",
+            "Type": "Standard",
+            "UniqueID": "Address_11087379",
+            "Standard": {
+              "StreetName": "Quay",
+              "StreetNumber": "111",
+              "StreetType": "Street"
+            }
+          },
+          {
+            "AustralianPostCode": "4069",
+            "AustralianState": "QLD",
+            "City": "Fig Tree Pocket",
+            "Country": "AU",
+            "Latitude": -27.5286302,
+            "Longitude": 152.9664001,
+            "Suburb": "Fig Tree Pocket",
+            "Type": "Standard",
+            "UniqueID": "Address_11555582",
+            "Standard": {
+              "StreetName": "Oasis",
+              "StreetNumber": "9",
+              "StreetType": "Court"
+            }
+          },
+          {
+            "AustralianPostCode": "4110",
+            "AustralianState": "QLD",
+            "City": "Pallara",
+            "Country": "AU",
+            "Latitude": -27.6174073,
+            "Longitude": 153.0116075,
+            "Suburb": "Pallara",
+            "Type": "Standard",
+            "UniqueID": "Address_12459614",
+            "Standard": {
+              "StreetName": "Ponting",
+              "StreetNumber": "95"
+            }
+          },
+          {
+            "AustralianPostCode": "2000",
+            "AustralianState": "NSW",
+            "City": "Sydney",
+            "Country": "AU",
+            "Latitude": -33.869167,
+            "Longitude": 151.2087416,
+            "Suburb": "Sydney",
+            "Type": "Standard",
+            "UniqueID": "Address_3416383",
+            "Standard": {
+              "StreetNumber": "135"
+            }
+          },
+          {
+            "AustralianPostCode": "4000",
+            "AustralianState": "QLD",
+            "City": "BRISBANE CITY",
+            "Country": "AU",
+            "Latitude": -27.4676885,
+            "Longitude": 153.0303725,
+            "Suburb": "BRISBANE CITY",
+            "Type": "Standard",
+            "UniqueID": "Address_807535",
+            "Standard": {
+              "Level": "26",
+              "StreetName": "EAGLE",
+              "StreetNumber": "111",
+              "StreetType": "Street"
+            }
+          }
+        ],
+        "BusinessChannel": {
+          "CompanyName": "TestBank",
+          "OtherIdentifier": "C9RZZZ",
+          "UniqueID": "Lender_5054",
+          "Contact": {
+            "WebAddress": "https://www.Lender.com.au/",
+            "OfficePhone": {
+              "Number": "02 9999 9999"
+            }
+          }
+        },
+        "ContributionFunds": [
+          {
+            "Amount": 200000,
+            "Description": "FUNDS_AVAILABLE",
+            "Type": "Genuine Savings",
+            "UniqueID": "Funds_28548183"
+          }
+        ],
+        "DetailedComment": [
+          {
+            "ContextDescription": "Immediate goals & objectives",
+            "Comment": "Testing - SIT NextGen Submission"
+          },
+          {
+            "ContextDescription": "Advisor Notes - ",
+            "Comment": "Testing - SIT NextGen Submission"
+          },
+          {
+            "ContextDescription": "Lender and product selection rationale - Summary",
+            "Comment": "Testing - SIT NextGen Submission Testing - SIT NextGen Submission Testing - SIT NextGen Submission Testing - SIT NextGen Submission Testing - SIT NextGen Submission Testing - SIT NextGen Submission <br><br>Testing - SIT NextGen Submission Testing - SIT NextGen Submission Testing - SIT NextGen Submission Testing - SIT NextGen Submission Testing - SIT NextGen Submission Testing - SIT NextGen Submission Testing - SIT NextGen Submission Testing - SIT NextGen Submission Testing - SIT NextGen Submission Testing - SIT NextGen Submission Testing - SIT NextGen Submission Testing - SIT NextGen Submission Testing - SIT NextGen Submission Testing - SIT NextGen Submission Testing - SIT NextGen Submission Testing - SIT NextGen Submission Testing - SIT NextGen Submission Testing - SIT NextGen Submission Testing - SIT NextGen Submission Testing - SIT NextGen Submission Testing - SIT NextGen Submission Testing - SIT NextGen Submission Testing - SIT NextGen Submission Testing - SIT NextGen Submission"
+          }
+        ],
+        "Household": [
+          {
+            "NumberOfAdults": 2,
+            "NumberOfDependants": 0,
+            "UniqueID": "Family_7102929",
+            "ExpenseDetails": {
+              "LivingExpense": [
+                {
+                  "Amount": 800,
+                  "Category": "Groceries",
+                  "Description": "Groceries",
+                  "Frequency": "Monthly"
+                },
+                {
+                  "Amount": 3300,
+                  "Category": "Primary Residence Running Costs",
+                  "Description": "Electricity & Gas, Council Rates, Water & Sewer, Body Corporate",
+                  "Frequency": "Monthly"
+                },
+                {
+                  "Amount": 1200,
+                  "Category": "Investment Property Running Costs",
+                  "Description": "Building Insurance",
+                  "Frequency": "Monthly"
+                },
+                {
+                  "Amount": 260,
+                  "Category": "Health Insurance",
+                  "Description": "Health Insurance",
+                  "Frequency": "Monthly"
+                },
+                {
+                  "Amount": 100,
+                  "Category": "General Basic Insurances",
+                  "Description": "Vehicle Insurance",
+                  "Frequency": "Monthly"
+                },
+                {
+                  "Amount": 50,
+                  "Category": "Medical and health",
+                  "Description": "Medical & Health",
+                  "Frequency": "Monthly"
+                },
+                {
+                  "Amount": 200,
+                  "Category": "Clothing and personal care",
+                  "Description": "Clothing & Footwear, Personal Care",
+                  "Frequency": "Monthly"
+                },
+                {
+                  "Amount": 530,
+                  "Category": "Recreation and entertainment",
+                  "Description": "Cinema/Concerts/Memberships, Dining Out, Gym / Sports",
+                  "Frequency": "Monthly"
+                },
+                {
+                  "Amount": 170,
+                  "Category": "Telephone, internet, pay TV and media streaming subscriptions",
+                  "Description": "Home/Mobile Phone, Internet, Pay TV & Media Streaming Subscriptions",
+                  "Frequency": "Monthly"
+                },
+                {
+                  "Amount": 375,
+                  "Category": "Transport",
+                  "Description": "Petrol, Registration, Vehicle Maintenance, Tolls/Parking etc",
+                  "Frequency": "Monthly"
+                }
+              ]
+            }
+          }
+        ],
+        "Insurance": [
+          {
+            "Description": "Life Insurance",
+            "InsuranceType": "Life Insurance",
+            "InsuredAmount": 150000,
+            "OtherInsurerName": "",
+            "UniqueID": "Insurance_15254658",
+            "InsuredParty": [
+              {
+                "x_InsuredParty": "Family_8477374"
+              },
+              {
+                "x_InsuredParty": "Family_8477375"
+              }
+            ]
+          }
+        ],
+        "Liability": [
+          {
+            "AnnualInterestRate": 0,
+            "ClearingFromThisLoan": false,
+            "ClearingFromThisLoanAmount": 0,
+            "CreditCardType": "MasterCard",
+            "CreditLimit": 15000,
+            "HasArrears": false,
+            "OutstandingBalance": 0,
+            "Type": "Credit Card",
+            "UniqueID": "FinancialLiability_45722253",
+            "AccountNumber": {},
+            "ContinuingRepayment": [
+              {
+                "LoanPaymentScheduleType": "Even Total Payments",
+                "PaymentType": "Principal and Interest",
+                "TaxDeductible": false
+              }
+            ],
+            "PercentOwned": {
+              "Proportions": "Specified",
+              "Owner": [
+                {
+                  "Percent": 50,
+                  "x_Party": "Family_8477374"
+                },
+                {
+                  "Percent": 50,
+                  "x_Party": "Family_8477375"
+                }
+              ]
+            },
+            "Repayment": [
+              {
+                "LoanPaymentScheduleType": "Even Total Payments",
+                "PaymentType": "Principal and Interest",
+                "Regular": true,
+                "RepaymentAmount": 0,
+                "RepaymentFrequency": "Monthly",
+                "TaxDeductible": false
+              }
+            ]
+          },
+          {
+            "AnnualInterestRate": 0,
+            "ClearingFromThisLoan": false,
+            "ClearingFromThisLoanAmount": 0,
+            "CreditCardType": "Other Credit Card",
+            "CreditLimit": 17000,
+            "HasArrears": false,
+            "OutstandingBalance": 0,
+            "Type": "Credit Card",
+            "UniqueID": "FinancialLiability_45722241",
+            "AccountNumber": {},
+            "ContinuingRepayment": [
+              {
+                "LoanPaymentScheduleType": "Even Total Payments",
+                "PaymentType": "Principal and Interest",
+                "TaxDeductible": false
+              }
+            ],
+            "PercentOwned": {
+              "Proportions": "Specified",
+              "Owner": [
+                {
+                  "Percent": 100,
+                  "x_Party": "Family_8477374"
+                },
+                {
+                  "Percent": 0,
+                  "x_Party": "Family_8477375"
+                }
+              ]
+            },
+            "Repayment": [
+              {
+                "LoanPaymentScheduleType": "Even Total Payments",
+                "PaymentType": "Principal and Interest",
+                "Regular": true,
+                "RepaymentAmount": 0,
+                "RepaymentFrequency": "Monthly",
+                "TaxDeductible": false
+              }
+            ]
+          },
+          {
+            "AnnualInterestRate": 0,
+            "ClearingFromThisLoan": false,
+            "ClearingFromThisLoanAmount": 415817,
+            "CreditLimit": 415817,
+            "HasArrears": false,
+            "OutstandingBalance": 415817,
+            "Type": "Mortgage Loan",
+            "UniqueID": "FinancialLiability_63101829",
+            "AccountNumber": {
+              "FinancialInstitution": "Other",
+              "OtherFIName": "ANZ Australia"
+            },
+            "ContinuingRepayment": [
+              {
+                "LoanPaymentScheduleType": "Even Total Payments",
+                "PaymentType": "Principal and Interest",
+                "TaxDeductible": false
+              }
+            ],
+            "OriginalTerm": {
+              "PaymentType": "Principal and Interest",
+              "PaymentTypeUnits": "Years",
+              "TotalTermDuration": 30
+            },
+            "PercentOwned": {
+              "Proportions": "Specified",
+              "Owner": [
+                {
+                  "Percent": 50,
+                  "x_Party": "Family_8477374"
+                },
+                {
+                  "Percent": 50,
+                  "x_Party": "Family_8477375"
+                }
+              ]
+            },
+            "Repayment": [
+              {
+                "LoanPaymentScheduleType": "Even Total Payments",
+                "PaymentType": "Principal and Interest",
+                "Regular": true,
+                "RepaymentAmount": 2666,
+                "RepaymentFrequency": "Monthly",
+                "TaxDeductible": false
+              }
+            ],
+            "Security": [
+              {
+                "Priority": "First Mortgage",
+                "x_Security": "FinancialInfo_15708480"
+              }
+            ]
+          },
+          {
+            "AnnualInterestRate": 5.2,
+            "ClearingFromThisLoan": false,
+            "ClearingFromThisLoanAmount": 203000,
+            "CreditLimit": 203000,
+            "HasArrears": false,
+            "OutstandingBalance": 203000,
+            "Type": "Mortgage Loan",
+            "UniqueID": "FinancialLiability_47859966",
+            "AccountNumber": {
+              "FinancialInstitution": "Other",
+              "OtherFIName": "Westpac"
+            },
+            "ContinuingRepayment": [
+              {
+                "LoanPaymentScheduleType": "Even Total Payments",
+                "PaymentType": "Principal and Interest",
+                "TaxDeductible": false
+              }
+            ],
+            "OriginalTerm": {
+              "PaymentType": "Principal and Interest",
+              "PaymentTypeUnits": "Years",
+              "TotalTermDuration": 30
+            },
+            "PercentOwned": {
+              "Proportions": "Specified",
+              "Owner": [
+                {
+                  "Percent": 100,
+                  "x_Party": "Family_8477375"
+                },
+                {
+                  "Percent": 0,
+                  "x_Party": "Family_8477374"
+                }
+              ]
+            },
+            "Repayment": [
+              {
+                "LoanPaymentScheduleType": "Even Total Payments",
+                "PaymentType": "Principal and Interest",
+                "Regular": true,
+                "RepaymentAmount": 1400,
+                "RepaymentFrequency": "Monthly",
+                "TaxDeductible": false
+              }
+            ],
+            "Security": [
+              {
+                "Priority": "First Mortgage",
+                "x_Security": "FinancialInfo_13162992"
+              }
+            ]
+          },
+          {
+            "AnnualInterestRate": 0,
+            "ClearingFromThisLoan": false,
+            "ClearingFromThisLoanAmount": 291476,
+            "CreditLimit": 291476,
+            "HasArrears": false,
+            "OutstandingBalance": 291476,
+            "Type": "Mortgage Loan",
+            "UniqueID": "FinancialLiability_55290391",
+            "AccountNumber": {
+              "FinancialInstitution": "Other",
+              "OtherFIName": "Adelaide Bank"
+            },
+            "ContinuingRepayment": [
+              {
+                "LoanPaymentScheduleType": "Even Total Payments",
+                "PaymentType": "Principal and Interest",
+                "TaxDeductible": true
+              }
+            ],
+            "OriginalTerm": {
+              "PaymentType": "Principal and Interest",
+              "PaymentTypeUnits": "Years",
+              "TotalTermDuration": 26
+            },
+            "PercentOwned": {
+              "Proportions": "Specified",
+              "Owner": [
+                {
+                  "Percent": 100,
+                  "x_Party": "Family_8477375"
+                },
+                {
+                  "Percent": 0,
+                  "x_Party": "Family_8477374"
+                }
+              ]
+            },
+            "Repayment": [
+              {
+                "LoanPaymentScheduleType": "Even Total Payments",
+                "PaymentType": "Principal and Interest",
+                "Regular": true,
+                "RepaymentAmount": 1902,
+                "RepaymentFrequency": "Monthly",
+                "TaxDeductible": true
+              }
+            ],
+            "Security": [
+              {
+                "Priority": "First Mortgage",
+                "x_Security": "FinancialInfo_14381322"
+              }
+            ]
+          },
+          {
+            "AnnualInterestRate": 7.15,
+            "ClearingFromThisLoan": false,
+            "ClearingFromThisLoanAmount": 875000,
+            "CreditLimit": 875000,
+            "HasArrears": false,
+            "OutstandingBalance": 875000,
+            "Type": "Mortgage Loan",
+            "UniqueID": "FinancialLiability_51868326",
+            "AccountNumber": {
+              "FinancialInstitution": "Other",
+              "OtherFIName": "Commonwealth Bank"
+            },
+            "ContinuingRepayment": [
+              {
+                "LoanPaymentScheduleType": "Even Total Payments",
+                "PaymentType": "Principal and Interest",
+                "TaxDeductible": false
+              }
+            ],
+            "OriginalTerm": {
+              "PaymentType": "Principal and Interest",
+              "PaymentTypeUnits": "Years",
+              "TotalTermDuration": 30
+            },
+            "PercentOwned": {
+              "Proportions": "Specified",
+              "Owner": [
+                {
+                  "Percent": 50,
+                  "x_Party": "Family_8477374"
+                },
+                {
+                  "Percent": 50,
+                  "x_Party": "Family_8477375"
+                }
+              ]
+            },
+            "Repayment": [
+              {
+                "LoanPaymentScheduleType": "Even Total Payments",
+                "PaymentType": "Principal and Interest",
+                "Regular": true,
+                "RepaymentAmount": 5909.81,
+                "RepaymentFrequency": "Monthly",
+                "TaxDeductible": false
+              }
+            ],
+            "Security": [
+              {
+                "Priority": "First Mortgage",
+                "x_Security": "FinancialInfo_13821438"
+              }
+            ]
+          },
+          {
+            "AnnualInterestRate": 0,
+            "ClearingFromThisLoan": false,
+            "ClearingFromThisLoanAmount": 785406,
+            "CreditLimit": 785406,
+            "HasArrears": false,
+            "OutstandingBalance": 785406,
+            "Type": "Mortgage Loan",
+            "UniqueID": "FinancialLiability_55290515",
+            "AccountNumber": {
+              "FinancialInstitution": "Other",
+              "OtherFIName": "Adelaide Bank"
+            },
+            "ContinuingRepayment": [
+              {
+                "LoanPaymentScheduleType": "Even Total Payments",
+                "PaymentType": "Principal and Interest",
+                "TaxDeductible": true
+              }
+            ],
+            "OriginalTerm": {
+              "PaymentType": "Principal and Interest",
+              "PaymentTypeUnits": "Years",
+              "TotalTermDuration": 29
+            },
+            "PercentOwned": {
+              "Proportions": "Specified",
+              "Owner": [
+                {
+                  "Percent": 50,
+                  "x_Party": "Family_8477374"
+                },
+                {
+                  "Percent": 50,
+                  "x_Party": "Family_8477375"
+                }
+              ]
+            },
+            "Repayment": [
+              {
+                "LoanPaymentScheduleType": "Even Total Payments",
+                "PaymentType": "Principal and Interest",
+                "Regular": true,
+                "RepaymentAmount": 5199,
+                "RepaymentFrequency": "Monthly",
+                "TaxDeductible": true
+              }
+            ],
+            "Security": [
+              {
+                "Priority": "First Mortgage",
+                "x_Security": "FinancialInfo_14381339"
+              }
+            ]
+          }
+        ],
+        "LoanDetails": [
+          {
+            "AmountRequested": 620000,
+            "LoanType": "Term Loan",
+            "LVR": 77.5,
+            "Secured": "true",
+            "StatementCycle": "Monthly",
+            "TaxDeductible": false,
+            "UniqueID": "LoanStructure_6717099",
+            "Borrowers": {
+              "Proportions": "Equal",
+              "Owner": [
+                {
+                  "Percent": 50,
+                  "x_Party": "Family_8477374"
+                },
+                {
+                  "Percent": 50,
+                  "x_Party": "Family_8477375"
+                }
+              ]
+            },
+            "FeaturesSelected": {
+              "ChequeBook": false,
+              "CreditCard": false,
+              "RateLock": false,
+              "Redraw": true
+            },
+            "LendingPurpose": [
+              {
+                "IncludesRefinancing": false
+              },
+              {
+                "ABSLendingPurpose": "Purchase a Property",
+                "ABSLendingPurposeCode": "ABS-129",
+                "PurposeAmount": 620000
+              }
+            ],
+            "LoanPurpose": {
+              "PrimaryPurpose": "Owner Occupied"
+            },
+            "ProposedRepayment": {
+              "RegularRepayment": [
+                {
+                  "Amount": 0,
+                  "Frequency": "Monthly"
+                }
+              ]
+            },
+            "Term": {
+              "PaymentType": "Principal and Interest",
+              "TotalTermDuration": 30,
+              "TotalTermType": "Total Term",
+              "TotalTermUnits": "Years"
+            }
+          }
+        ],
+        "NonRealEstateAsset": [
+          {
+            "ToBeSold": false,
+            "ToBeUsedAsSecurity": false,
+            "Type": "Motor Vehicle and Transport",
+            "UniqueID": "FinancialInfo_12811548",
+            "EstimatedValue": {
+              "EstimateBasis": "Applicant Estimate",
+              "Value": 15000
+            },
+            "MotorVehicle": {
+              "Age": 9,
+              "Description": "2015 Hyundai (Luxury Car)",
+              "Make": "Hyundai",
+              "Type": "Car",
+              "Year": "2015"
+            },
+            "PercentOwned": {
+              "Proportions": "Specified",
+              "Owner": [
+                {
+                  "Percent": 50,
+                  "x_Party": "Family_8477374"
+                },
+                {
+                  "Percent": 50,
+                  "x_Party": "Family_8477375"
+                }
+              ]
+            }
+          },
+          {
+            "ToBeSold": false,
+            "ToBeUsedAsSecurity": false,
+            "Type": "Financial Asset",
+            "UniqueID": "FinancialInfo_12811552",
+            "EstimatedValue": {
+              "EstimateBasis": "Applicant Estimate",
+              "Value": 55000
+            },
+            "FinancialAsset": {
+              "Description": "ANZ Australia",
+              "Type": "Savings Account",
+              "AccountNumber": {
+                "FinancialInstitution": "Other",
+                "OtherFIName": "ANZ Australia"
+              }
+            },
+            "PercentOwned": {
+              "Proportions": "Specified",
+              "Owner": [
+                {
+                  "Percent": 50,
+                  "x_Party": "Family_8477374"
+                },
+                {
+                  "Percent": 50,
+                  "x_Party": "Family_8477375"
+                }
+              ]
+            }
+          },
+          {
+            "ToBeSold": false,
+            "ToBeUsedAsSecurity": false,
+            "Type": "Financial Asset",
+            "UniqueID": "FinancialInfo_12811556",
+            "EstimatedValue": {
+              "EstimateBasis": "Applicant Estimate",
+              "Value": 80000
+            },
+            "FinancialAsset": {
+              "Description": "",
+              "Type": "Superannuation",
+              "AccountNumber": {
+                "FinancialInstitution": "Other",
+                "OtherFIName": ""
+              }
+            },
+            "PercentOwned": {
+              "Proportions": "Specified",
+              "Owner": [
+                {
+                  "Percent": 100,
+                  "x_Party": "Family_8477375"
+                },
+                {
+                  "Percent": 0,
+                  "x_Party": "Family_8477374"
+                }
+              ]
+            }
+          },
+          {
+            "ToBeSold": false,
+            "ToBeUsedAsSecurity": false,
+            "Type": "Financial Asset",
+            "UniqueID": "FinancialInfo_12811554",
+            "EstimatedValue": {
+              "EstimateBasis": "Applicant Estimate",
+              "Value": 60000
+            },
+            "FinancialAsset": {
+              "Description": "",
+              "Type": "Superannuation",
+              "AccountNumber": {
+                "FinancialInstitution": "Other",
+                "OtherFIName": ""
+              }
+            },
+            "PercentOwned": {
+              "Proportions": "Specified",
+              "Owner": [
+                {
+                  "Percent": 100,
+                  "x_Party": "Family_8477374"
+                },
+                {
+                  "Percent": 0,
+                  "x_Party": "Family_8477375"
+                }
+              ]
+            }
+          },
+          {
+            "ToBeSold": false,
+            "ToBeUsedAsSecurity": false,
+            "Type": "Other",
+            "UniqueID": "FinancialInfo_15254658",
+            "EstimatedValue": {
+              "EstimateBasis": "Applicant Estimate",
+              "Value": 150000
+            },
+            "Insurance": [
+              {
+                "x_Insurance": "Insurance_15254658"
+              }
+            ],
+            "OtherAsset": {
+              "Description": "Life Insurance",
+              "Type": "Other"
+            },
+            "PercentOwned": {
+              "Proportions": "Specified",
+              "Owner": [
+                {
+                  "Percent": 50,
+                  "x_Party": "Family_8477374"
+                },
+                {
+                  "Percent": 50,
+                  "x_Party": "Family_8477375"
+                }
+              ]
+            }
+          }
+        ],
+        "Overview": {
+          "ApplicationType": "Loan",
+          "BrokerApplicationReferenceNumber": "5542468",
+          "IsBridgingFinance": false
+        },
+        "PersonApplicant": [
+          {
+            "ApplicantType": "Borrower",
+            "Citizenship": "AU",
+            "DateOfBirth": "1986-06-06",
+            "FirstHomeBuyer": false,
+            "Gender": "Female",
+            "HasPreviousName": false,
+            "IsExistingCustomer": false,
+            "MaritalStatus": "Single",
+            "MonthsInCurrentProfession": 3,
+            "MothersMaidenName": "",
+            "PrimaryApplicant": true,
+            "PrincipalForeignResidence": "AU",
+            "ResidencyStatus": "Permanently in Australia",
+            "UnderstandApplication": true,
+            "UniqueID": "Family_8477374",
+            "x_Household": "Family_7102929",
+            "YearsInCurrentProfession": 6,
+            "Contact": {
+              "PreferredContact": "Mobile",
+              "EmailAddress": [
+                {
+                  "Email": "testEmail@testcompany.com",
+                  "EmailType": "Home"
+                }
+              ],
+              "Mobile": {
+                "AustralianDialingCode": "04",
+                "CountryCode": "61",
+                "Number": "0499999999"
+              },
+              "PostSettlementAddress": {
+                "HousingStatus": "Own Home",
+                "x_ResidentialAddress": "Address_13627498"
+              },
+              "PreviousAddress": {
+                "EndDate": "2018-07-01",
+                "HousingStatus": "Own Home",
+                "StartDate": "2011-07-01",
+                "x_ResidentialAddress": "Address_11168887",
+                "Duration": {
+                  "Length": 84,
+                  "Units": "Months"
+                }
+              }
+            },
+            "Employment": [
+              {
+                "PAYG": {
+                  "Basis": "Full Time",
+                  "Occupation": "Testing 2",
+                  "OnProbation": false,
+                  "PositionTitle": "Testing 2",
+                  "StartDate": "2018-04-10",
+                  "Status": "Primary",
+                  "UniqueID": "Employment_5283447",
+                  "x_Employer": "EmployerCompany_5283447",
+                  "Duration": {
+                    "Length": 75,
+                    "Units": "Months"
+                  },
+                  "Income": {
+                    "GrossRegularOvertimeAmountConditionOfEmployment": false,
+                    "GrossSalaryAmount": 90000,
+                    "GrossSalaryFrequency": "Yearly",
+                    "WorkAllowanceAmountConditionOfEmployment": false
+                  }
+                }
+              },
+              {
+                "PAYG": {
+                  "Basis": "Full Time",
+                  "EndDate": "2018-03-19",
+                  "Occupation": "Testing",
+                  "OnProbation": false,
+                  "PositionTitle": "Testing",
+                  "StartDate": "2012-07-07",
+                  "Status": "Previous",
+                  "UniqueID": "Employment_5283440",
+                  "x_Employer": "EmployerCompany_5283440",
+                  "Duration": {
+                    "Length": 68,
+                    "Units": "Months"
+                  },
+                  "Income": {
+                    "GrossRegularOvertimeAmountConditionOfEmployment": false,
+                    "GrossSalaryAmount": 80000,
+                    "GrossSalaryFrequency": "Yearly",
+                    "WorkAllowanceAmountConditionOfEmployment": false
+                  }
+                }
+              }
+            ],
+            "PersonName": {
+              "FirstName": "Wanda",
+              "KnownAs": "Wanda",
+              "MiddleNames": "",
+              "NameTitle": "Mrs",
+              "Surname": "Maximoff"
+            },
+            "Privacy": {
+              "AllowCreditBureauIdentityCheck": true,
+              "AllowCreditCheck": true,
+              "AllowElectronicIdentityCheck": true,
+              "PrivacyActConsentSigned": true
+            },
+            "ProofOfIdentity": [
+              {
+                "CertifiedCopy": false,
+                "CountryOfIssue": "AU",
+                "DocumentNumber": "",
+                "DocumentType": "Other",
+                "ExpiryDate": "2027-09-23",
+                "IssuingOrganisation": "",
+                "MiddleNameOnDocument": "Wanda",
+                "NameOnDocument": "Wanda Maximoff",
+                "Original": false,
+                "OtherDescription": "Drivers Licence Australia",
+                "PlaceOfIssue": ""
+              }
+            ],
+            "ResponsibleLending": {
+              "AnticipatedChanges": false
+            }
+          },
+          {
+            "ApplicantType": "Borrower",
+            "Citizenship": "AU",
+            "DateOfBirth": "1986-01-01",
+            "FirstHomeBuyer": false,
+            "Gender": "Male",
+            "HasPreviousName": false,
+            "IsExistingCustomer": false,
+            "MaritalStatus": "Single",
+            "MothersMaidenName": "",
+            "PrimaryApplicant": false,
+            "PrincipalForeignResidence": "AU",
+            "ResidencyStatus": "Permanently in Australia",
+            "UnderstandApplication": true,
+            "UniqueID": "Family_8477375",
+            "x_Household": "Family_7102929",
+            "YearsInCurrentProfession": 8,
+            "Contact": {
+              "PreferredContact": "Mobile",
+              "EmailAddress": [
+                {
+                  "Email": "testBroker@testCompany.com",
+                  "EmailType": "Home"
+                }
+              ],
+              "Mobile": {
+                "AustralianDialingCode": "04",
+                "CountryCode": "61",
+                "Number": "0488888888"
+              },
+              "PostSettlementAddress": {
+                "HousingStatus": "Own Home",
+                "x_ResidentialAddress": "Address_13627498"
+              },
+              "PreviousAddress": {
+                "EndDate": "2018-07-01",
+                "HousingStatus": "Own Home",
+                "StartDate": "2011-07-01",
+                "x_ResidentialAddress": "Address_11168887",
+                "Duration": {
+                  "Length": 84,
+                  "Units": "Months"
+                }
+              }
+            },
+            "Employment": [
+              {
+                "PAYG": {
+                  "Basis": "Full Time",
+                  "Occupation": "Senior DevOps Engineer",
+                  "OnProbation": false,
+                  "PositionTitle": "Senior DevOps Engineer",
+                  "StartDate": "2016-08-02",
+                  "Status": "Primary",
+                  "UniqueID": "Employment_4688212",
+                  "x_Employer": "EmployerCompany_4688212",
+                  "Duration": {
+                    "Length": 96,
+                    "Units": "Months"
+                  },
+                  "Income": {
+                    "GrossRegularOvertimeAmountConditionOfEmployment": false,
+                    "GrossSalaryAmount": 5769,
+                    "GrossSalaryFrequency": "Fortnightly",
+                    "WorkAllowanceAmountConditionOfEmployment": false
+                  }
+                }
+              }
+            ],
+            "PersonName": {
+              "FirstName": "Vision",
+              "KnownAs": "Vision",
+              "MiddleNames": "",
+              "NameTitle": "Mr",
+              "Surname": "Vis"
+            },
+            "Privacy": {
+              "AllowCreditBureauIdentityCheck": true,
+              "AllowCreditCheck": true,
+              "AllowElectronicIdentityCheck": true,
+              "PrivacyActConsentSigned": true
+            },
+            "ProofOfIdentity": [
+              {
+                "CertifiedCopy": false,
+                "CountryOfIssue": "AU",
+                "DocumentNumber": "",
+                "DocumentType": "Other",
+                "ExpiryDate": "2027-09-22",
+                "IssuingOrganisation": "",
+                "MiddleNameOnDocument": "ion",
+                "NameOnDocument": "Vision Vis",
+                "Original": false,
+                "OtherDescription": "Drivers Licence Australia",
+                "PlaceOfIssue": ""
+              }
+            ],
+            "ResponsibleLending": {
+              "AnticipatedChanges": false
+            }
+          }
+        ],
+        "RealEstateAsset": [
+          {
+            "ApprovalInPrinciple": false,
+            "Occupancy": "Owner Primary",
+            "PrimaryPurpose": "Owner Occupied",
+            "PrimaryUsage": "Residential",
+            "ToBeUsedAsSecurity": false,
+            "Transaction": "Owns",
+            "UniqueID": "FinancialInfo_15708480",
+            "x_Address": "Address_13531793",
+            "ContractDetails": {},
+            "Encumbrance": [
+              {
+                "EncumbranceType": "Mortgage",
+                "Priority": "First Mortgage",
+                "UniqueID": "FinancialLiability_10219681"
+              }
+            ],
+            "EstimatedValue": {
+              "EstimateBasis": "Applicant Estimate",
+              "Value": 453000
+            },
+            "PercentOwned": {
+              "Proportions": "Specified",
+              "Owner": [
+                {
+                  "Percent": 100,
+                  "x_Party": "Family_8477374"
+                },
+                {
+                  "Percent": 0,
+                  "x_Party": "Family_8477375"
+                }
+              ]
+            },
+            "PropertyType": {
+              "PropertyTypeName": "Fully Detached House"
+            },
+            "Residential": {
+              "Type": "Fully Detached House"
+            },
+            "Zoning": {
+              "Type": "Residential"
+            }
+          },
+          {
+            "ApprovalInPrinciple": false,
+            "Occupancy": "Owner Primary",
+            "PrimaryPurpose": "Investment",
+            "PrimaryUsage": "Residential",
+            "ToBeUsedAsSecurity": false,
+            "Transaction": "Owns",
+            "UniqueID": "FinancialInfo_13162992",
+            "x_Address": "Address_11168887",
+            "ContractDetails": {},
+            "Encumbrance": [
+              {
+                "EncumbranceType": "Mortgage",
+                "Priority": "First Mortgage",
+                "UniqueID": "FinancialLiability_7966108"
+              }
+            ],
+            "EstimatedValue": {
+              "EstimateBasis": "Certified Valuation",
+              "Value": 740000
+            },
+            "PercentOwned": {
+              "Proportions": "Specified",
+              "Owner": [
+                {
+                  "Percent": 100,
+                  "x_Party": "Family_8477375"
+                },
+                {
+                  "Percent": 0,
+                  "x_Party": "Family_8477374"
+                }
+              ]
+            },
+            "PropertyType": {
+              "PropertyTypeName": "Fully Detached House"
+            },
+            "Residential": {
+              "Type": "Fully Detached House"
+            },
+            "Zoning": {
+              "Type": "Residential"
+            }
+          },
+          {
+            "ApprovalInPrinciple": false,
+            "Occupancy": "Owner Primary",
+            "PrimaryPurpose": "Owner Occupied",
+            "PrimaryUsage": "Residential",
+            "ToBeUsedAsSecurity": false,
+            "Transaction": "Owns",
+            "UniqueID": "FinancialInfo_13790701",
+            "x_Address": "Address_8247579",
+            "ContractDetails": {},
+            "EstimatedValue": {
+              "EstimateBasis": "Certified Valuation",
+              "Value": 1312908
+            },
+            "PercentOwned": {
+              "Proportions": "Specified",
+              "Owner": [
+                {
+                  "Percent": 50,
+                  "x_Party": "Family_8477374"
+                },
+                {
+                  "Percent": 50,
+                  "x_Party": "Family_8477375"
+                }
+              ]
+            },
+            "PropertyType": {
+              "PropertyTypeName": "Fully Detached House"
+            },
+            "Residential": {
+              "Type": "Fully Detached House"
+            },
+            "Zoning": {
+              "Type": "Residential"
+            }
+          },
+          {
+            "ApprovalInPrinciple": false,
+            "Occupancy": "Owner Primary",
+            "PrimaryPurpose": "Investment",
+            "PrimaryUsage": "Residential",
+            "ToBeUsedAsSecurity": false,
+            "Transaction": "Owns",
+            "UniqueID": "FinancialInfo_14381322",
+            "x_Address": "Address_11087379",
+            "ContractDetails": {},
+            "Encumbrance": [
+              {
+                "EncumbranceType": "Mortgage",
+                "Priority": "First Mortgage",
+                "UniqueID": "FinancialLiability_9060327"
+              }
+            ],
+            "EstimatedValue": {
+              "EstimateBasis": "Applicant Estimate",
+              "Value": 400000
+            },
+            "PercentOwned": {
+              "Proportions": "Specified",
+              "Owner": [
+                {
+                  "Percent": 100,
+                  "x_Party": "Family_8477375"
+                },
+                {
+                  "Percent": 0,
+                  "x_Party": "Family_8477374"
+                }
+              ]
+            },
+            "PropertyType": {
+              "PropertyTypeName": "Std Apartment"
+            },
+            "Residential": {
+              "Type": "Apartment Unit Flat"
+            },
+            "Zoning": {
+              "Type": "Residential"
+            }
+          },
+          {
+            "ApprovalInPrinciple": false,
+            "Occupancy": "Owner Primary",
+            "PrimaryPurpose": "Owner Occupied",
+            "PrimaryUsage": "Residential",
+            "ToBeUsedAsSecurity": false,
+            "Transaction": "Owns",
+            "UniqueID": "FinancialInfo_13821438",
+            "x_Address": "Address_11555582",
+            "ContractDetails": {},
+            "Encumbrance": [
+              {
+                "EncumbranceType": "Mortgage",
+                "Priority": "First Mortgage",
+                "UniqueID": "FinancialLiability_8539113"
+              }
+            ],
+            "EstimatedValue": {
+              "EstimateBasis": "Applicant Estimate",
+              "Value": 1980000
+            },
+            "PercentOwned": {
+              "Proportions": "Specified",
+              "Owner": [
+                {
+                  "Percent": 50,
+                  "x_Party": "Family_8477374"
+                },
+                {
+                  "Percent": 50,
+                  "x_Party": "Family_8477375"
+                }
+              ]
+            },
+            "PropertyType": {
+              "PropertyTypeName": "Fully Detached House"
+            },
+            "Residential": {
+              "Type": "Fully Detached House"
+            },
+            "Zoning": {
+              "Type": "Residential"
+            }
+          },
+          {
+            "ApprovalInPrinciple": false,
+            "Occupancy": "Owner Primary",
+            "PrimaryPurpose": "Investment",
+            "PrimaryUsage": "Residential",
+            "ToBeUsedAsSecurity": false,
+            "Transaction": "Owns",
+            "UniqueID": "FinancialInfo_14381339",
+            "x_Address": "Address_12459614",
+            "ContractDetails": {},
+            "Encumbrance": [
+              {
+                "EncumbranceType": "Mortgage",
+                "Priority": "First Mortgage",
+                "UniqueID": "FinancialLiability_9060352"
+              }
+            ],
+            "EstimatedValue": {
+              "EstimateBasis": "Applicant Estimate",
+              "Value": 1000000
+            },
+            "PercentOwned": {
+              "Proportions": "Specified",
+              "Owner": [
+                {
+                  "Percent": 50,
+                  "x_Party": "Family_8477374"
+                },
+                {
+                  "Percent": 50,
+                  "x_Party": "Family_8477375"
+                }
+              ]
+            },
+            "PropertyType": {
+              "PropertyTypeName": "Fully Detached House"
+            },
+            "Residential": {
+              "Type": "Fully Detached House"
+            },
+            "Zoning": {
+              "Type": "Residential"
+            }
+          },
+          {
+            "ApprovalInPrinciple": false,
+            "Construction": false,
+            "Holding": "Joint Tenants",
+            "Occupancy": "Owner Primary",
+            "PrimaryPurpose": "Owner Occupied",
+            "PrimarySecurity": true,
+            "PrimaryUsage": "Residential",
+            "Status": "Established",
+            "ToBeUsedAsSecurity": true,
+            "Transaction": "Purchasing",
+            "UniqueID": "SecurityInfo_5583881",
+            "x_Address": "Address_13627215",
+            "ContractDetails": {
+              "LicencedRealEstateAgentContract": true
+            },
+            "EstimatedValue": {
+              "EstimateBasis": "Applicant Estimate",
+              "Value": 800000
+            },
+            "PercentOwned": {
+              "Proportions": "Specified",
+              "Owner": [
+                {
+                  "Percent": 50,
+                  "x_Party": "Family_8477374"
+                },
+                {
+                  "Percent": 50,
+                  "x_Party": "Family_8477375"
+                }
+              ]
+            },
+            "PropertyType": {
+              "PropertyTypeName": "Fully Detached House"
+            },
+            "Residential": {
+              "Type": "Fully Detached House"
+            },
+            "Title": [
+              {
+                "TenureType": "Other Title",
+                "TitleSystem": "Torrens"
+              }
+            ],
+            "Zoning": {
+              "Type": "Residential"
+            }
+          }
+        ],
+        "RelatedCompany": [
+          {
+            "BusinessName": "Australian Council of Educational Research",
+            "CompanyName": "Australian Council of Educational Research",
+            "UniqueID": "EmployerCompany_4688212",
+            "Contact": {
+              "x_Address": "Address_3510876",
+              "OfficePhone": {
+                "Number": "61477777777"
+              }
+            }
+          },
+          {
+            "BusinessName": "Testing 2",
+            "CompanyName": "Testing 2",
+            "UniqueID": "EmployerCompany_5283447",
+            "Contact": {
+              "x_Address": "Address_3386157",
+              "ContactPerson": {
+                "x_ContactPerson": "EmployerContact_5283447"
+              },
+              "OfficePhone": {
+                "Number": "61400000000"
+              }
+            }
+          },
+          {
+            "BusinessName": "Testing 1",
+            "CompanyName": "Testing 1",
+            "UniqueID": "EmployerCompany_5283440",
+            "Contact": {
+              "x_Address": "Address_3386157",
+              "ContactPerson": {
+                "x_ContactPerson": "EmployerContact_5283440"
+              },
+              "OfficePhone": {
+                "Number": "61400000000"
+              }
+            }
+          }
+        ],
+        "RelatedPerson": [
+          {
+            "UniqueID": "EmployerContact_5283447",
+            "Contact": {
+              "x_Address": "Address_3386157",
+              "Mobile": {
+                "Number": "61400000000"
+              }
+            },
+            "PersonName": {
+              "FirstName": "Testing 2",
+              "KnownAs": "Testing 2"
+            }
+          },
+          {
+            "UniqueID": "EmployerContact_5283440",
+            "Contact": {
+              "x_Address": "Address_3386157",
+              "Mobile": {
+                "Number": "61400101010"
+              }
+            },
+            "PersonName": {
+              "FirstName": "Testing",
+              "KnownAs": "Testing 1"
+            }
+          }
+        ],
+        "SalesChannel": {
+          "Type": "Mortgage Broker",
+          "Aggregator": {
+            "ABN": "67666666666",
+            "LicenceNumber": "555555",
+            "LicenceType": "ACL",
+            "UniqueID": "Aggregator_2",
+            "Contact": {
+              "Email": "testcustomerservice@testCompany.com.au",
+              "x_Address": "Address_807535",
+              "OfficePhone": {
+                "Number": "1800 000 000(free call)"
+              }
+            }
+          },
+          "Company": {
+            "ABN": "12313212312",
+            "CompanyName": "Test Company",
+            "LicenceNumber": "777777"
+          },
+          "LoanWriter": {
+            "FirstName": "Jeremy",
+            "Surname": "Adviser",
+            "UniqueID": "Family_6430652",
+            "Contact": {
+              "Email": "testAdviser@testCompany.com.au",
+              "x_Address": "Address_3416383",
+              "Fax": {},
+              "Mobile": {
+                "Number": "0400000000"
+              },
+              "OfficePhone": {
+                "Number": "0222222222"
+              }
+            }
+          }
+        },
+        "Summary": {
+          "Fee": [
+            {
+              "Amount": 0,
+              "CapitaliseFee": false,
+              "PayFeesFrom": "Account",
+              "Type": "LMI"
+            }
+          ],
+          "LoanToValuationRatio": {
+            "ApplicationLVR": 77.5
+          }
+        }
+      },
+      "NeedsAnalysis": {
+        "Interview": {},
+        "Preferences": {
+          "ConflictExists": false,
+          "InterestRateType": "Standard Variable",
+          "PreferredLenders": true,
+          "PreferredLendersDetails": ", ",
+          "FundsAccessTypeDetails": {
+            "OffsetAccount": {
+              "Importance": "Important",
+              "RisksExplained": true,
+              "Reason": {
+                "AllowsAccessToFunds": false,
+                "AllowsPayingOffLoanSooner": true,
+                "ForTaxPurposes": false,
+                "Other": false
+              }
+            },
+            "Redraw": {
+              "Importance": "Important",
+              "RisksExplained": true,
+              "Reason": {
+                "FlexibilityToAccessPrepaidFundsIfNeeded": true,
+                "Other": false
+              }
+            }
+          },
+          "InterestRateTypeDetails": {
+            "FixedAndVariableRate": {
+              "Importance": "Not Important"
+            },
+            "FixedRate": {
+              "Importance": "Not Important"
+            },
+            "VariableRate": {
+              "Importance": "Important",
+              "RisksExplained": true,
+              "Reason": {
+                "Flexibility": false,
+                "Other": false,
+                "PotentialRateDecreases": true
+              }
+            }
+          },
+          "RepaymentTypeDetails": {
+            "InterestInAdvance": {
+              "Importance": "Not Important"
+            },
+            "InterestOnly": {
+              "Importance": "Not Important"
+            },
+            "LineOfCredit": {
+              "Importance": "Not Important"
+            },
+            "PrincipalAndInterest": {
+              "Importance": "Important",
+              "RepaymentFrequency": "Weekly",
+              "RisksExplained": true
+            }
+          }
+        },
+        "RetirementDetails": {
+          "Applicant": [
+            {
+              "ImminentlyRetiring": false,
+              "IntendedRetirementAge": 70,
+              "UnderstandsImpactOnRetirementPlans": false,
+              "x_Applicant": "Family_8477374",
+              "RepaymentOptions": {
+                "CoApplicantIncome": false,
+                "DownsizingHome": false,
+                "IncomeFromOtherInvestments": false,
+                "Other": false,
+                "RecurringIncomeFromSuperannuation": false,
+                "RepaymentOfLoanPriorToRetirement": false,
+                "SaleOfAssets": true,
+                "Savings": false,
+                "SuperannuationLumpSumFollowingRetirement": false
+              }
+            },
+            {
+              "ImminentlyRetiring": false,
+              "IntendedRetirementAge": 70,
+              "UnderstandsImpactOnRetirementPlans": false,
+              "x_Applicant": "Family_8477375",
+              "RepaymentOptions": {
+                "CoApplicantIncome": false,
+                "DownsizingHome": false,
+                "IncomeFromOtherInvestments": false,
+                "Other": false,
+                "RecurringIncomeFromSuperannuation": false,
+                "RepaymentOfLoanPriorToRetirement": false,
+                "SaleOfAssets": true,
+                "Savings": false,
+                "SuperannuationLumpSumFollowingRetirement": false
+              }
+            }
+          ]
+        }
+      }
+    },
+    "Instructions": {
+      "ApplicationInstructions": {
+        "Submit": {
+          "AssessmentType": "Full",
+          "IsAccountVariation": false
+        }
+      }
+    },
+    "Publisher": {
+      "LIXICode": "ZZZLO1"
+    },
+    "Recipient": [
+      {
+        "LIXICode": "ZZZANU1"
+      }
+    ],
+    "SchemaVersion": {
+      "GuidebookCode": "EGB-XD1ZZ3",
+      "LIXITransactionType": "CAL",
+      "LIXIVersion": "2.6.35"
+    }
+  
+}

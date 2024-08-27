@@ -4,5 +4,6 @@
     {
         public const string Validate = "Validate";
         public const string Submit = "Submit";
+        public const string SumbitTestPackage = "SubmitTestPackage";
     }
 }
