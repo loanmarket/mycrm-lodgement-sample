@@ -1095,7 +1095,7 @@
               "PreferredContact": "Mobile",
               "EmailAddress": [
                 {
-                  "Email": "jeremy.kho+2222@loanmarketgroup.com",
+                  "Email": "testBroker@testCompany.com",
                   "EmailType": "Home"
                 }
               ],
@@ -1556,22 +1556,22 @@
         "SalesChannel": {
           "Type": "Mortgage Broker",
           "Aggregator": {
-            "ABN": "67632405504",
-            "LicenceNumber": "517192",
+            "ABN": "67666666666",
+            "LicenceNumber": "555555",
             "LicenceType": "ACL",
             "UniqueID": "Aggregator_2",
             "Contact": {
               "Email": "testcustomerservice@testCompany.com.au",
               "x_Address": "Address_807535",
               "OfficePhone": {
-                "Number": "1800 763 486 (free call)"
+                "Number": "1800 000 000(free call)"
               }
             }
           },
           "Company": {
-            "ABN": "12345678910",
+            "ABN": "12313212312",
             "CompanyName": "Test Company",
-            "LicenceNumber": "517192"
+            "LicenceNumber": "777777"
           },
           "LoanWriter": {
             "FirstName": "Jeremy",
