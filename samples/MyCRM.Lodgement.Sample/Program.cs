@@ -10,13 +10,8 @@ builder.Services.AddControllers(options => { options.Conventions.Add(new ApiExpl
     .AddXmlSerializerFormatters()
     .AddJsonOptions(options => { options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter()); });
 
-
-//builder.Services.AddServicesSample(Configuration);
-
-// builder.Services.AddProblemDetails(options =>
-//             {
-//                 options.IncludeExceptionDetails = (context, ex) => false;
-//             });
+IConfiguration config = builder.Configuration;
+builder.Services.AddServicesSample(config);
 
 builder.Services.AddHealthChecks().AddCheck("default", _ => HealthCheckResult.Healthy("The API is responding"));
 
@@ -29,6 +24,8 @@ builder.Services.AddSwaggerGen(c =>
         new OpenApiInfo { Title = "MyCRM Lodgement API (v1)", Version = "v1" });
     c.SwaggerDoc(ApiExplorerConvention.BackchannelApi,
         new OpenApiInfo { Title = "MyCRM Lodgement Backchannel API (v1)", Version = "v1" });
+    c.SwaggerDoc(ApiExplorerConvention.LixiPackageApi,
+        new OpenApiInfo { Title = "MyCRM LIXI package API (v1)", Version = "v1" });
 
     c.CustomSchemaIds(x => x.FullName);
    
@@ -72,7 +69,8 @@ app.UseSwagger();
 app.UseSwaggerUI(c =>
 {
     c.SwaggerEndpoint($"{ApiExplorerConvention.LodgementApi}/swagger.json", "MyCRM Lodgement API (v1)");
-    c.SwaggerEndpoint($"{ApiExplorerConvention.BackchannelApi}/swagger.json", "MyCRM LodgementApi Backchannel API (v1)");
+    c.SwaggerEndpoint($"{ApiExplorerConvention.BackchannelApi}/swagger.json", "MyCRM Lodgement Backchannel API (v1)");
+    c.SwaggerEndpoint($"{ApiExplorerConvention.LixiPackageApi}/swagger.json", "MyCRM LIXI Package API (v1)");
 });
 
 app.UseAuthorization();

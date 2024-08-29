@@ -1,6 +1,4 @@
-﻿using MyCRMAPI.Lodgement.Models;
-
-namespace MyCRM.Lodgement.Sample.Controllers
+﻿namespace MyCRM.Lodgement.Sample.Controllers
 {
     [ApiController]
     [Route("Lodgement")]
