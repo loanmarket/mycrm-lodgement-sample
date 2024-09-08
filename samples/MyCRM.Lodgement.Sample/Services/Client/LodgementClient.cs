@@ -3,7 +3,6 @@ using System.Net.Http;
 using System.Text;
 using Microsoft.AspNetCore.Mvc.Formatters;
 using MyCRM.Lodgement.Common.Utilities;
-using MyCRMAPI.Lodgement.Models;
 
 namespace MyCRM.Lodgement.Sample.Services.Client
 {
@@ -24,7 +23,7 @@ namespace MyCRM.Lodgement.Sample.Services.Client
 
         public async Task<ValidationResult> Validate(Package package, CancellationToken token)
         {
-            using var response = await Send(package, Routes.Validate, token);
+            using var response = await SendAsync(package, Routes.Validate, token);
             return response.StatusCode switch
             {
                 HttpStatusCode.OK => await ReadResponse<ValidationResult>(response.Content),
@@ -36,7 +35,7 @@ namespace MyCRM.Lodgement.Sample.Services.Client
         public async Task<ResultOrError<SubmissionResult, ValidationResult>> Submit(Package package,
             CancellationToken token)
         {
-            using var response = await Send(package, Routes.Submit, token);
+            using var response = await SendAsync(package, Routes.Submit, token);
             return response.StatusCode switch
             {
                 HttpStatusCode.OK => await ReadResponse<SubmissionResult>(response.Content),
@@ -55,7 +54,7 @@ namespace MyCRM.Lodgement.Sample.Services.Client
             var package = await _lixiPackageService.CreatePackageAsync(lodgementInformation.LoanId,
                 lodgementInformation.Scenario, token);
 
-            using var response = await Send(package, Routes.Submit, token);
+            using var response = await SendAsync(package, Routes.Submit, token);
             return response.StatusCode switch
             {
                 HttpStatusCode.OK => await ReadResponse<SubmissionResult>(response.Content),
@@ -65,7 +64,7 @@ namespace MyCRM.Lodgement.Sample.Services.Client
             };
         }
 
-        private Task<HttpResponseMessage> Send(Package package, string route, CancellationToken token)
+        private async Task<HttpResponseMessage> SendAsync(Package package, string route, CancellationToken token)
         {
             if (package == null) throw new ArgumentNullException(nameof(package));
             if (route == null) throw new ArgumentNullException(nameof(route));
@@ -77,7 +76,7 @@ namespace MyCRM.Lodgement.Sample.Services.Client
             };
 
             using var client = _httpClientFactory.CreateClient(nameof(LodgementClient));
-            return client.SendAsync(message, token);
+            return await client.SendAsync(message, token);
         }
 
         private static async Task<T> ReadResponse<T>(HttpContent content) where T : class

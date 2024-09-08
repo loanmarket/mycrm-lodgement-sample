@@ -1,5 +1,4 @@
-﻿using MyCRMAPI.Lodgement.Models;
-
+﻿
 namespace MyCRM.Lodgement.Sample.Controllers
 {
     /// <summary>

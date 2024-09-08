@@ -6,13 +6,13 @@ using System.Threading;
 using System.Threading.Tasks;
 using AutoFixture;
 using FluentAssertions;
+using LMGTech.DotNetLixi.Models;
 using Microsoft.Extensions.Options;
 using Moq;
 using MyCRM.Lodgement.Common.Models;
 using MyCRM.Lodgement.Sample.Services.Client;
 using MyCRM.Lodgement.Sample.Services.LixiPackage;
 using MyCRM.Lodgement.Sample.Services.Settings;
-using MyCRMAPI.Lodgement.Models;
 using Newtonsoft.Json.Linq;
 using Xunit;
 

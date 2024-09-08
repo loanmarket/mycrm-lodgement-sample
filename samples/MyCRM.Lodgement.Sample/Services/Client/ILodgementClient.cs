@@ -1,6 +1,4 @@
-﻿using MyCRMAPI.Lodgement.Models;
-
-namespace MyCRM.Lodgement.Sample.Services.Client
+﻿namespace MyCRM.Lodgement.Sample.Services.Client
 {
     public interface ILodgementClient
     {
