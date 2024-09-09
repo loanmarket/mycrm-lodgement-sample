@@ -20,7 +20,9 @@ jobs:
     - name: Test Samples
       run: dotnet test --no-restore --verbosity normal ./samples/MyCRM.Lodgement.Sample.Tests/MyCRM.Lodgement.Sample.Tests.csproj
     - name: Build Docker image
-      run: docker build . -f ./samples/MyCRM.Lodgement.Sample/Dockerfile -t lodgementsample:latest
+      run: |
+        echo ${{secrets.LOAN_MARKET_TOKEN_READ_ONLY }}> ./nugetLoginToken.secret
+        docker build . -f ./samples/MyCRM.Lodgement.Sample/Dockerfile -t lodgementsample:latest --secret id=NUGET_LOGIN_TOKEN,src=./nugetLoginToken.secret
     - name: Save Docker image to file
       run: docker save lodgementsample:latest -o lodgementsample-docker-image.tar
     - name: Save Docker image as an artifact
@@ -28,3 +30,4 @@ jobs:
       with:
         name: lodgementsample-docker-image
         path: lodgementsample-docker-image.tar
+        
