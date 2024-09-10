@@ -20,6 +20,8 @@ RUN dotnet publish \
     --configuration Release \
     --output "/app/publish"
 
+
+
 FROM mcr.microsoft.com/dotnet/aspnet:8.0-bookworm-slim AS final
 WORKDIR /app
 COPY --from=build /app/publish .
