@@ -23,9 +23,17 @@ RUN dotnet publish \
 
 
 FROM mcr.microsoft.com/dotnet/aspnet:8.0-bookworm-slim AS final
+
+RUN groupadd -r appgroup && useradd -r -g appgroup appuser
+
 WORKDIR /app
 COPY --from=build /app/publish .
 
 LABEL org.opencontainers.image.source=https://github.com/loanmarket/mycrm-lodgement-sample
+
+# Create a user
+RUN chown -R appuser:appgroup /app
+# Switch to the non-root user
+USER appuser
 
 ENTRYPOINT ["dotnet", "MyCRM.Lodgement.Sample.dll"]
