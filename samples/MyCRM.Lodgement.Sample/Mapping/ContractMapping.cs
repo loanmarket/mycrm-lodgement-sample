@@ -9,6 +9,7 @@ public static class ContractMapping
         return new SampleLodgementInformation
         {
             LoanId = random.Next(0, int.MaxValue),
+            Country = request.Country,
             Scenario = request.Scenario
         };
     }

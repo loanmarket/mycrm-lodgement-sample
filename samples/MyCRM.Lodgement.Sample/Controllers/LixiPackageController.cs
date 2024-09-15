@@ -1,3 +1,5 @@
+using LMGTech.DotNetLixi;
+
 namespace MyCRM.Lodgement.Sample.Controllers
 {
     [ApiController]
@@ -25,7 +27,7 @@ namespace MyCRM.Lodgement.Sample.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<ActionResult<Package>>  GetLixiPackage([FromRoute]LoanApplicationScenario scenario, CancellationToken token)
+        public async Task<ActionResult<Package>> GetLixiPackage([FromRoute]LoanApplicationScenario scenario, CancellationToken token)
         {
             var package = await _lixiPackageService.GetPackageAsync(scenario, token);
             if (package is null) return NotFound();

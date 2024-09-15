@@ -1,4 +1,4 @@
-﻿
+﻿using LMGTech.DotNetLixi;
 using MyCRM.Lodgement.Common.Utilities;
 using Newtonsoft.Json.Linq;
 
@@ -7,15 +7,15 @@ namespace MyCRM.Lodgement.Sample.Services.LixiPackage;
 public class LixiPackageService : ILixiPackageService
 {
     private readonly string _packagSamplesBasePath =Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "LixiPackageSamples"); 
-
-    public async Task<Package> CreatePackageAsync(int loanId, LoanApplicationScenario scenario,
+    private readonly string[] _propertiesToObfuscate = { "CompanyName", "Email", "Number", "ABN", "WebAddress", "BusinessNumber" };
+    public async Task<Package> CreatePackageAsync(SampleLodgementInformation lodgementInformation,
         CancellationToken token = default)
     {
-        var package = await GetPackageAsync(scenario, token);
+        var package = await GetPackageAsync(lodgementInformation.Scenario, token);
 
         package.ProductionData = false;
-        package.Content.Application.Overview.BrokerApplicationReferenceNumber = loanId.ToString();
-        package.Content.Application.UniqueID = $"LoanScenario-{loanId}";
+        package.Content.Application.Overview.BrokerApplicationReferenceNumber = lodgementInformation.LoanId.ToString();
+        package.Content.Application.UniqueID = $"LoanScenario-{lodgementInformation.LoanId}";
 
         return package;
     }
@@ -53,10 +53,9 @@ public class LixiPackageService : ILixiPackageService
         try
         {
             string jsonObj =JsonConvert.SerializeObject(package);
-            string[] propertiesToObfuscate = { "CompanyName", "Email", "Number", "ABN", "WebAddress" };
-            string obfuscateJsonObj = ObjectSerializer.ObfuscateJson(JToken.Parse(jsonObj),propertiesToObfuscate);
-            await File.WriteAllTextAsync(path,obfuscateJsonObj, token);
-             
+            if(beObfuscated)
+                jsonObj = LixiPackageSerializer.ObfuscateJson(JToken.Parse(jsonObj),_propertiesToObfuscate);
+            await File.WriteAllTextAsync(path,jsonObj, token);
         }
         catch (Exception e)
         {
