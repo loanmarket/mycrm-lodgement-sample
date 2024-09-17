@@ -6,6 +6,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using AutoFixture;
 using FluentAssertions;
+using LMGTech.DotNetLixi;
 using LMGTech.DotNetLixi.Models;
 using Microsoft.Extensions.Options;
 using Moq;
@@ -70,7 +71,7 @@ namespace MyCRM.Lodgement.Sample.Tests.Services.Client
                 _lixiPackageService.Object,
                 _optionsMock.Object);
 
-            var result = await target.Validate(package, CancellationToken.None);
+            var result = await target.Validate(package,LixiCountry.Australia, CancellationToken.None);
             result.ExternalReferenceId.Should().Be(validationResult.ExternalReferenceId);
         }
 
@@ -105,7 +106,7 @@ namespace MyCRM.Lodgement.Sample.Tests.Services.Client
                 _lixiPackageService.Object,
                 _optionsMock.Object);
 
-            var result = await target.Submit(package, CancellationToken.None);
+            var result = await target.Submit(package,LixiCountry.Australia, CancellationToken.None);
             result.Result.ReferenceId.Should().Be(submissionResult.ReferenceId);
         }
     }

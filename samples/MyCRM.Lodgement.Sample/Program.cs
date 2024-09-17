@@ -1,14 +1,17 @@
+using System.ComponentModel;
 using System.Text.Json.Serialization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Hosting;
+using Newtonsoft.Json.Converters;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.  
 builder.Services.AddControllers(options => { options.Conventions.Add(new ApiExplorerConvention()); })
     .AddXmlSerializerFormatters()
-    .AddJsonOptions(options => { options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter()); });
+    .AddNewtonsoftJson()
+    .AddJsonOptions(options => { options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter()); });;
 
 IConfiguration config = builder.Configuration;
 builder.Services.AddServicesSample(config);

@@ -17,9 +17,9 @@ namespace MyCRM.Lodgement.Sample.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(ValidationError))]
         [ProducesResponseType(StatusCodes.Status500InternalServerError, Type = typeof(ProblemDetails))]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(SubmissionResult))]
-        public async Task<IActionResult> Post(Package package, CancellationToken token)
+        public async Task<IActionResult> Post(PostPackageRequest request, CancellationToken token)
         {
-            var resultOrError = await _lodgementClient.Submit(package, token);
+            var resultOrError = await _lodgementClient.Submit(request.LixiPackage,request.Country, token);
 
             if (resultOrError.IsError)
             {

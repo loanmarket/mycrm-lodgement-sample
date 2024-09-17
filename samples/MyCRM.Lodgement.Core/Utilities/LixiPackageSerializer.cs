@@ -1,24 +1,24 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
+using System.Net.Mime;
 using System.Text;
-using System.Xml.Serialization;
+using LMGTech.DotNetLixi;
 using LMGTech.DotNetLixi.Models;
+using LMGTech.DotNetLixi.Serialization;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
 namespace MyCRM.Lodgement.Common.Utilities;
 
-public class ObjectSerializer
+public class LixiPackageSerializer
 {
-    public static string Serialize(Package package, string mediaType)
+    public static string Serialize(Package package,LixiCountry country, string mediaType)
     {
         if (package == null) throw new ArgumentNullException(nameof(package));
-
+        var json = new Json { Package = package };
         return mediaType switch
         {
-            "application/xml" => SerializeAsXml(package),
-            "application/json" => JObject.FromObject(package).ToString(),
+            MediaTypeNames.Application.Xml => country==LixiCountry.Australia?  SerializeAsCalXml(package): SerializeAsCnzXml(package) ,
+            MediaTypeNames.Application.Json =>country==LixiCountry.Australia?  SerializeAsCal(package): SerializeAsCnz(package),
             _ => throw new NotImplementedException($"Media Type {mediaType} not supported.")
         };
     }
@@ -30,7 +30,6 @@ public class ObjectSerializer
         {
             foreach (var property in obj.Properties())
             {
-                Console.WriteLine(property.Name);
                 // Check if the property name is in the list to be obfuscated
                 if ((obfscuteCertainProperties && Array.Exists(propertiesToObfuscate, p => p.Equals(property?.Name, StringComparison.OrdinalIgnoreCase)))
                     ||!obfscuteCertainProperties)
@@ -43,7 +42,6 @@ public class ObjectSerializer
                 else
                 {
                     // Recursively obfuscate nested objects or arrays
-
                     ObfuscateJson(property.Value,propertiesToObfuscate);
                 }
             }
@@ -58,15 +56,9 @@ public class ObjectSerializer
 
         return token.ToString(Formatting.Indented);
     }
-
-    private static string SerializeAsXml(Package package)
-    {
-        using var writer = new StringWriter();
-        var serializer = new XmlSerializer(package.GetType());
-        serializer.Serialize(writer, package);
-        return writer.ToString();
-    }
-
+    public static Json? DeserializeFromJson(string json, LixiCountry country, LixiVersion version) =>
+        LixiSerializer.Deserialize(json, country, version);
+    
     static string TransformString(string input)
     {
         StringBuilder result = new StringBuilder();
@@ -90,4 +82,30 @@ public class ObjectSerializer
 
         return result.ToString();
     }
+    
+    private static string SerializeAsCalXml(Package package, LixiVersion version = LixiVersion.Cal2635)
+    {
+        var json = new Json { Package = package };
+        return LixiSerializer.SerializeToXml(json, LixiCountry.Australia, version);
+    }
+
+    private static string SerializeAsCnzXml(Package package, LixiVersion version = LixiVersion.Cnz218)
+    {
+        var json = new Json { Package = package };
+        return LixiSerializer.SerializeToXml(json, LixiCountry.NewZealand, version);
+    }
+
+    private static string SerializeAsCal(Package package)
+    {
+        var json = new Json { Package = package };
+        return LixiSerializer.Serialize(json, LixiCountry.Australia, LixiVersion.Cal2635);
+    }
+
+    private static string SerializeAsCnz(Package package)
+    {
+        var json = new Json { Package = package };
+        return LixiSerializer.Serialize(json, LixiCountry.Australia, LixiVersion.Cnz218);
+    }
+
+
 }
