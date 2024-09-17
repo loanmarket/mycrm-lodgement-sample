@@ -7,7 +7,7 @@ namespace MyCRM.Lodgement.Sample.Services.LixiPackage;
 public class LixiPackageService : ILixiPackageService
 {
     private readonly string _packagSamplesBasePath =Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "LixiPackageSamples"); 
-    private readonly string[] _propertiesToObfuscate = { "CompanyName", "Email", "Number", "ABN", "WebAddress", "BusinessNumber" };
+    private readonly string[] _propertiesToObfuscate = { "CompanyName", "Email", "Number", "ABN", "WebAddress", "BusinessNumber", "Name" };
     public async Task<Package> CreatePackageAsync(SampleLodgementInformation lodgementInformation,
         CancellationToken token = default)
     {

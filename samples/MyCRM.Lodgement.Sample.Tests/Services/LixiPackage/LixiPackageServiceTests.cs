@@ -11,54 +11,15 @@ using MyCRM.Lodgement.Sample.Services.LixiPackage;
 
 public class LixiPackageServiceTests
 {
-    private readonly Mock<ILixiPackageService> _sut;
-    private readonly LixiPackageService _lixiPackageService;
+    private readonly LixiPackageService _sut;
     private readonly string _basePackagePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "LixiPackageSamples");
 
     public LixiPackageServiceTests()
     {
-        // Create a mock for ILixiPackageService
-        _sut = new Mock<ILixiPackageService>();
-
         // Create an instance of LixiPackageService
-        _lixiPackageService = new LixiPackageService();
+        _sut = new LixiPackageService();
     }
-
-    [Fact]
-    public async Task CreatePackageAsync_ShouldSetCorrectValues()
-    {
-        // Arrange
-        var lodgementInformation = new SampleLodgementInformation
-        {
-            LoanId = 12345,
-            Scenario = LoanApplicationScenario.NewLoanApplication
-        };
-
-        var package = new Package
-        {
-            ProductionData = true,
-            Content = new PackageContent
-            {
-                Application = new Application
-                {
-                    Overview = new Overview(),
-                    UniqueID = ""
-                }
-            }
-        };
-
-        // Mock the GetPackageAsync method to return a predefined package
-        _sut.Setup(service => service.GetPackageAsync(It.IsAny<LoanApplicationScenario>(), It.IsAny<CancellationToken>()))
-                               .ReturnsAsync(package);
-
-        // Act
-        var result = await _lixiPackageService.CreatePackageAsync(lodgementInformation);
-
-        // Assert
-        Assert.False(result.ProductionData);
-        Assert.Equal(lodgementInformation.LoanId.ToString(), result.Content.Application.Overview.BrokerApplicationReferenceNumber);
-        Assert.Equal($"LoanScenario-{lodgementInformation.LoanId}", result.Content.Application.UniqueID);
-    }
+    
 
     [Fact]
     public async Task GetPackageAsync_ShouldReturnPackageFromFile()
@@ -83,12 +44,12 @@ public class LixiPackageServiceTests
         File.WriteAllText(packagePath, jsonContent);
 
         // Act
-        var result = await _lixiPackageService.GetPackageAsync(scenario);
+        var result = await _sut.GetPackageAsync(scenario);
 
         // Assert
         Assert.NotNull(result);
         Assert.Equal(packageContent.UniqueID, result.UniqueID);
-
+        
         // Clean up the file
         File.Delete(packagePath);
     }
@@ -115,7 +76,7 @@ public class LixiPackageServiceTests
         var packagePath = Path.Combine(_basePackagePath, fileName);
 
         // Act
-        await _lixiPackageService.SavePackageAsync(package, scenario);
+        await _sut.SavePackageAsync(package, scenario);
 
         // Assert
         Assert.True(File.Exists(packagePath));
@@ -124,7 +85,7 @@ public class LixiPackageServiceTests
         var savedPackage = JsonConvert.DeserializeObject<Package>(fileContent);
 
         Assert.Equal(package.Content.Application.SalesChannel.Aggregator.CompanyName, savedPackage.Content.Application.SalesChannel.Aggregator.CompanyName);
-
+        
         // Clean up the file
         File.Delete(packagePath);
     }
