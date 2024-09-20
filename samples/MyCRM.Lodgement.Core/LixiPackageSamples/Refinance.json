@@ -5,80 +5,15 @@
       "AccountVariation": null,
       "Address": [
         {
-          "AddressTypeExtensions": {
-            "StreetAddress": null,
-            "Route": null,
-            "Intersection": null,
-            "Political": null,
-            "Country": null,
-            "AdministrativeAreaLevel1": null,
-            "AdministrativeAreaLevel2": null,
-            "AdministrativeAreaLevel3": null,
-            "AdministrativeAreaLevel4": null,
-            "AdministrativeAreaLevel5": null,
-            "ColloquialArea": null,
-            "Locality": null,
-            "Ward": null,
-            "Sublocality": null,
-            "SublocalityLevel1": null,
-            "SublocalityLevel2": null,
-            "SublocalityLevel3": null,
-            "SublocalityLevel4": null,
-            "SublocalityLevel5": null,
-            "Neighborhood": null,
-            "Premise": null,
-            "SubPremise": null,
-            "PostalCode": null,
-            "NaturalFeature": null,
-            "Airport": null,
-            "Park": null,
-            "PointOfInterest": null,
-            "Floor": null,
-            "Establishment": null,
-            "Parking": null,
-            "PostBox": null,
-            "PostalTown": null,
-            "Room": null,
-            "StreetNumber": null,
-            "BusStation": null,
-            "TrainStation": null,
-            "TransitStation": null,
-            "Latitude": 0.0,
-            "Longitude": 0.0,
-            "GeoCoded": false,
-            "StateShortName": null,
-            "CountryCodeInTwoLetter": null,
-            "IsMailing": false,
-            "Campground": null,
-            "Lodging": null,
-            "Description": null,
-            "PlaceId": null,
-            "IsBusiness": null,
-            "GoogleFormattedAddress": null,
-            "FormattedAddress": "11 Muscat Ct, Heritage Park QLD 4118, Australia",
-            "IsCustomAddress": null,
-            "IsPostalAddress": null,
-            "Level": null,
-            "BuildingName": null,
-            "StreetName": null,
-            "StreetType": null,
-            "AddressType": null,
-            "AddressLine1": null,
-            "AddressLine2": null,
-            "PostOfficeType": null,
-            "Number": null,
-            "Exchange": null,
-            "AddressId": 10500102
-          },
           "City": "HERITAGE PARK",
           "Country": "AU",
           "DataSource": null,
           "DeliveryPoint": null,
           "DXBox": null,
           "GNAF_ID": null,
-          "Latitude": -27.679362700,
+          "Latitude": -27.6793627,
           "LGAName": null,
-          "Longitude": 153.057355400,
+          "Longitude": 153.0573554,
           "NonStandard": null,
           "OverseasPostCode": null,
           "OverseasState": null,
@@ -107,71 +42,6 @@
           "UniqueID": "Address_65702"
         },
         {
-          "AddressTypeExtensions": {
-            "StreetAddress": null,
-            "Route": null,
-            "Intersection": null,
-            "Political": null,
-            "Country": null,
-            "AdministrativeAreaLevel1": null,
-            "AdministrativeAreaLevel2": null,
-            "AdministrativeAreaLevel3": null,
-            "AdministrativeAreaLevel4": null,
-            "AdministrativeAreaLevel5": null,
-            "ColloquialArea": null,
-            "Locality": null,
-            "Ward": null,
-            "Sublocality": null,
-            "SublocalityLevel1": null,
-            "SublocalityLevel2": null,
-            "SublocalityLevel3": null,
-            "SublocalityLevel4": null,
-            "SublocalityLevel5": null,
-            "Neighborhood": null,
-            "Premise": null,
-            "SubPremise": null,
-            "PostalCode": null,
-            "NaturalFeature": null,
-            "Airport": null,
-            "Park": null,
-            "PointOfInterest": null,
-            "Floor": null,
-            "Establishment": null,
-            "Parking": null,
-            "PostBox": null,
-            "PostalTown": null,
-            "Room": null,
-            "StreetNumber": null,
-            "BusStation": null,
-            "TrainStation": null,
-            "TransitStation": null,
-            "Latitude": 0.0,
-            "Longitude": 0.0,
-            "GeoCoded": false,
-            "StateShortName": null,
-            "CountryCodeInTwoLetter": null,
-            "IsMailing": false,
-            "Campground": null,
-            "Lodging": null,
-            "Description": null,
-            "PlaceId": null,
-            "IsBusiness": null,
-            "GoogleFormattedAddress": null,
-            "FormattedAddress": " Australia",
-            "IsCustomAddress": null,
-            "IsPostalAddress": null,
-            "Level": null,
-            "BuildingName": null,
-            "StreetName": null,
-            "StreetType": null,
-            "AddressType": null,
-            "AddressLine1": null,
-            "AddressLine2": null,
-            "PostOfficeType": null,
-            "Number": null,
-            "Exchange": null,
-            "AddressId": 10394891
-          },
           "City": null,
           "Country": "AU",
           "DataSource": null,
@@ -196,80 +66,15 @@
           "UniqueID": "Address_10028882"
         },
         {
-          "AddressTypeExtensions": {
-            "StreetAddress": null,
-            "Route": null,
-            "Intersection": null,
-            "Political": null,
-            "Country": null,
-            "AdministrativeAreaLevel1": null,
-            "AdministrativeAreaLevel2": null,
-            "AdministrativeAreaLevel3": null,
-            "AdministrativeAreaLevel4": null,
-            "AdministrativeAreaLevel5": null,
-            "ColloquialArea": null,
-            "Locality": null,
-            "Ward": null,
-            "Sublocality": null,
-            "SublocalityLevel1": null,
-            "SublocalityLevel2": null,
-            "SublocalityLevel3": null,
-            "SublocalityLevel4": null,
-            "SublocalityLevel5": null,
-            "Neighborhood": null,
-            "Premise": null,
-            "SubPremise": null,
-            "PostalCode": null,
-            "NaturalFeature": null,
-            "Airport": null,
-            "Park": null,
-            "PointOfInterest": null,
-            "Floor": null,
-            "Establishment": null,
-            "Parking": null,
-            "PostBox": null,
-            "PostalTown": null,
-            "Room": null,
-            "StreetNumber": null,
-            "BusStation": null,
-            "TrainStation": null,
-            "TransitStation": null,
-            "Latitude": 0.0,
-            "Longitude": 0.0,
-            "GeoCoded": false,
-            "StateShortName": null,
-            "CountryCodeInTwoLetter": null,
-            "IsMailing": false,
-            "Campground": null,
-            "Lodging": null,
-            "Description": null,
-            "PlaceId": null,
-            "IsBusiness": null,
-            "GoogleFormattedAddress": null,
-            "FormattedAddress": "28 Oak Court, Chirnside Park Victoria 3116, Australia",
-            "IsCustomAddress": null,
-            "IsPostalAddress": null,
-            "Level": null,
-            "BuildingName": null,
-            "StreetName": null,
-            "StreetType": null,
-            "AddressType": null,
-            "AddressLine1": null,
-            "AddressLine2": null,
-            "PostOfficeType": null,
-            "Number": null,
-            "Exchange": null,
-            "AddressId": 10395021
-          },
           "City": "Chirnside Park",
           "Country": "AU",
           "DataSource": null,
           "DeliveryPoint": null,
           "DXBox": null,
           "GNAF_ID": null,
-          "Latitude": -37.719136600,
+          "Latitude": -37.7191366,
           "LGAName": null,
-          "Longitude": 145.303185400,
+          "Longitude": 145.3031854,
           "NonStandard": null,
           "OverseasPostCode": null,
           "OverseasState": null,
@@ -298,80 +103,15 @@
           "UniqueID": "Address_13683783"
         },
         {
-          "AddressTypeExtensions": {
-            "StreetAddress": null,
-            "Route": null,
-            "Intersection": null,
-            "Political": null,
-            "Country": null,
-            "AdministrativeAreaLevel1": null,
-            "AdministrativeAreaLevel2": null,
-            "AdministrativeAreaLevel3": null,
-            "AdministrativeAreaLevel4": null,
-            "AdministrativeAreaLevel5": null,
-            "ColloquialArea": null,
-            "Locality": null,
-            "Ward": null,
-            "Sublocality": null,
-            "SublocalityLevel1": null,
-            "SublocalityLevel2": null,
-            "SublocalityLevel3": null,
-            "SublocalityLevel4": null,
-            "SublocalityLevel5": null,
-            "Neighborhood": null,
-            "Premise": null,
-            "SubPremise": null,
-            "PostalCode": null,
-            "NaturalFeature": null,
-            "Airport": null,
-            "Park": null,
-            "PointOfInterest": null,
-            "Floor": null,
-            "Establishment": null,
-            "Parking": null,
-            "PostBox": null,
-            "PostalTown": null,
-            "Room": null,
-            "StreetNumber": null,
-            "BusStation": null,
-            "TrainStation": null,
-            "TransitStation": null,
-            "Latitude": 0.0,
-            "Longitude": 0.0,
-            "GeoCoded": false,
-            "StateShortName": null,
-            "CountryCodeInTwoLetter": null,
-            "IsMailing": false,
-            "Campground": null,
-            "Lodging": null,
-            "Description": null,
-            "PlaceId": null,
-            "IsBusiness": null,
-            "GoogleFormattedAddress": null,
-            "FormattedAddress": "34 Summerhill Drive, Palmerston North Manawatu-Wanganui 4410, New Zealand",
-            "IsCustomAddress": null,
-            "IsPostalAddress": null,
-            "Level": null,
-            "BuildingName": null,
-            "StreetName": null,
-            "StreetType": null,
-            "AddressType": null,
-            "AddressLine1": null,
-            "AddressLine2": null,
-            "PostOfficeType": null,
-            "Number": null,
-            "Exchange": null,
-            "AddressId": null
-          },
           "City": "Fitzherbert",
           "Country": "NZ",
           "DataSource": null,
           "DeliveryPoint": null,
           "DXBox": null,
           "GNAF_ID": null,
-          "Latitude": -40.382166200,
+          "Latitude": -40.3821662,
           "LGAName": null,
-          "Longitude": 175.630218000,
+          "Longitude": 175.630218,
           "NonStandard": null,
           "OverseasPostCode": "4410",
           "OverseasState": "Palmerston North",
@@ -400,71 +140,6 @@
           "UniqueID": "Address_12326334"
         },
         {
-          "AddressTypeExtensions": {
-            "StreetAddress": null,
-            "Route": null,
-            "Intersection": null,
-            "Political": null,
-            "Country": null,
-            "AdministrativeAreaLevel1": null,
-            "AdministrativeAreaLevel2": null,
-            "AdministrativeAreaLevel3": null,
-            "AdministrativeAreaLevel4": null,
-            "AdministrativeAreaLevel5": null,
-            "ColloquialArea": null,
-            "Locality": null,
-            "Ward": null,
-            "Sublocality": null,
-            "SublocalityLevel1": null,
-            "SublocalityLevel2": null,
-            "SublocalityLevel3": null,
-            "SublocalityLevel4": null,
-            "SublocalityLevel5": null,
-            "Neighborhood": null,
-            "Premise": null,
-            "SubPremise": null,
-            "PostalCode": null,
-            "NaturalFeature": null,
-            "Airport": null,
-            "Park": null,
-            "PointOfInterest": null,
-            "Floor": null,
-            "Establishment": null,
-            "Parking": null,
-            "PostBox": null,
-            "PostalTown": null,
-            "Room": null,
-            "StreetNumber": null,
-            "BusStation": null,
-            "TrainStation": null,
-            "TransitStation": null,
-            "Latitude": 0.0,
-            "Longitude": 0.0,
-            "GeoCoded": false,
-            "StateShortName": null,
-            "CountryCodeInTwoLetter": null,
-            "IsMailing": false,
-            "Campground": null,
-            "Lodging": null,
-            "Description": null,
-            "PlaceId": null,
-            "IsBusiness": null,
-            "GoogleFormattedAddress": null,
-            "FormattedAddress": "1 Sussex Street, Victoria Park Western Australia 6101, Australia",
-            "IsCustomAddress": null,
-            "IsPostalAddress": null,
-            "Level": null,
-            "BuildingName": null,
-            "StreetName": null,
-            "StreetType": null,
-            "AddressType": null,
-            "AddressLine1": null,
-            "AddressLine2": null,
-            "PostOfficeType": null,
-            "Number": null,
-            "Exchange": null,
-            "AddressId": null
-          },
           "City": "",
           "Country": null,
           "DataSource": null,
@@ -489,80 +164,15 @@
           "UniqueID": "Address_13691229"
         },
         {
-          "AddressTypeExtensions": {
-            "StreetAddress": null,
-            "Route": null,
-            "Intersection": null,
-            "Political": null,
-            "Country": null,
-            "AdministrativeAreaLevel1": null,
-            "AdministrativeAreaLevel2": null,
-            "AdministrativeAreaLevel3": null,
-            "AdministrativeAreaLevel4": null,
-            "AdministrativeAreaLevel5": null,
-            "ColloquialArea": null,
-            "Locality": null,
-            "Ward": null,
-            "Sublocality": null,
-            "SublocalityLevel1": null,
-            "SublocalityLevel2": null,
-            "SublocalityLevel3": null,
-            "SublocalityLevel4": null,
-            "SublocalityLevel5": null,
-            "Neighborhood": null,
-            "Premise": null,
-            "SubPremise": null,
-            "PostalCode": null,
-            "NaturalFeature": null,
-            "Airport": null,
-            "Park": null,
-            "PointOfInterest": null,
-            "Floor": null,
-            "Establishment": null,
-            "Parking": null,
-            "PostBox": null,
-            "PostalTown": null,
-            "Room": null,
-            "StreetNumber": null,
-            "BusStation": null,
-            "TrainStation": null,
-            "TransitStation": null,
-            "Latitude": 0.0,
-            "Longitude": 0.0,
-            "GeoCoded": false,
-            "StateShortName": null,
-            "CountryCodeInTwoLetter": null,
-            "IsMailing": false,
-            "Campground": null,
-            "Lodging": null,
-            "Description": null,
-            "PlaceId": null,
-            "IsBusiness": null,
-            "GoogleFormattedAddress": null,
-            "FormattedAddress": "10 Bayleaf Retreat, O'CONNOR Western Australia 6163, Australia",
-            "IsCustomAddress": null,
-            "IsPostalAddress": null,
-            "Level": null,
-            "BuildingName": null,
-            "StreetName": null,
-            "StreetType": null,
-            "AddressType": null,
-            "AddressLine1": null,
-            "AddressLine2": null,
-            "PostOfficeType": null,
-            "Number": null,
-            "Exchange": null,
-            "AddressId": null
-          },
           "City": "O'CONNOR",
           "Country": "AU",
           "DataSource": null,
           "DeliveryPoint": null,
           "DXBox": null,
           "GNAF_ID": null,
-          "Latitude": -32.062968700,
+          "Latitude": -32.0629687,
           "LGAName": null,
-          "Longitude": 115.803096500,
+          "Longitude": 115.8030965,
           "NonStandard": null,
           "OverseasPostCode": null,
           "OverseasState": null,
@@ -591,80 +201,15 @@
           "UniqueID": "Address_13691228"
         },
         {
-          "AddressTypeExtensions": {
-            "StreetAddress": null,
-            "Route": null,
-            "Intersection": null,
-            "Political": null,
-            "Country": null,
-            "AdministrativeAreaLevel1": null,
-            "AdministrativeAreaLevel2": null,
-            "AdministrativeAreaLevel3": null,
-            "AdministrativeAreaLevel4": null,
-            "AdministrativeAreaLevel5": null,
-            "ColloquialArea": null,
-            "Locality": null,
-            "Ward": null,
-            "Sublocality": null,
-            "SublocalityLevel1": null,
-            "SublocalityLevel2": null,
-            "SublocalityLevel3": null,
-            "SublocalityLevel4": null,
-            "SublocalityLevel5": null,
-            "Neighborhood": null,
-            "Premise": null,
-            "SubPremise": null,
-            "PostalCode": null,
-            "NaturalFeature": null,
-            "Airport": null,
-            "Park": null,
-            "PointOfInterest": null,
-            "Floor": null,
-            "Establishment": null,
-            "Parking": null,
-            "PostBox": null,
-            "PostalTown": null,
-            "Room": null,
-            "StreetNumber": null,
-            "BusStation": null,
-            "TrainStation": null,
-            "TransitStation": null,
-            "Latitude": 0.0,
-            "Longitude": 0.0,
-            "GeoCoded": false,
-            "StateShortName": null,
-            "CountryCodeInTwoLetter": null,
-            "IsMailing": false,
-            "Campground": null,
-            "Lodging": null,
-            "Description": null,
-            "PlaceId": null,
-            "IsBusiness": null,
-            "GoogleFormattedAddress": null,
-            "FormattedAddress": "14 Airlie Avenue, Prahran VIC, 3181, Australia",
-            "IsCustomAddress": null,
-            "IsPostalAddress": null,
-            "Level": null,
-            "BuildingName": null,
-            "StreetName": null,
-            "StreetType": null,
-            "AddressType": null,
-            "AddressLine1": null,
-            "AddressLine2": null,
-            "PostOfficeType": null,
-            "Number": null,
-            "Exchange": null,
-            "AddressId": null
-          },
           "City": "Prahran",
           "Country": "AU",
           "DataSource": null,
           "DeliveryPoint": null,
           "DXBox": null,
           "GNAF_ID": null,
-          "Latitude": -37.855278300,
+          "Latitude": -37.8552783,
           "LGAName": null,
-          "Longitude": 145.007982400,
+          "Longitude": 145.0079824,
           "NonStandard": null,
           "OverseasPostCode": null,
           "OverseasState": null,
@@ -693,80 +238,15 @@
           "UniqueID": "Address_3605279"
         },
         {
-          "AddressTypeExtensions": {
-            "StreetAddress": null,
-            "Route": null,
-            "Intersection": null,
-            "Political": null,
-            "Country": null,
-            "AdministrativeAreaLevel1": null,
-            "AdministrativeAreaLevel2": null,
-            "AdministrativeAreaLevel3": null,
-            "AdministrativeAreaLevel4": null,
-            "AdministrativeAreaLevel5": null,
-            "ColloquialArea": null,
-            "Locality": null,
-            "Ward": null,
-            "Sublocality": null,
-            "SublocalityLevel1": null,
-            "SublocalityLevel2": null,
-            "SublocalityLevel3": null,
-            "SublocalityLevel4": null,
-            "SublocalityLevel5": null,
-            "Neighborhood": null,
-            "Premise": null,
-            "SubPremise": null,
-            "PostalCode": null,
-            "NaturalFeature": null,
-            "Airport": null,
-            "Park": null,
-            "PointOfInterest": null,
-            "Floor": null,
-            "Establishment": null,
-            "Parking": null,
-            "PostBox": null,
-            "PostalTown": null,
-            "Room": null,
-            "StreetNumber": null,
-            "BusStation": null,
-            "TrainStation": null,
-            "TransitStation": null,
-            "Latitude": 0.0,
-            "Longitude": 0.0,
-            "GeoCoded": false,
-            "StateShortName": null,
-            "CountryCodeInTwoLetter": null,
-            "IsMailing": false,
-            "Campground": null,
-            "Lodging": null,
-            "Description": null,
-            "PlaceId": null,
-            "IsBusiness": null,
-            "GoogleFormattedAddress": null,
-            "FormattedAddress": "Level 5, 9-11 Cremorne St, Cremorne VIC 3121",
-            "IsCustomAddress": null,
-            "IsPostalAddress": null,
-            "Level": null,
-            "BuildingName": null,
-            "StreetName": null,
-            "StreetType": null,
-            "AddressType": null,
-            "AddressLine1": null,
-            "AddressLine2": null,
-            "PostOfficeType": null,
-            "Number": null,
-            "Exchange": null,
-            "AddressId": null
-          },
           "City": "Cremorne",
           "Country": "AU",
           "DataSource": null,
           "DeliveryPoint": null,
           "DXBox": null,
           "GNAF_ID": null,
-          "Latitude": -37.825640000,
+          "Latitude": -37.82564,
           "LGAName": null,
-          "Longitude": 144.991233000,
+          "Longitude": 144.991233,
           "NonStandard": null,
           "OverseasPostCode": null,
           "OverseasState": null,
@@ -795,80 +275,15 @@
           "UniqueID": "Address_3605280"
         },
         {
-          "AddressTypeExtensions": {
-            "StreetAddress": null,
-            "Route": null,
-            "Intersection": null,
-            "Political": null,
-            "Country": null,
-            "AdministrativeAreaLevel1": null,
-            "AdministrativeAreaLevel2": null,
-            "AdministrativeAreaLevel3": null,
-            "AdministrativeAreaLevel4": null,
-            "AdministrativeAreaLevel5": null,
-            "ColloquialArea": null,
-            "Locality": null,
-            "Ward": null,
-            "Sublocality": null,
-            "SublocalityLevel1": null,
-            "SublocalityLevel2": null,
-            "SublocalityLevel3": null,
-            "SublocalityLevel4": null,
-            "SublocalityLevel5": null,
-            "Neighborhood": null,
-            "Premise": null,
-            "SubPremise": null,
-            "PostalCode": null,
-            "NaturalFeature": null,
-            "Airport": null,
-            "Park": null,
-            "PointOfInterest": null,
-            "Floor": null,
-            "Establishment": null,
-            "Parking": null,
-            "PostBox": null,
-            "PostalTown": null,
-            "Room": null,
-            "StreetNumber": null,
-            "BusStation": null,
-            "TrainStation": null,
-            "TransitStation": null,
-            "Latitude": 0.0,
-            "Longitude": 0.0,
-            "GeoCoded": false,
-            "StateShortName": null,
-            "CountryCodeInTwoLetter": null,
-            "IsMailing": false,
-            "Campground": null,
-            "Lodging": null,
-            "Description": null,
-            "PlaceId": null,
-            "IsBusiness": null,
-            "GoogleFormattedAddress": null,
-            "FormattedAddress": "Level 26, 111 Eagle Street, Brisbane, Queensland 4000",
-            "IsCustomAddress": null,
-            "IsPostalAddress": null,
-            "Level": null,
-            "BuildingName": null,
-            "StreetName": null,
-            "StreetType": null,
-            "AddressType": null,
-            "AddressLine1": null,
-            "AddressLine2": null,
-            "PostOfficeType": null,
-            "Number": null,
-            "Exchange": null,
-            "AddressId": null
-          },
           "City": "BRISBANE CITY",
           "Country": "AU",
           "DataSource": null,
           "DeliveryPoint": null,
           "DXBox": null,
           "GNAF_ID": null,
-          "Latitude": -27.467688500,
+          "Latitude": -27.4676885,
           "LGAName": null,
-          "Longitude": 153.030372500,
+          "Longitude": 153.0303725,
           "NonStandard": null,
           "OverseasPostCode": null,
           "OverseasState": null,
@@ -898,20 +313,20 @@
         }
       ],
       "BusinessChannel": {
-        "BusinessNumber": null,
-        "CompanyName": "uBank",
+        "BusinessNumber": "",
+        "CompanyName": "twewj",
         "CompanyNumber": null,
         "Contact": {
           "ContactPerson": null,
-          "Email": null,
+          "Email": "",
           "OfficeFax": null,
           "OfficePhone": {
             "CountryCode": null,
             "DialingCode": null,
-            "Number": "02 9058 7402",
+            "Number": "21 6605 5871",
             "OverseasDialingCode": null
           },
-          "WebAddress": "https://www.ubank.com.au/",
+          "WebAddress": "aegur://wfl.edyyv.mqx.hy/",
           "X_Address": null
         },
         "CRMReferenceNumber": null,
@@ -928,8 +343,6 @@
       "CompanyFinancials": [],
       "ContributionFunds": [
         {
-          "FundsId": 29135237,
-          "IsDefault": false,
           "Amount": 210.3,
           "Description": "FUNDS_AVAILABLE",
           "Loan": null,
@@ -978,14 +391,12 @@
       "GeneralSecurityAgreement": null,
       "Household": [
         {
-          "FamilyId": 8061858,
           "Dependant": [
             {
-              "IncludedInLoanApp": true,
               "Age": 17,
               "DateOfBirth": "2007-04-19T00:00:00",
               "FinancialProvider": null,
-              "Name": "Ruby Bruce ",
+              "Name": "nalz fahiy ",
               "SequenceNumber": null,
               "UniqueID": "Person_9970620"
             }
@@ -996,7 +407,7 @@
             "BrokerVerifiedExpenseDetails": null,
             "LivingExpense": [
               {
-                "Amount": 2000.00,
+                "Amount": 2000.0,
                 "Category": "Childcare",
                 "Description": "Child Care",
                 "EndDate": null,
@@ -1007,7 +418,7 @@
                 "UniqueID": null
               },
               {
-                "Amount": 2000.00,
+                "Amount": 2000.0,
                 "Category": "Groceries",
                 "Description": "Groceries",
                 "EndDate": null,
@@ -1018,7 +429,7 @@
                 "UniqueID": null
               },
               {
-                "Amount": 1150.00,
+                "Amount": 1150.0,
                 "Category": "Primary Residence Running Costs",
                 "Description": "Electricity & Gas, Council Rates, Water & Sewer, Home Repairs",
                 "EndDate": null,
@@ -1029,7 +440,7 @@
                 "UniqueID": null
               },
               {
-                "Amount": 200.00,
+                "Amount": 200.0,
                 "Category": "Investment Property Running Costs",
                 "Description": "Building Insurance",
                 "EndDate": null,
@@ -1040,7 +451,7 @@
                 "UniqueID": null
               },
               {
-                "Amount": 200.00,
+                "Amount": 200.0,
                 "Category": "Telephone, internet, pay TV and media streaming subscriptions",
                 "Description": "Home/Mobile Phone, Internet, Pay TV & Media Streaming Subscriptions",
                 "EndDate": null,
@@ -1056,7 +467,7 @@
             "TotalSystemCalculatedLivingExpenses": null,
             "TotalUserStatedLivingExpenses": null
           },
-          "Name": null,
+          "Name": "",
           "NumberOfAdults": 3,
           "NumberOfDependants": 1,
           "SequenceNumber": null,
@@ -1068,18 +479,6 @@
       "LendingGuarantee": null,
       "Liability": [
         {
-          "DischargeFee": null,
-          "IsPayout": false,
-          "IsReleaseEquity": false,
-          "AdditionalFunds": null,
-          "ReleaseEquity": null,
-          "IsRevolvingCredit": false,
-          "InterestOnlyTermMonth": 0,
-          "InterestOnlyTermYear": 0,
-          "DocumentedLoanTermMonth": 0,
-          "DocumentedLoanTermYear": 0,
-          "LiabilityType": "CreditCard",
-          "LenderName": null,
           "AccelerationPercentage": null,
           "AccountNumber": {
             "AccountName": null,
@@ -1091,7 +490,7 @@
             "OtherFIName": null,
             "SequenceNumber": null
           },
-          "AnnualInterestRate": 0.00,
+          "AnnualInterestRate": 0.0,
           "Arrears": null,
           "AvailableForRedrawAmount": null,
           "BalloonRepaymentAmount": null,
@@ -1100,7 +499,7 @@
           "ClearingFromOtherSource": null,
           "ClearingFromOtherSourceAmount": null,
           "ClearingFromThisLoan": false,
-          "ClearingFromThisLoanAmount": 5000.00,
+          "ClearingFromThisLoanAmount": 5000.0,
           "ClosingOnSettlement": null,
           "ContinuingRepayment": [
             {
@@ -1118,7 +517,7 @@
             }
           ],
           "CreditCardType": "MasterCard",
-          "CreditLimit": 15000.00,
+          "CreditLimit": 15000.0,
           "CreditRiskGrade": null,
           "Description": null,
           "DiscountMargin": null,
@@ -1152,20 +551,20 @@
           "OriginalTerm": null,
           "OriginationDate": null,
           "OriginatorReferenceID": null,
-          "OutstandingBalance": 5000.00,
+          "OutstandingBalance": 5000.0,
           "Overdrawn": null,
           "Package": null,
           "PercentOwned": {
             "Owner": [
               {
                 "OwnerType": null,
-                "Percent": 50.00,
+                "Percent": 50.0,
                 "SequenceNumber": null,
                 "X_Party": "Family_9901852"
               },
               {
                 "OwnerType": null,
-                "Percent": 50.00,
+                "Percent": 50.0,
                 "SequenceNumber": null,
                 "X_Party": "Family_9954969"
               }
@@ -1191,7 +590,7 @@
               "PrincipalPayment": null,
               "Regular": true,
               "RemainingRepayments": null,
-              "RepaymentAmount": 570.00,
+              "RepaymentAmount": 570.0,
               "RepaymentFrequency": "Monthly",
               "SequenceNumber": null,
               "TaxDeductible": false,
@@ -1214,18 +613,6 @@
           "X_CustomerTransactionAnalysis": null
         },
         {
-          "DischargeFee": null,
-          "IsPayout": false,
-          "IsReleaseEquity": false,
-          "AdditionalFunds": null,
-          "ReleaseEquity": null,
-          "IsRevolvingCredit": false,
-          "InterestOnlyTermMonth": 0,
-          "InterestOnlyTermYear": 0,
-          "DocumentedLoanTermMonth": 0,
-          "DocumentedLoanTermYear": 0,
-          "LiabilityType": "TermLoan",
-          "LenderName": "ANZ",
           "AccelerationPercentage": null,
           "AccountNumber": {
             "AccountName": null,
@@ -1237,7 +624,7 @@
             "OtherFIName": "ANZ Australia",
             "SequenceNumber": null
           },
-          "AnnualInterestRate": 6.00,
+          "AnnualInterestRate": 6.0,
           "Arrears": null,
           "AvailableForRedrawAmount": null,
           "BalloonRepaymentAmount": null,
@@ -1246,7 +633,7 @@
           "ClearingFromOtherSource": null,
           "ClearingFromOtherSourceAmount": null,
           "ClearingFromThisLoan": true,
-          "ClearingFromThisLoanAmount": 200000.00,
+          "ClearingFromThisLoanAmount": 200000.0,
           "ClosingOnSettlement": null,
           "ContinuingRepayment": [
             {
@@ -1264,7 +651,7 @@
             }
           ],
           "CreditCardType": null,
-          "CreditLimit": 200000.00,
+          "CreditLimit": 200000.0,
           "CreditRiskGrade": null,
           "Description": null,
           "DiscountMargin": null,
@@ -1311,20 +698,20 @@
           },
           "OriginationDate": null,
           "OriginatorReferenceID": null,
-          "OutstandingBalance": 200000.00,
+          "OutstandingBalance": 200000.0,
           "Overdrawn": null,
           "Package": null,
           "PercentOwned": {
             "Owner": [
               {
                 "OwnerType": null,
-                "Percent": 50.00,
+                "Percent": 50.0,
                 "SequenceNumber": null,
                 "X_Party": "Family_9901852"
               },
               {
                 "OwnerType": null,
-                "Percent": 50.00,
+                "Percent": 50.0,
                 "SequenceNumber": null,
                 "X_Party": "Family_9954969"
               }
@@ -1350,7 +737,7 @@
               "PrincipalPayment": null,
               "Regular": true,
               "RemainingRepayments": null,
-              "RepaymentAmount": 500.00,
+              "RepaymentAmount": 500.0,
               "RepaymentFrequency": "Monthly",
               "SequenceNumber": null,
               "TaxDeductible": false,
@@ -1388,57 +775,6 @@
       ],
       "LoanDetails": [
         {
-          "ProposedAnnualInterestRate": 0.0,
-          "ProductName": "Flex 3 Years Fixed <60% (OO PI)",
-          "OriginatorReferenceID": "Flex-0-60%-F-PI-OO",
-          "Products": [
-            {
-              "LenderId": "5054",
-              "LenderName": "uBank",
-              "ProductId": "3462307",
-              "ProductName": "Flex 3 Years Fixed <60% (OO PI)",
-              "IsSelected": true,
-              "ProductTypes": "Owner Occupied",
-              "DocumentationType": "Full Doc",
-              "OriginatorReferenceId": "Flex-0-60%-F-PI-OO",
-              "ComparisonRate": {
-                "Rate": 6.34,
-                "OverrideRate": null,
-                "DiscountRate": null,
-                "OverrideDiscountRate": null
-              },
-              "InitialRate": {
-                "Rate": 5.99,
-                "OverrideRate": 0.0,
-                "DiscountRate": 0.0,
-                "OverrideDiscountRate": 0.0
-              },
-              "OngoingRate": {
-                "Rate": 6.14,
-                "OverrideRate": 0.0,
-                "DiscountRate": 0.0,
-                "OverrideDiscountRate": 0.0
-              },
-              "Fees": {
-                "MonthlyFee": 0.0,
-                "AnnualFee": 250.0,
-                "EstablishmentFee": 0.0,
-                "ValuationFee": 0.0,
-                "ApplicationFee": 0.0,
-                "SettlementFee": 250.0,
-                "LegalFee": 0.0
-              }
-            }
-          ],
-          "DocumentationType": "Full Doc",
-          "CapitaliseLmi": false,
-          "IsModeledProduct": false,
-          "ProductTypes": "Owner Occupied",
-          "LenderId": null,
-          "LenderName": null,
-          "LenderLogoUrl": null,
-          "ProductId": null,
-          "ProductRemarks": null,
           "AccelerationPercentage": null,
           "AccountNumber": null,
           "AmountRequested": 200000.0,
@@ -1535,7 +871,7 @@
               "NonRefinancingLendingReason": null,
               "PayoutQuoteObtained": null,
               "PercentBenefit": null,
-              "PurposeAmount": 200000.00,
+              "PurposeAmount": 200000.0,
               "PurposeOfFunds": null,
               "RefinancingReason": null,
               "SecurityForMarginLoan": null,
@@ -1561,9 +897,12 @@
           "NegativelyGeared": null,
           "NegativelyGearedPercentage": null,
           "NominateBalloonRepayment": null,
+          "OriginatorReferenceID": "Flex-0-60%-F-PI-OO",
           "Package": null,
           "ProductCode": null,
+          "ProductName": "Flex 3 Years Fixed <60% (OO PI)",
           "ProductSubCategory": null,
+          "ProposedAnnualInterestRate": 0.0,
           "ProposedRepayment": {
             "AnniversaryDate": null,
             "Authoriser": null,
@@ -1668,7 +1007,7 @@
             "MinimumResidualValue": null,
             "TaxDepreciationMethod": null,
             "TaxDepreciationRate": null,
-            "Value": 53000.00,
+            "Value": 53000.0,
             "ValuedDate": null
           },
           "EstimatedValues": null,
@@ -1730,12 +1069,12 @@
           "PercentOwned": {
             "Owner": [
               {
-                "Percent": 50.00,
+                "Percent": 50.0,
                 "SequenceNumber": null,
                 "X_Party": "Family_9901852"
               },
               {
-                "Percent": 50.00,
+                "Percent": 50.0,
                 "SequenceNumber": null,
                 "X_Party": "Family_9954969"
               }
@@ -1780,7 +1119,7 @@
             "MinimumResidualValue": null,
             "TaxDepreciationMethod": null,
             "TaxDepreciationRate": null,
-            "Value": 32000.00,
+            "Value": 32000.0,
             "ValuedDate": null
           },
           "EstimatedValues": null,
@@ -1842,12 +1181,12 @@
           "PercentOwned": {
             "Owner": [
               {
-                "Percent": 50.00,
+                "Percent": 50.0,
                 "SequenceNumber": null,
                 "X_Party": "Family_9901852"
               },
               {
-                "Percent": 50.00,
+                "Percent": 50.0,
                 "SequenceNumber": null,
                 "X_Party": "Family_9954969"
               }
@@ -1931,7 +1270,7 @@
           "PercentOwned": {
             "Owner": [
               {
-                "Percent": 100.00,
+                "Percent": 100.0,
                 "SequenceNumber": null,
                 "X_Party": "Family_9901852"
               },
@@ -2020,7 +1359,7 @@
           "PercentOwned": {
             "Owner": [
               {
-                "Percent": 100.00,
+                "Percent": 100.0,
                 "SequenceNumber": null,
                 "X_Party": "Family_9901852"
               },
@@ -2109,7 +1448,7 @@
           "PercentOwned": {
             "Owner": [
               {
-                "Percent": 100.00,
+                "Percent": 100.0,
                 "SequenceNumber": null,
                 "X_Party": "Family_9901852"
               },
@@ -2198,7 +1537,7 @@
           "PercentOwned": {
             "Owner": [
               {
-                "Percent": 100.00,
+                "Percent": 100.0,
                 "SequenceNumber": null,
                 "X_Party": "Family_9901852"
               },
@@ -2287,7 +1626,7 @@
           "PercentOwned": {
             "Owner": [
               {
-                "Percent": 100.00,
+                "Percent": 100.0,
                 "SequenceNumber": null,
                 "X_Party": "Family_9954969"
               },
@@ -2337,7 +1676,7 @@
             "MinimumResidualValue": null,
             "TaxDepreciationMethod": null,
             "TaxDepreciationRate": null,
-            "Value": 212265.00,
+            "Value": 212265.0,
             "ValuedDate": null
           },
           "EstimatedValues": null,
@@ -2376,12 +1715,12 @@
           "PercentOwned": {
             "Owner": [
               {
-                "Percent": 50.00,
+                "Percent": 50.0,
                 "SequenceNumber": null,
                 "X_Party": "Family_9901852"
               },
               {
-                "Percent": 50.00,
+                "Percent": 50.0,
                 "SequenceNumber": null,
                 "X_Party": "Family_9954969"
               }
@@ -2426,7 +1765,7 @@
             "MinimumResidualValue": null,
             "TaxDepreciationMethod": null,
             "TaxDepreciationRate": null,
-            "Value": 95000.00,
+            "Value": 95000.0,
             "ValuedDate": null
           },
           "EstimatedValues": null,
@@ -2453,12 +1792,12 @@
           "PercentOwned": {
             "Owner": [
               {
-                "Percent": 50.00,
+                "Percent": 50.0,
                 "SequenceNumber": null,
                 "X_Party": "Family_9901852"
               },
               {
-                "Percent": 50.00,
+                "Percent": 50.0,
                 "SequenceNumber": null,
                 "X_Party": "Family_9954969"
               }
@@ -2503,7 +1842,7 @@
             "MinimumResidualValue": null,
             "TaxDepreciationMethod": null,
             "TaxDepreciationRate": null,
-            "Value": 100000.00,
+            "Value": 100000.0,
             "ValuedDate": null
           },
           "EstimatedValues": null,
@@ -2530,12 +1869,12 @@
           "PercentOwned": {
             "Owner": [
               {
-                "Percent": 50.00,
+                "Percent": 50.0,
                 "SequenceNumber": null,
                 "X_Party": "Family_9901852"
               },
               {
-                "Percent": 50.00,
+                "Percent": 50.0,
                 "SequenceNumber": null,
                 "X_Party": "Family_9954969"
               }
@@ -2563,7 +1902,7 @@
       "OtherExpense": [],
       "OtherIncome": [
         {
-          "Amount": 5000.00,
+          "Amount": 5000.0,
           "BenefitsDescription": null,
           "Country": null,
           "Description": "",
@@ -2581,7 +1920,7 @@
           "PercentOwned": {
             "Owner": [
               {
-                "Percent": 100.00,
+                "Percent": 100.0,
                 "SequenceNumber": null,
                 "X_Party": "Family_9954969"
               }
@@ -2647,9 +1986,6 @@
       },
       "PersonApplicant": [
         {
-          "FamilyId": 8061858,
-          "PersonId": 9901852,
-          "ForeignPurchaser": null,
           "AboriginalOrTorresStraitIslander": null,
           "AccountsPreventedFromOverdraw": null,
           "AdditionalCitizenship": null,
@@ -2673,7 +2009,7 @@
             },
             "EmailAddress": [
               {
-                "Email": "gXXXt@pXXXXXXXXXXXXXXXXXXXXXXXXXX.Xu",
+                "Email": "noylu@hitgrkaqjsjkqtzlaoqjdoagtrv.np",
                 "EmailType": "Home",
                 "SequenceNumber": null,
                 "UniqueID": null
@@ -2684,7 +2020,7 @@
             "Mobile": {
               "CountryCode": "61",
               "DialingCode": "04",
-              "Number": "0455555555",
+              "Number": "8472061278",
               "OverseasDialingCode": null
             },
             "PostSettlementAddress": null,
@@ -2749,7 +2085,7 @@
                   "HasForeignSourcedIncome": null,
                   "IncomeGreaterThanPreviousYear": null,
                   "ProfitAfterTax": null,
-                  "ProfitBeforeTax": 200000.00,
+                  "ProfitBeforeTax": 200000.0,
                   "ProofCode": null,
                   "ProofSighted": null,
                   "StartDate": "2018-09-28T00:00:00",
@@ -2914,7 +2250,6 @@
           "PrimaryApplicant": true,
           "PrincipalForeignResidence": "AU",
           "Privacy": {
-            "AllowThirdPartyDisclosurePrivacy": true,
             "AllowApplicationStatusUpdates": null,
             "AllowCreditBureauIdentityCheck": true,
             "AllowCreditCheck": true,
@@ -2930,7 +2265,6 @@
           },
           "ProofOfIdentity": [
             {
-              "IdentificationId": 3372241,
               "Attachment": null,
               "CardNumber": null,
               "CertifiedCopy": false,
@@ -2963,7 +2297,6 @@
               "X_LocationDocumentVerified": null
             },
             {
-              "IdentificationId": 3378221,
               "Attachment": null,
               "CardNumber": null,
               "CertifiedCopy": false,
@@ -3029,9 +2362,6 @@
           "YearsInCurrentProfession": 5.0
         },
         {
-          "FamilyId": 8061858,
-          "PersonId": 9954969,
-          "ForeignPurchaser": null,
           "AboriginalOrTorresStraitIslander": null,
           "AccountsPreventedFromOverdraw": null,
           "AdditionalCitizenship": null,
@@ -3052,7 +2382,7 @@
             },
             "EmailAddress": [
               {
-                "Email": "cXXXXXXXXXXs@bXXXXXX.XXm",
+                "Email": "frgztituyyol@eovbkti.bbc",
                 "EmailType": "Home",
                 "SequenceNumber": null,
                 "UniqueID": null
@@ -3063,7 +2393,7 @@
             "Mobile": {
               "CountryCode": "61",
               "DialingCode": "04",
-              "Number": "0455555555",
+              "Number": "4122842760",
               "OverseasDialingCode": null
             },
             "PostSettlementAddress": null,
@@ -3149,7 +2479,6 @@
           "PrimaryApplicant": false,
           "PrincipalForeignResidence": "AU",
           "Privacy": {
-            "AllowThirdPartyDisclosurePrivacy": true,
             "AllowApplicationStatusUpdates": null,
             "AllowCreditBureauIdentityCheck": true,
             "AllowCreditCheck": true,
@@ -3165,7 +2494,6 @@
           },
           "ProofOfIdentity": [
             {
-              "IdentificationId": 3403460,
               "Attachment": null,
               "CardNumber": null,
               "CertifiedCopy": false,
@@ -3198,7 +2526,6 @@
               "X_LocationDocumentVerified": null
             },
             {
-              "IdentificationId": 3403464,
               "Attachment": null,
               "CardNumber": null,
               "CertifiedCopy": false,
@@ -3269,10 +2596,6 @@
       "ProductSet": null,
       "RealEstateAsset": [
         {
-          "PackageContentApplicationRealEstateAssetFeesExtensions": [],
-          "RealEstateAssetExtensions": null,
-          "RealEstateAssetStampDutyExtensions": null,
-          "Mortgaged": null,
           "ApprovalInPrinciple": false,
           "BrokerReferenceNumber": null,
           "Commercial": null,
@@ -3465,10 +2788,10 @@
           "Beneficiary": null,
           "BusinessName": "PXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXD",
           "BusinessNameSameAsCompanyName": null,
-          "BusinessNumber": "31108489765",
+          "BusinessNumber": "20274106685",
           "BusinessNumberVerified": null,
           "BusinessStructure": "Sole Trader",
-          "CompanyName": "PXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXD",
+          "CompanyName": "afyrheimwdprhxadnxyeasdpietgfqdpjfqoarlmvgkq",
           "CompanyNumber": null,
           "Contact": {
             "ContactPerson": {
@@ -3478,17 +2801,17 @@
               "Surname": null,
               "X_ContactPerson": "EmployerContact_5554456"
             },
-            "Email": null,
+            "Email": "",
             "OfficeFax": null,
             "OfficeMobile": null,
             "OfficePhone": {
               "CountryCode": null,
               "DialingCode": null,
-              "Number": "61450000111",
+              "Number": "36343030832",
               "OverseasDialingCode": null
             },
             "TradingAddress": null,
-            "WebAddress": null,
+            "WebAddress": "",
             "X_Address": "Address_12326334",
             "X_RegisteredAddress": null
           },
@@ -3522,10 +2845,10 @@
           "Beneficiary": null,
           "BusinessName": "MXXXXXXXXXXXXs",
           "BusinessNameSameAsCompanyName": null,
-          "BusinessNumber": null,
+          "BusinessNumber": "",
           "BusinessNumberVerified": null,
           "BusinessStructure": null,
-          "CompanyName": "MXXXXXXXXXXXXs",
+          "CompanyName": "qodytzqywctppx",
           "CompanyNumber": null,
           "Contact": {
             "ContactPerson": {
@@ -3535,17 +2858,17 @@
               "Surname": null,
               "X_ContactPerson": "EmployerContact_5554443"
             },
-            "Email": null,
+            "Email": "",
             "OfficeFax": null,
             "OfficeMobile": null,
             "OfficePhone": {
               "CountryCode": null,
               "DialingCode": null,
-              "Number": "61450111222",
+              "Number": "52482822001",
               "OverseasDialingCode": null
             },
             "TradingAddress": null,
-            "WebAddress": null,
+            "WebAddress": "",
             "X_Address": "Address_13691229",
             "X_RegisteredAddress": null
           },
@@ -3571,14 +2894,14 @@
       "RelatedPerson": [
         {
           "Contact": {
-            "Email": null,
+            "Email": "",
             "EmailType": null,
             "FaxNumber": null,
             "HomePhone": null,
             "Mobile": {
               "CountryCode": null,
               "DialingCode": null,
-              "Number": "61450000111",
+              "Number": "26414183428",
               "OverseasDialingCode": null
             },
             "PreferredContact": null,
@@ -3605,14 +2928,14 @@
         },
         {
           "Contact": {
-            "Email": null,
+            "Email": "",
             "EmailType": null,
             "FaxNumber": null,
             "HomePhone": null,
             "Mobile": {
               "CountryCode": null,
               "DialingCode": null,
-              "Number": "61450111222",
+              "Number": "80012042137",
               "OverseasDialingCode": null
             },
             "PreferredContact": null,
@@ -3641,18 +2964,18 @@
       "SalesChannel": {
         "Aggregator": {
           "AccreditationNumber": null,
-          "BusinessNumber": "67632405504",
-          "CompanyName": null,
+          "BusinessNumber": "87770824517",
+          "CompanyName": "",
           "Contact": {
-            "Email": "customerservice@loanmarket.com.au",
+            "Email": "tsneknyeoslzxts@awtphzweks.wbh.jk",
             "OfficeFax": null,
             "OfficePhone": {
               "CountryCode": null,
               "DialingCode": null,
-              "Number": "1800 763 486 (free call)",
+              "Number": "3851 103 074 (ckez zqtj)",
               "OverseasDialingCode": null
             },
-            "WebAddress": null,
+            "WebAddress": "",
             "X_Address": "Address_807535"
           },
           "CRMReferenceNumber": null,
@@ -3667,8 +2990,8 @@
           "BSB": null,
           "BusinessName": null,
           "BusinessNameSameAsCompanyName": null,
-          "BusinessNumber": "63605295234",
-          "CompanyName": "Entourage Finance Pty Ltd",
+          "BusinessNumber": "81111762013",
+          "CompanyName": "aztjoobyr cijfxge qoh ium",
           "Contact": null,
           "CRMReferenceNumber": null,
           "LicenceNumber": "475676",
@@ -3680,26 +3003,26 @@
         "LoanWriter": {
           "AccreditationNumber": "LMA46141",
           "Contact": {
-            "Email": "dXXXXn@eXXXXXXXXXXXX.Xu",
+            "Email": "pzeptv@cgedadordxrru.wu",
             "Fax": {
               "CountryCode": null,
               "DialingCode": null,
-              "Number": null,
+              "Number": "",
               "OverseasDialingCode": null
             },
             "Mobile": {
               "CountryCode": null,
               "DialingCode": null,
-              "Number": "0421555555",
+              "Number": "3185415848",
               "OverseasDialingCode": null
             },
             "OfficePhone": {
               "CountryCode": null,
               "DialingCode": null,
-              "Number": "0555555551",
+              "Number": "7112120245",
               "OverseasDialingCode": null
             },
-            "WebAddress": null,
+            "WebAddress": "",
             "X_Address": "Address_3605279"
           },
           "DelegatedRecipient": null,
@@ -3775,66 +3098,12 @@
     "CreditReport": null,
     "History": null,
     "NeedsAnalysis": {
-      "ImportantDates": {
-        "Details": null,
-        "SettlementDate": {
-          "Value": null
-        },
-        "AuctionDate": {
-          "Value": null
-        },
-        "FinanceDate": {
-          "Value": null
-        }
-      },
-      "CurrentBankingWith": {
-        "Lenders": [
-          {
-            "LenderId": 3647,
-            "Name": "ANZ Australia"
-          }
-        ],
-        "HappyWithCurrentBank": true,
-        "HappyWithCurrentBankDetails": null,
-        "Other": null
-      },
-      "PreferredLenders": [],
-      "AdequateInsurance": {
-        "FinancialHardship": null,
-        "AccidentDamageTheft": null,
-        "FinancialHardshipDetails": null,
-        "AccidentDamageTheftDetails": null
-      },
-      "Arrears": {
-        "PreviousIssuesRelatedToArrears": false,
-        "CurrentlyInArrears": false,
-        "PreviousIssuesRelatedToArrearsDetails": null,
-        "CurrentlyInArrearsDetails": null
-      },
-      "SpecificGoals": "The applicant needs to refinance to get lower interest rate.",
-      "WhatToAchieve": "Restroom Upgrade: Modernize the bathroom with new tiles, a walk-in shower, and energy-efficient fixtures.<br/><br/>Kitchen Remodel: Install new cabinets, countertops, and smart appliances to create a more functional and stylish cooking space.<br/><br/>Basement Renovation: Convert the basement into a livable space, such as a home office, entertainment room, or guest suite.<br/><br/>Outdoor Deck Installation: Add a wooden deck for outdoor gatherings and leisure, enhancing the backyard space.<br/><br/>Attic Conversion: Transform the attic into an additional bedroom or storage space with insulation and new flooring.<br/><br/>Living Room Expansion: Knock down walls to create an open-concept living room, bringing in more natural light and space.<br/><br/>Garage Conversion: Convert the garage into a home gym, workshop, or a cozy den.<br/><br/>Energy-Efficient Windows: Replace old windows with double-glazed, energy-efficient ones to improve insulation and reduce utility bills.<br/><br/>Roof Repair & Solar Panels: Fix any roof damage and install solar panels to make the home more energy-efficient.<br/><br/>Landscape Overhaul: Redesign the front or backyard with new plants, a garden, or a water feature to boost curb appeal.",
-      "BeenADirectorRecently": false,
-      "BeenADirectorRecentlyDetails": null,
-      "GoodAccountConduct": null,
-      "Other": null,
-      "OtherDetails": null,
-      "ConflictsOfInterest": {
-        "FasterTurnAroundTimes": null,
-        "PaymentToThirdParty": false,
-        "BusinessOwnershipStructure": false,
-        "BusinessOwnershipStructureDetails": null,
-        "OtherConflicts": false,
-        "OtherConflictsDetails": null
-      },
       "BenefitToApplicants": null,
       "ClientMandate": null,
       "ClientMandateDetails": null,
       "CoApplicantInterview": null,
       "FutureCircumstances": null,
       "Interview": {
-        "IsVideoConference": false,
-        "IsPhoneCall": false,
-        "Other": false,
         "AllApplicantsPresent": null,
         "AllApplicantsUnderstandEnglish": null,
         "Attendee": null,
@@ -3955,8 +3224,8 @@
             "ImminentlyRetiring": false,
             "IntendedRetirementAge": 70,
             "IntendedRetirementAgeDetails": null,
-            "Name": null,
-            "Number": null,
+            "Name": "",
+            "Number": "",
             "RepaymentOptions": null,
             "SequenceNumber": null,
             "UnderstandsImpactOnRetirementPlans": false,
@@ -3968,8 +3237,8 @@
             "ImminentlyRetiring": false,
             "IntendedRetirementAge": 70,
             "IntendedRetirementAgeDetails": null,
-            "Name": null,
-            "Number": null,
+            "Name": "",
+            "Number": "",
             "RepaymentOptions": null,
             "SequenceNumber": null,
             "UnderstandsImpactOnRetirementPlans": false,
@@ -4001,9 +3270,9 @@
   },
   "ProductionData": false,
   "Publisher": {
-    "CompanyName": null,
+    "CompanyName": "",
     "ContactName": null,
-    "Email": null,
+    "Email": "",
     "LIXICode": "LMKLO1",
     "PhoneNumber": null,
     "PublishedDateTime": null,
@@ -4020,7 +3289,6 @@
     }
   ],
   "SchemaVersion": {
-    "LenderCode": "C9RHHX",
     "GuidebookCode": "EGB-XD1IB4",
     "GuidebookName": null,
     "GuidebookVersion": null,
