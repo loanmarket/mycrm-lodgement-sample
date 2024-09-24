@@ -19,7 +19,7 @@ namespace MyCRM.Lodgement.Sample.Controllers
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(SubmissionResult))]
         public async Task<IActionResult> Post(PostPackageRequest request, CancellationToken token)
         {
-            var resultOrError = await _lodgementClient.Submit(request.LixiPackage,request.Country, token);
+            var resultOrError = await _lodgementClient.Submit(request.LixiPackage, token);
 
             if (resultOrError.IsError)
             {

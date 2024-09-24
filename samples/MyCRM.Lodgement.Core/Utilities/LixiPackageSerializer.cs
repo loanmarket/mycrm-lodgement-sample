@@ -11,14 +11,14 @@ namespace MyCRM.Lodgement.Common.Utilities;
 
 public class LixiPackageSerializer
 {
-    public static string Serialize(Package package,LixiCountry country, string mediaType)
+    public static string Serialize(Package package,LixiCountry country,LixiVersion version, string mediaType)
     {
         if (package == null) throw new ArgumentNullException(nameof(package));
         var json = new Json { Package = package };
         return mediaType switch
         {
-            MediaTypeNames.Application.Xml => country==LixiCountry.Australia?  SerializeAsCalXml(package): SerializeAsCnzXml(package) ,
-            MediaTypeNames.Application.Json =>country==LixiCountry.Australia?  SerializeAsCal(package): SerializeAsCnz(package),
+            MediaTypeNames.Application.Xml => country==LixiCountry.Australia?  SerializeAsCalXml(package,version): SerializeAsCnzXml(package,version) ,
+            MediaTypeNames.Application.Json =>country==LixiCountry.Australia?  SerializeAsCal(package,version): SerializeAsCnz(package,version),
             _ => throw new NotImplementedException($"Media Type {mediaType} not supported.")
         };
     }
@@ -83,28 +83,28 @@ public class LixiPackageSerializer
         return result.ToString();
     }
     
-    private static string SerializeAsCalXml(Package package, LixiVersion version = LixiVersion.Cal2635)
+    private static string SerializeAsCalXml(Package package, LixiVersion version)
     {
         var json = new Json { Package = package };
         return LixiSerializer.SerializeToXml(json, LixiCountry.Australia, version);
     }
 
-    private static string SerializeAsCnzXml(Package package, LixiVersion version = LixiVersion.Cnz218)
+    private static string SerializeAsCnzXml(Package package, LixiVersion version )
     {
         var json = new Json { Package = package };
         return LixiSerializer.SerializeToXml(json, LixiCountry.NewZealand, version);
     }
 
-    private static string SerializeAsCal(Package package)
+    private static string SerializeAsCal(Package package, LixiVersion version )
     {
         var json = new Json { Package = package };
-        return LixiSerializer.Serialize(json, LixiCountry.Australia, LixiVersion.Cal2635);
+        return LixiSerializer.Serialize(json, LixiCountry.Australia, version);
     }
 
-    private static string SerializeAsCnz(Package package)
+    private static string SerializeAsCnz(Package package, LixiVersion version)
     {
         var json = new Json { Package = package };
-        return LixiSerializer.Serialize(json, LixiCountry.Australia, LixiVersion.Cnz218);
+        return LixiSerializer.Serialize(json, LixiCountry.Australia, version);
     }
 
 

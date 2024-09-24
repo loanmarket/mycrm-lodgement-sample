@@ -1,4 +1,8 @@
-﻿namespace MyCRM.Lodgement.Sample.Services.Client
+﻿using LMGTech.DotNetLixi;
+using Microsoft.CSharp.RuntimeBinder;
+using MyCRM.Lodgement.Common.Utilities;
+
+namespace MyCRM.Lodgement.Sample.Services.Client
 {
     public static class ServiceCollectionExtensions
     {
@@ -8,7 +12,12 @@
             if (configuration == null) throw new ArgumentNullException(nameof(configuration));
 
             services.AddOptions();
-            services.Configure<LodgementSettings>(settings => configuration.GetSection(nameof(LodgementSettings)).Bind(settings));
+            services.Configure<LodgementSettings>(settings =>
+            {
+                var lodgementSettingsSection = configuration.GetSection(nameof(LodgementSettings));
+                lodgementSettingsSection.Bind(settings);
+                settings.LixiPackageVersion = EnumHelper.ConvertToEnum<LixiVersion>(lodgementSettingsSection["Version"]);
+            });
             services.AddHttpClient(nameof(LodgementClient), (provider, httpClient) =>
             {
                 var settings = provider.GetRequiredService<IOptions<LodgementSettings>>()?.Value;

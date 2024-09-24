@@ -21,7 +21,7 @@ public class LixiPackageSerializerTests
         var package = CreateTestPackage();
 
         // Act
-        var result = LixiPackageSerializer.Serialize(package, LixiCountry.Australia, "application/json");
+        var result = LixiPackageSerializer.Serialize(package, LixiCountry.Australia,LixiVersion.Cal2635, "application/json");
 
         // Assert
         Assert.NotNull(result);
@@ -35,7 +35,7 @@ public class LixiPackageSerializerTests
         var package = CreateTestPackage();
 
         // Act
-        var result = LixiPackageSerializer.Serialize(package, LixiCountry.Australia, "application/xml");
+        var result = LixiPackageSerializer.Serialize(package, LixiCountry.Australia,LixiVersion.Cal2635, "application/xml");
 
         // Assert
         Assert.NotNull(result);
@@ -51,7 +51,7 @@ public class LixiPackageSerializerTests
         var package = CreateTestPackage();
 
         // Act
-        var result = LixiPackageSerializer.Serialize(package, LixiCountry.NewZealand, "application/xml");
+        var result = LixiPackageSerializer.Serialize(package, LixiCountry.NewZealand,LixiVersion.Cnz218, "application/xml");
 
         // Assert
         Assert.NotNull(result);
@@ -66,7 +66,7 @@ public class LixiPackageSerializerTests
 
         // Act & Assert
         var ex = Assert.Throws<NotImplementedException>(() =>
-            LixiPackageSerializer.Serialize(package, LixiCountry.Australia, "application/unsupported"));
+            LixiPackageSerializer.Serialize(package, LixiCountry.Australia,LixiVersion.Cal2635, "application/unsupported"));
         Assert.Equal("Media Type application/unsupported not supported.", ex.Message);
     }
 
@@ -75,7 +75,7 @@ public class LixiPackageSerializerTests
     {
         // Act & Assert
         Assert.Throws<ArgumentNullException>(() =>
-            LixiPackageSerializer.Serialize(null, LixiCountry.Australia, "application/json"));
+            LixiPackageSerializer.Serialize(null, LixiCountry.Australia,LixiVersion.Cal2635, "application/json"));
     }
 
     [Fact]
