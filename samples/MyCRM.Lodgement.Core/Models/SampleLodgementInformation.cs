@@ -5,6 +5,5 @@ namespace MyCRM.Lodgement.Common.Models;
 public class SampleLodgementInformation
 {
     public int LoanId { get; set; }
-    public LixiCountry Country{ get; set; }
     public LoanApplicationScenario Scenario { get; set; }      
 }

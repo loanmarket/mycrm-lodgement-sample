@@ -16,7 +16,7 @@
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(ValidationResult))]
         public async Task<IActionResult> Post(PostPackageRequest request, CancellationToken token)
         {
-            var validationResult = await _lodgementClient.Validate(request.LixiPackage,request.Country, token);
+            var validationResult = await _lodgementClient.Validate(request.LixiPackage, token);
             return Ok(validationResult);
         }
     }

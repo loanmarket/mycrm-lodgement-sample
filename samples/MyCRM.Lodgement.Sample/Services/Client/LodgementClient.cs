@@ -21,9 +21,9 @@ namespace MyCRM.Lodgement.Sample.Services.Client
             _settings = options?.Value ?? throw new ArgumentNullException(nameof(options));
         }
 
-        public async Task<ValidationResult> Validate(Package package, LixiCountry country, CancellationToken token)
+        public async Task<ValidationResult> Validate(Package package, CancellationToken token)
         {
-            using var response = await SendAsync(package,country, Routes.Validate, token);
+            using var response = await SendAsync(package, Routes.Validate, token);
             return response.StatusCode switch
             {
                 HttpStatusCode.OK => await ReadResponse<ValidationResult>(response.Content),
@@ -32,10 +32,10 @@ namespace MyCRM.Lodgement.Sample.Services.Client
             };
         }
 
-        public async Task<ResultOrError<SubmissionResult, ValidationResult>> Submit(Package package, LixiCountry country,
+        public async Task<ResultOrError<SubmissionResult, ValidationResult>> Submit(Package package,
             CancellationToken token)
         {
-            using var response = await SendAsync(package,country, Routes.Submit, token);
+            using var response = await SendAsync(package, Routes.Submit, token);
             return response.StatusCode switch
             {
                 HttpStatusCode.OK => await ReadResponse<SubmissionResult>(response.Content),
@@ -51,7 +51,7 @@ namespace MyCRM.Lodgement.Sample.Services.Client
 
             var package = await _lixiPackageService.CreatePackageAsync(lodgementInformation, token);
 
-            using var response = await SendAsync(package, lodgementInformation.Country,Routes.Submit, token);
+            using var response = await SendAsync(package,Routes.Submit, token);
             return response.StatusCode switch
             {
                 HttpStatusCode.OK => await ReadResponse<SubmissionResult>(response.Content),
@@ -61,12 +61,12 @@ namespace MyCRM.Lodgement.Sample.Services.Client
             };
         }
 
-        private async Task<HttpResponseMessage> SendAsync(Package package,LixiCountry country, string route, CancellationToken token)
+        private async Task<HttpResponseMessage> SendAsync(Package package, string route, CancellationToken token)
         {
             if (package == null) throw new ArgumentNullException(nameof(package));
             if (route == null) throw new ArgumentNullException(nameof(route));
-
-            var payload = LixiPackageSerializer.Serialize(package,country, _settings.MediaType);
+            
+            var payload = LixiPackageSerializer.Serialize(package,_settings.Country,_settings.LixiPackageVersion,_settings.MediaType);
             var message = new HttpRequestMessage(HttpMethod.Post, $"Lodgement/{route}")
             {
                 Content = new StringContent(payload, Encoding.UTF8, _settings.MediaType)

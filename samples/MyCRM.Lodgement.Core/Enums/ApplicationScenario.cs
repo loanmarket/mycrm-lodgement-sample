@@ -6,4 +6,10 @@ public enum LoanApplicationScenario
 {
     [Description("NewLoanApplication")]
     NewLoanApplication,
+    
+    [Description("Refinance")]
+    Refinance,
+    
+    [Description("TopUp")]
+    TopUp,
 }
