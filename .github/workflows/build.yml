@@ -11,23 +11,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-dotnet@v1
-    - name: Add Nuget Sources
-      run: dotnet nuget add source https://nuget.pkg.github.com/loanmarket/index.json  --name lmgithubnuget --username license.admin@loanmarket.com.au --password ${{secrets.LOAN_MARKET_TOKEN_READ_ONLY }}   --store-password-in-clear-text
     - name: Restore Samples
       run: dotnet restore ./samples/MyCRM.Lodgement.Sample.sln
     - name: Build Samples
       run: dotnet build --configuration Release --no-restore ./samples/MyCRM.Lodgement.Sample.sln
     - name: Test Samples
       run: dotnet test --no-restore --verbosity normal ./samples/MyCRM.Lodgement.Sample.Tests/MyCRM.Lodgement.Sample.Tests.csproj
-    - name: Build Docker image
-      run: |
-        echo ${{secrets.LOAN_MARKET_TOKEN_READ_ONLY }}> ./nugetLoginToken.secret
-        docker build . -f ./samples/MyCRM.Lodgement.Sample/Dockerfile -t lodgementsample:latest --secret id=NUGET_LOGIN_TOKEN,src=./nugetLoginToken.secret
-    - name: Save Docker image to file
-      run: docker save lodgementsample:latest -o lodgementsample-docker-image.tar
-    - name: Save Docker image as an artifact
-      uses: actions/upload-artifact@v3
-      with:
-        name: lodgementsample-docker-image
-        path: lodgementsample-docker-image.tar
-        

@@ -1,4 +1,14 @@
-﻿namespace MyCRM.Lodgement.Sample.Controllers
+﻿using System;
+using System.Threading;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using MyCRM.Lodgement.Common;
+using MyCRM.Lodgement.Common.Models;
+using MyCRM.Lodgement.Sample.Services.Client;
+using MyCRMAPI.Lodgement.Models;
+
+namespace MyCRM.Lodgement.Sample.Controllers
 {
     [ApiController]
     [Route("Lodgement")]
@@ -14,9 +24,9 @@
         [HttpPost(Routes.Validate)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError, Type = typeof(ProblemDetails))]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(ValidationResult))]
-        public async Task<IActionResult> Post(PostPackageRequest request, CancellationToken token)
+        public async Task<IActionResult> Post(Package package, CancellationToken token)
         {
-            var validationResult = await _lodgementClient.Validate(request.LixiPackage, token);
+            var validationResult = await _lodgementClient.Validate(package, token);
             return Ok(validationResult);
         }
     }
