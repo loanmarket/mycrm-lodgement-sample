@@ -1,6 +1,8 @@
-﻿using LMGTech.DotNetLixi;
-using Microsoft.CSharp.RuntimeBinder;
-using MyCRM.Lodgement.Common.Utilities;
+﻿using System;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
+using MyCRM.Lodgement.Sample.Services.Settings;
 
 namespace MyCRM.Lodgement.Sample.Services.Client
 {
@@ -12,12 +14,7 @@ namespace MyCRM.Lodgement.Sample.Services.Client
             if (configuration == null) throw new ArgumentNullException(nameof(configuration));
 
             services.AddOptions();
-            services.Configure<LodgementSettings>(settings =>
-            {
-                var lodgementSettingsSection = configuration.GetSection(nameof(LodgementSettings));
-                lodgementSettingsSection.Bind(settings);
-                settings.LixiPackageVersion = EnumHelper.ConvertToEnum<LixiVersion>(lodgementSettingsSection["Version"]);
-            });
+            services.Configure<LodgementSettings>(settings => configuration.GetSection(nameof(LodgementSettings)).Bind(settings));
             services.AddHttpClient(nameof(LodgementClient), (provider, httpClient) =>
             {
                 var settings = provider.GetRequiredService<IOptions<LodgementSettings>>()?.Value;
@@ -29,17 +26,6 @@ namespace MyCRM.Lodgement.Sample.Services.Client
                 httpClient.BaseAddress = new Uri(settings.Url);
             });
             services.AddTransient<ILodgementClient, LodgementClient>();
-            return services;
-        }
-
-        public static IServiceCollection AddServicesSample(this IServiceCollection services, IConfiguration configuration)
-        {
-            if (services == null) throw new ArgumentNullException(nameof(services));
-            if (configuration == null) throw new ArgumentNullException(nameof(configuration));
-            
-            services.AddScoped<ILixiPackageService, LixiPackageService>();
-            services.AddClient(configuration);
-            
             return services;
         }
     }

@@ -15,8 +15,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyCRM.Lodgement.Automation"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCRM.Lodgement.Common", "MyCRM.Lodgement.Core\MyCRM.Lodgement.Common.csproj", "{54988FFA-E726-4734-827C-E76C990D5290}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCRM.Lodgement.Common.Tests", "MyCRM.Lodgement.Common.Tests\MyCRM.Lodgement.Common.Tests.csproj", "{2BEE7E2E-C6C2-48B9-B512-3878F39A1C66}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,10 +37,6 @@ Global
 		{54988FFA-E726-4734-827C-E76C990D5290}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54988FFA-E726-4734-827C-E76C990D5290}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54988FFA-E726-4734-827C-E76C990D5290}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2BEE7E2E-C6C2-48B9-B512-3878F39A1C66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2BEE7E2E-C6C2-48B9-B512-3878F39A1C66}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2BEE7E2E-C6C2-48B9-B512-3878F39A1C66}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2BEE7E2E-C6C2-48B9-B512-3878F39A1C66}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,7 +46,6 @@ Global
 		{82EFFC13-DE4B-4A57-A9EA-7E18DD65D983} = {881F7FE9-64AE-4F4F-84D3-D94678A98704}
 		{56E4CC0D-4EBB-4280-897F-AB848553EDDD} = {C7A5F525-9F9D-409D-A605-50B451B974CD}
 		{54988FFA-E726-4734-827C-E76C990D5290} = {C7A5F525-9F9D-409D-A605-50B451B974CD}
-		{2BEE7E2E-C6C2-48B9-B512-3878F39A1C66} = {881F7FE9-64AE-4F4F-84D3-D94678A98704}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {07674D10-FD67-435B-BBF2-F9CE9BF947E2}

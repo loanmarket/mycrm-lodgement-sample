@@ -1,4 +1,12 @@
-﻿using MyCRM.Lodgement.Sample.Mapping;
+﻿using System;
+using System.Threading;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using MyCRM.Lodgement.Common;
+using MyCRM.Lodgement.Common.Models;
+using MyCRM.Lodgement.Sample.Services.Client;
+using MyCRMAPI.Lodgement.Models;
 
 namespace MyCRM.Lodgement.Sample.Controllers
 {
@@ -17,38 +25,15 @@ namespace MyCRM.Lodgement.Sample.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(ValidationError))]
         [ProducesResponseType(StatusCodes.Status500InternalServerError, Type = typeof(ProblemDetails))]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(SubmissionResult))]
-        public async Task<IActionResult> Post(PostPackageRequest request, CancellationToken token)
+        public async Task<IActionResult> Post(Package package, CancellationToken token)
         {
-            var resultOrError = await _lodgementClient.Submit(request.LixiPackage, token);
+            var resultOrError = await _lodgementClient.Submit(package, token);
 
             if (resultOrError.IsError)
             {
                 return BadRequest(resultOrError.Error);
             }
 
-            return Ok(resultOrError.Result);
-        }
-        
-        
-        [HttpPost(Routes.SumbitTestPackage)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(ValidationError))]
-        [ProducesResponseType(StatusCodes.Status500InternalServerError, Type = typeof(ProblemDetails))]
-        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(SubmissionResult))]
-        public async Task<IActionResult> PostTestPackage(PostTestPackageRequest request, CancellationToken token)
-        {
-            var model = request.MapToLodgementInformation();
-            if (model is null)
-            {
-                return BadRequest();
-            }
-            
-            var resultOrError = await _lodgementClient.SubmitSampleLixiPackage(model, token);
-        
-            if (resultOrError.IsError)
-            {
-                return BadRequest(resultOrError.Error);
-            }
-        
             return Ok(resultOrError.Result);
         }
     }

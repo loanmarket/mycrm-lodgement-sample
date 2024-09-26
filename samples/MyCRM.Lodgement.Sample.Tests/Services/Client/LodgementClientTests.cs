@@ -6,14 +6,12 @@ using System.Threading;
 using System.Threading.Tasks;
 using AutoFixture;
 using FluentAssertions;
-using LMGTech.DotNetLixi;
-using LMGTech.DotNetLixi.Models;
 using Microsoft.Extensions.Options;
 using Moq;
 using MyCRM.Lodgement.Common.Models;
 using MyCRM.Lodgement.Sample.Services.Client;
-using MyCRM.Lodgement.Sample.Services.LixiPackage;
 using MyCRM.Lodgement.Sample.Services.Settings;
+using MyCRMAPI.Lodgement.Models;
 using Newtonsoft.Json.Linq;
 using Xunit;
 
@@ -30,14 +28,12 @@ namespace MyCRM.Lodgement.Sample.Tests.Services.Client
 
         private const string MediaType = "application/json";
         private readonly Mock<IHttpClientFactory> _httpClientFactoryMock;
-        private readonly Mock<ILixiPackageService> _lixiPackageService;
         private readonly Mock<IOptions<LodgementSettings>> _optionsMock;
 
         public LodgementClientTests()
         {
             _httpClientFactoryMock = new Mock<IHttpClientFactory>();
             _optionsMock = new Mock<IOptions<LodgementSettings>>();
-            _lixiPackageService = new Mock<ILixiPackageService>();
         }
 
         [Fact]
@@ -68,7 +64,6 @@ namespace MyCRM.Lodgement.Sample.Tests.Services.Client
                 .Returns(client);
 
             var target = new LodgementClient(_httpClientFactoryMock.Object,
-                _lixiPackageService.Object,
                 _optionsMock.Object);
 
             var result = await target.Validate(package, CancellationToken.None);
@@ -103,11 +98,10 @@ namespace MyCRM.Lodgement.Sample.Tests.Services.Client
                 .Returns(client);
 
             var target = new LodgementClient(_httpClientFactoryMock.Object,
-                _lixiPackageService.Object,
                 _optionsMock.Object);
 
-            var result = await target.Submit(package, CancellationToken.None);
-            result.Result.ReferenceId.Should().Be(submissionResult.ReferenceId);
+            var result = await target.Validate(package, CancellationToken.None);
+            result.ExternalReferenceId.Should().Be(submissionResult.ReferenceId);
         }
     }
 }
