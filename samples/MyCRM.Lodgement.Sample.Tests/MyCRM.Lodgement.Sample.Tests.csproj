@@ -1,26 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-
-    <IsPackable>false</IsPackable>
-
-    <LangVersion>default</LangVersion>
-  </PropertyGroup>
-
   <ItemGroup>
-    <PackageReference Include="AutoFixture" Version="4.15.0" />
-    <PackageReference Include="FluentAssertions" Version="5.10.3" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="3.1.12" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
-    <PackageReference Include="Moq" Version="4.16.1" />
-    <PackageReference Include="xunit" Version="2.4.0" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
-    <PackageReference Include="coverlet.collector" Version="1.2.0" />
+    <PackageReference Include="FluentAssertions" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="Moq" />
+    <PackageReference Include="xunit" />
+    <PackageReference Include="xunit.runner.visualstudio" />
+    <PackageReference Include="coverlet.collector" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\MyCRM.Lodgement.Sample\MyCRM.Lodgement.Sample.csproj" />
   </ItemGroup>
-
 </Project>
