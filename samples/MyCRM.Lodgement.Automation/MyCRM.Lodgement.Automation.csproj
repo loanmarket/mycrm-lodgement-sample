@@ -1,21 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <TargetFramework>net6.0</TargetFramework>
-    <LangVersion>latest</LangVersion>
-  </PropertyGroup>
-
   <ItemGroup>
-    <PackageReference Include="FluentAssertions" Version="5.10.3" />
-    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.12" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.1.12" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="3.1.12" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.12" />
-    <PackageReference Include="xunit" Version="2.4.1" />
-    <PackageReference Include="xunit.runner.utility" Version="2.4.1" />
+    <PackageReference Include="FluentAssertions" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" />
+    <PackageReference Include="xunit" />
+    <PackageReference Include="xunit.runner.utility" />
   </ItemGroup>
 
   <ItemGroup>
@@ -37,5 +28,4 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
-
 </Project>

@@ -1,10 +1,4 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
-
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <LangVersion>default</LangVersion>
-  </PropertyGroup>
-
   <ItemGroup>
     <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
       <_Parameter1>MyCRM.Lodgement.Sample.Tests</_Parameter1>
@@ -12,15 +6,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Hellang.Middleware.ProblemDetails" Version="5.1.1" />
-    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.0.7" />
-    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.0.7" />
-    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.0.7" />
+    <PackageReference Include="Hellang.Middleware.ProblemDetails" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\MyCRM.Lodgement.Core\MyCRM.Lodgement.Common.csproj" />
   </ItemGroup>
-
-
 </Project>

@@ -46,3 +46,4 @@ _ReSharper*/
 artifacts/
 .DS_Store
 dist/
+*.dccache
