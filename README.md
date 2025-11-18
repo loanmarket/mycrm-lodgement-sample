@@ -6,7 +6,7 @@ MyCRM aims to integrate with a wide range of lodgement targets either by communi
 
 Lodgement uses Lixi packages for both Australia and New Zealand.
 * CAL - 2.6.35
-* CNZ - 2.1.8
+* CNZ - 2.1.31
 
 # MyCRM Lodgement Overview
 
